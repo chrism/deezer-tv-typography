@@ -7,6 +7,7 @@ const Router = EmberRouter.extend({
 });
 
 Router.map(function() {
+  this.route('font-family-audit', { path: '/' });
 });
 
 export default Router;

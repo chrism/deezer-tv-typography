@@ -1125,6 +1125,13 @@ broccoli-filter@^1.2.2, broccoli-filter@^1.2.3:
     symlink-or-copy "^1.0.1"
     walk-sync "^0.3.1"
 
+broccoli-flatiron@^0.1.3:
+  version "0.1.3"
+  resolved "https://registry.yarnpkg.com/broccoli-flatiron/-/broccoli-flatiron-0.1.3.tgz#fc7bd8faf7db429ed7199933aa2ec7ef84a8d943"
+  dependencies:
+    broccoli-plugin "^1.3.0"
+    mkdirp "^0.5.1"
+
 broccoli-funnel-reducer@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/broccoli-funnel-reducer/-/broccoli-funnel-reducer-1.0.0.tgz#11365b2a785aec9b17972a36df87eef24c5cc0ea"
@@ -1166,7 +1173,7 @@ broccoli-funnel@^2.0.0, broccoli-funnel@^2.0.1:
     symlink-or-copy "^1.0.0"
     walk-sync "^0.3.1"
 
-broccoli-kitchen-sink-helpers@^0.2.5:
+broccoli-kitchen-sink-helpers@^0.2.0, broccoli-kitchen-sink-helpers@^0.2.5:
   version "0.2.9"
   resolved "https://registry.yarnpkg.com/broccoli-kitchen-sink-helpers/-/broccoli-kitchen-sink-helpers-0.2.9.tgz#a5e0986ed8d76fb5984b68c3f0450d3a96e36ecc"
   dependencies:
@@ -1319,6 +1326,14 @@ broccoli-sri-hash@^2.1.0:
     sri-toolbox "^0.2.0"
     symlink-or-copy "^1.0.1"
 
+broccoli-static-compiler@^0.1.4:
+  version "0.1.4"
+  resolved "https://registry.yarnpkg.com/broccoli-static-compiler/-/broccoli-static-compiler-0.1.4.tgz#713d18f08eb3131530575a0c5ad2951bba10af41"
+  dependencies:
+    broccoli-kitchen-sink-helpers "^0.2.0"
+    broccoli-writer "^0.1.1"
+    mkdirp "^0.3.5"
+
 broccoli-stew@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/broccoli-stew/-/broccoli-stew-2.0.0.tgz#68f3d94f13b4a79aa15d582703574fb4c3215e50"
@@ -1353,6 +1368,13 @@ broccoli-uglify-sourcemap@^2.1.1:
     terser "^3.7.5"
     walk-sync "^0.3.2"
     workerpool "^2.3.0"
+
+broccoli-writer@^0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/broccoli-writer/-/broccoli-writer-0.1.1.tgz#d4d71aa8f2afbc67a3866b91a2da79084b96ab2d"
+  dependencies:
+    quick-temp "^0.1.0"
+    rsvp "^3.0.6"
 
 browserslist@^3.2.6:
   version "3.2.8"
@@ -2228,6 +2250,17 @@ ember-cli@~3.4.2:
     watch-detector "^0.1.0"
     yam "^0.0.24"
 
+ember-code-snippet@^2.3.1:
+  version "2.3.1"
+  resolved "https://registry.yarnpkg.com/ember-code-snippet/-/ember-code-snippet-2.3.1.tgz#dd4b05d6fe9595c6cab532b70d70f9a442962046"
+  dependencies:
+    broccoli-flatiron "^0.1.3"
+    broccoli-merge-trees "^1.0.0"
+    broccoli-static-compiler "^0.1.4"
+    broccoli-writer "^0.1.1"
+    es6-promise "^1.0.0"
+    glob "^7.1.3"
+
 ember-compatibility-helpers@^1.0.0:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/ember-compatibility-helpers/-/ember-compatibility-helpers-1.0.2.tgz#a7eb8969747d063720fe44658af5448589b437ba"
@@ -2451,6 +2484,10 @@ es-to-primitive@^1.1.1:
     is-callable "^1.1.1"
     is-date-object "^1.0.1"
     is-symbol "^1.0.1"
+
+es6-promise@^1.0.0:
+  version "1.0.0"
+  resolved "http://registry.npmjs.org/es6-promise/-/es6-promise-1.0.0.tgz#f90d3629faa7c26166ae4df77c89bacdeb8dca7f"
 
 escape-html@~1.0.3:
   version "1.0.3"
@@ -3127,7 +3164,7 @@ glob@^5.0.10:
     once "^1.3.0"
     path-is-absolute "^1.0.0"
 
-glob@^7.0.3, glob@^7.0.4, glob@^7.0.5, glob@^7.1.2:
+glob@^7.0.3, glob@^7.0.4, glob@^7.0.5, glob@^7.1.2, glob@^7.1.3:
   version "7.1.3"
   resolved "https://registry.yarnpkg.com/glob/-/glob-7.1.3.tgz#3960832d3f1574108342dafd3a67b332c0969df1"
   dependencies:
@@ -4468,6 +4505,10 @@ mkdirp@0.5.x, mkdirp@^0.5.0, mkdirp@^0.5.1:
   dependencies:
     minimist "0.0.8"
 
+mkdirp@^0.3.5:
+  version "0.3.5"
+  resolved "http://registry.npmjs.org/mkdirp/-/mkdirp-0.3.5.tgz#de3e5f8961c88c787ee1368df849ac4413eca8d7"
+
 mktemp@~0.4.0:
   version "0.4.0"
   resolved "https://registry.yarnpkg.com/mktemp/-/mktemp-0.4.0.tgz#6d0515611c8a8c84e484aa2000129b98e981ff0b"
@@ -5006,7 +5047,7 @@ qs@^6.2.0, qs@^6.4.0:
   version "6.5.2"
   resolved "https://registry.yarnpkg.com/qs/-/qs-6.5.2.tgz#cb3ae806e8740444584ef154ce8ee98d403f3e36"
 
-quick-temp@^0.1.2, quick-temp@^0.1.3, quick-temp@^0.1.5, quick-temp@^0.1.8:
+quick-temp@^0.1.0, quick-temp@^0.1.2, quick-temp@^0.1.3, quick-temp@^0.1.5, quick-temp@^0.1.8:
   version "0.1.8"
   resolved "https://registry.yarnpkg.com/quick-temp/-/quick-temp-0.1.8.tgz#bab02a242ab8fb0dd758a3c9776b32f9a5d94408"
   dependencies:
