@@ -11,3 +11,19 @@ body {
   margin-top: 0.5em;
   display: block;
 }
+
+.hljs {
+  border-radius: 0.5em;
+  background: transparent;
+  border: 1px solid #32303a;
+  color: #c8cdd2;
+  line-height: 1.4;
+}
+
+.hljs-string, .hljs-number {
+  color: #007feb;
+}
+
+.hljs-attribute {
+  color: #e91988;
+}
