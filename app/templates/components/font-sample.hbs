@@ -1,0 +1,11 @@
+<span style={{computedStyle}}>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+<button type="button" name="button" {{action 'toggleCode'}} class="toggle-code-button">
+  {{#if showCode}}
+    Hide code
+  {{else}}
+    Show code
+  {{/if}}
+</button>
+{{#if showCode}}
+  {{code-snippet name=@name}}
+{{/if}}
