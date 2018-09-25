@@ -1,0 +1,8 @@
+.dialog .block .title, .dialog .block .title1, .dialog .block .title2 {
+  color: #727982;
+  font-family: "Orange Sans 65 Medium", "HelveticaNeueLT Com 65 Md", helvetica;
+}
+
+.dialog .block .title {
+  font-size: 32px;
+}

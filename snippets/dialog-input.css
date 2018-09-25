@@ -1,0 +1,11 @@
+body {
+  font-family: "Orange Sans 45 light", "HelveticaNeueLT Com 55 Roman", helvetica;
+}
+
+.dialog .text-input {
+  color: #000;
+}
+
+.dialog .text-input .default {
+  color: #A6ABB2
+}

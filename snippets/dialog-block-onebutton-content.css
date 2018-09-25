@@ -1,0 +1,10 @@
+.dialog .block.oneButton .content {
+  font-family: "Orange Sans 75 Bold", "HelveticaNeueLT Com 75 Bd", helvetica;
+  color: #000;
+}
+
+.dialog .block .content {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: -1px
+}

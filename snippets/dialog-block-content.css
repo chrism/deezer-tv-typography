@@ -1,0 +1,13 @@
+.dialog .block .content {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: -1px
+}
+
+body {
+  font-family: "Orange Sans 45 light", "HelveticaNeueLT Com 55 Roman", helvetica;
+}
+
+.dialogWrapper {
+  color: #23232A;
+}

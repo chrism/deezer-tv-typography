@@ -1,0 +1,12 @@
+.dialog .boffers, .dialog .button {
+  color: #f2f2f2;
+}
+
+.dialog .button {
+  font-size: 20px;
+  font-family: "HelveticaNeueLT Com 75 Bd", helvetica;
+}
+
+.dialog .boffers.stbActive, .dialog .button.stbActive {
+  background: #007FEB !important
+}

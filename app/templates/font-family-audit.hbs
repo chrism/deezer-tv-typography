@@ -6,102 +6,195 @@
   </div>
 </div>
 
-<h2 class="font-normal my-4 text-center">Search styles</h2>
+<StyleGroup @title="Search styles" @bg-color="bg-grey-darkest">
+  <FontSample
+    @text='Search button text'
+    @code='btn-search.css'
+    @css='color: #fff;
+    font-family: "Orange Sans 45 light", "HelveticaNeueLT Com 55 Roman", "Helvetica 55 Roman", helvetica;
+    font-size: 20px;'
+  />
 
-<div class="bg-grey-darkest pt-10 pb-1 mb-8">
-  <div class="container mx-auto px-4">
-    <FontSample
-      @text='Search button text'
-      @code='btn-search.css'
-      @css='color: #fff;
-      font-family: "Orange Sans 45 light", "HelveticaNeueLT Com 55 Roman", "Helvetica 55 Roman", helvetica;
-      font-size: 20px;'
-    />
+  <FontSample
+    @text='Search autocomplete header text'
+    @code='autocomplete.css'
+    @css='color: #8A8D93;
+    font-family: "Orange Sans 45 light", "HelveticaNeueLT Com 55 Roman", "Helvetica 55 Roman", helvetica'
+  />
+</StyleGroup>
 
-    <FontSample
-      @text='Search autocomplete header text'
-      @code='autocomplete.css'
-      @css='color: #8A8D93;
-      font-family: "Orange Sans 45 light", "HelveticaNeueLT Com 55 Roman", "Helvetica 55 Roman", helvetica'
-    />
-  </div>
-</div>
+<StyleGroup @title="Miscellaneous styles" @bg-color="bg-grey-darkest">
+  <FontSample
+    @text='Empty label text'
+    @code='empty-label.css'
+    @css='font-family: "Orange Sans 55 roman", "HelveticaNeueLT Com 55 Roman", helvetica;
+    color: #C8CDD2'
+  />
 
-<h2 class="font-normal my-4 text-center">Miscellaneous styles</h2>
+  <FontSample
+    @text='Menu item text'
+    @code='menu-item.css'
+    @css='font-size: 24px;
+    color: #fff;
+    font-family: "HelveticaNeueLT Com 65 Md", helvetica;'
+  />
 
-<div class="bg-grey-darkest py-8">
-  <div class="container mx-auto px-4">
-    <FontSample
-      @text='Empty label text'
-      @code='empty-label.css'
-      @css='font-family: "Orange Sans 55 roman", "HelveticaNeueLT Com 55 Roman", helvetica;
-      color: #C8CDD2'
-    />
-
-    <FontSample
-      @text='Menu item text'
-      @code='menu-item.css'
-      @css='font-size: 24px;
-      color: #fff;
-      font-family: "HelveticaNeueLT Com 65 Md", helvetica;'
-    />
-
-    <FontSample
-      @text='Detail header title text'
-      @code='detail-header-title.css'
-      @css='font-family: "Orange Sans 55 roman", "HelveticaNeueLT Com 65 Md", helvetica;
-      color: #C8CDD2;
-      font-size: 32px;'
-    />
-
-    <FontSample
-      @text='Detail header subtitle text'
-      @code='detail-header-subtitle.css'
-      @css='font-family: "Orange Sans 55 roman", "HelveticaNeueLT Com 65 Md", helvetica;
-      font-size: 24px;
-      color: #727982'
-    />
-
-    <FontSample
-      @text='Detail header infos text'
-      @code='detail-header-infos.css'
-      @css='font-family: "Orange Sans 55 roman", "HelveticaNeueLT Com 65 Md", helvetica;
-      font-size: 18px;
-      color: #727982'
-    />
-
-    <FontSample
-      @text='Detail header infos span text'
-      @code='detail-header-infos-span.css'
-      @css='font-family: "Orange Sans 55 roman", "HelveticaNeueLT Com 65 Md", helvetica;
+  <FontSample
+    @text='List item text'
+    @code='list-item.css'
+    @css='  color: #C8CDD2;
       font-size: 22px;
-      color: #404048'
-    />
+      font-family: "Orange Sans 45 light", "HelveticaNeueLT Com 55 Roman", "Helvetica 55 Roman", helvetica;'
+  />
+</StyleGroup>
 
-    <FontSample
-      @text='Detail header favourite/radio button text'
-      @code='detail-header-button.css'
-      @css='font-family: "Orange Sans 45 light", "HelveticaNeueLT Com 55 Roman", "Helvetica 55 Roman", helvetica;
-      font-size: 20px;
-      color: #fff'
-    />
+<StyleGroup @title="Detail styles" @bg-color="bg-grey-darkest">
+  <FontSample
+    @text='Detail header title text'
+    @code='detail-header-title.css'
+    @css='font-family: "Orange Sans 55 roman", "HelveticaNeueLT Com 65 Md", helvetica;
+    color: #C8CDD2;
+    font-size: 32px;'
+  />
 
-    <FontSample
-      @text='Detail error/items text'
-      @code='detail-error-items.css'
-      @css='font-family: "Orange Sans 45 light", "HelveticaNeueLT Com 55 Roman", helvetica;
-      font-size: 28px;
-      color: #C8CDD2;'
-    />
+  <FontSample
+    @text='Detail header subtitle text'
+    @code='detail-header-subtitle.css'
+    @css='font-family: "Orange Sans 55 roman", "HelveticaNeueLT Com 65 Md", helvetica;
+    font-size: 24px;
+    color: #727982'
+  />
 
-    <FontSample
-      @text='List item text'
-      @code='list-item.css'
-      @css='  color: #C8CDD2;
-        font-size: 22px;
-        font-family: "Orange Sans 45 light", "HelveticaNeueLT Com 55 Roman", "Helvetica 55 Roman", helvetica;'
-    />
-  </div>
-</div>
+  <FontSample
+    @text='Detail header infos text'
+    @code='detail-header-infos.css'
+    @css='font-family: "Orange Sans 55 roman", "HelveticaNeueLT Com 65 Md", helvetica;
+    font-size: 18px;
+    color: #727982'
+  />
+
+  <FontSample
+    @text='Detail header infos span text'
+    @code='detail-header-infos-span.css'
+    @css='font-family: "Orange Sans 55 roman", "HelveticaNeueLT Com 65 Md", helvetica;
+    font-size: 22px;
+    color: #404048'
+  />
+
+  <FontSample
+    @text='Detail header favourite/radio button text'
+    @code='detail-header-button.css'
+    @css='font-family: "Orange Sans 45 light", "HelveticaNeueLT Com 55 Roman", "Helvetica 55 Roman", helvetica;
+    font-size: 20px;
+    color: #fff'
+  />
+
+  <FontSample
+    @text='Detail error/items text'
+    @code='detail-error-items.css'
+    @css='font-family: "Orange Sans 45 light", "HelveticaNeueLT Com 55 Roman", helvetica;
+    font-size: 28px;
+    color: #C8CDD2;'
+  />
+</StyleGroup>
+
+<StyleGroup @title="Dialog styles" @bg-color="bg-almost-white">
+  <FontSample
+    @text='Dialog block title text'
+    @code='dialog-block-title.css'
+    @css='color: #727982;
+    font-family: "Orange Sans 65 Medium", "HelveticaNeueLT Com 65 Md", helvetica;
+    font-size: 32px;'
+  />
+
+  <FontSample
+    @text='Dialog block title 2 text'
+    @code='dialog-block-title-2.css'
+    @css='color: #727982;
+    font-family: "Orange Sans 65 Medium", "HelveticaNeueLT Com 65 Md", helvetica;
+    font-size: 20px;'
+  />
+
+  <FontSample
+    @text='Dialog block content text'
+    @code='dialog-block-content.css'
+    @css='color: #23232A;
+    font-weight: 700;
+    font-family: "Orange Sans 45 light", "HelveticaNeueLT Com 55 Roman", helvetica;
+    font-size: 20px;
+    letter-spacing: -1px'
+  />
+
+  <FontSample
+    @text='Dialog block content 19 text'
+    @code='dialog-block-content-19.css'
+    @css='color: #23232A;
+    font-weight: 700;
+    font-family: "Orange Sans 45 light", "HelveticaNeueLT Com 55 Roman", helvetica;
+    font-size: 19px;
+    letter-spacing: -1px'
+  />
+
+  <FontSample
+    @text='Dialog block oneButton content text'
+    @code='dialog-block-onebutton-content.css'
+    @css='font-family: "Orange Sans 75 Bold", "HelveticaNeueLT Com 75 Bd", helvetica;
+    color: #000;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: -1px'
+  />
+
+  <FontSample
+    @text='Dialog block content account text'
+    @code='dialog-block-content-account.css'
+    @css='font-size: 24px;
+    font-weight: 700;
+    letter-spacing: -1px;
+    font-family: "Orange Sans 45 light", "HelveticaNeueLT Com 55 Roman", helvetica;
+    color: #007FEB;'
+  />
+</StyleGroup>
+
+<StyleGroup @title="Dialog button styles" @bg-color="bg-almost-white">
+  <FontSample
+    @text='Dialog button text'
+    @code='dialog-button.css'
+    @css='color: #f2f2f2;
+    background: #727982;
+    font-size: 20px;
+    font-family: "HelveticaNeueLT Com 75 Bd", helvetica;
+    padding:0.3em'
+  />
+
+  <FontSample
+    @text='Dialog button small text'
+    @code='dialog-button-small.css'
+    @css='color: #f2f2f2;
+    background: #727982;
+    font-size: 20px;
+    font-family: "HelveticaNeueLT Com 55 Roman", helvetica;
+    padding:0.3em'
+  />
+
+  <FontSample
+    @text='Dialog button active text'
+    @code='dialog-button-active.css'
+    @css='color: #f2f2f2;
+    background: #007FEB;
+    font-size: 20px;
+    font-family: "HelveticaNeueLT Com 75 Bd", helvetica;
+    padding:0.3em'
+  />
+</StyleGroup>
+
+<StyleGroup @title="Dialog input styles" @bg-color="bg-almost-white">
+  <FontSample
+    @text='Dialog input text'
+    @code='dialog-input.css'
+    @css=''
+  />
+
+</StyleGroup>
 
 {{outlet}}
