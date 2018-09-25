@@ -20,7 +20,9 @@ export default {
   black: '#000000',
   white: '#FFFFFF',
   blue: '#007feb',
+  pink: '#e91988',
   'grey-light': '#c8cdd2',
-  'grey': '#8A8D93',
-  'grey-dark': '#32303a'
+  'grey': '#727982',
+  'grey-dark': '#32303a',
+  'grey-darkest': '#23232a'
 };

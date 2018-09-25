@@ -1,0 +1,8 @@
+.detail .header .infos, .detail .header .subTitle, .detail .header .title {
+  font-family: "Orange Sans 55 roman", "HelveticaNeueLT Com 65 Md", helvetica
+}
+
+.detail .header .subTitle {
+  font-size: 24px;
+  color: #727982
+}

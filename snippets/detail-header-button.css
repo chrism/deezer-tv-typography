@@ -1,0 +1,8 @@
+.detail .header .favButton .favLabel, .detail .header .radioButton .radioLabel {
+  font-size: 20px;
+  font-family: "Orange Sans 45 light", "HelveticaNeueLT Com 55 Roman", "Helvetica 55 Roman", helvetica
+}
+
+.detail .header .favButton.stbActive, .detail .header .radioButton.stbActive {
+  color: #fff
+}

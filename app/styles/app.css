@@ -1,28 +1,6 @@
 @import 'tailwind.css';
 
-body {
+/*body {
   background: #23232A;
   color: white;
-}
-
-.font-sample {
-  margin-bottom: 2em;
-} 
-
-.hljs {
-  border-radius: 0.5em;
-  background: transparent;
-  border: 1px solid #32303a;
-  color: #c8cdd2;
-  line-height: 1.4;
-  padding: 1em;
-  font-size: 13px;
-}
-
-.hljs-string, .hljs-number {
-  color: #007feb;
-}
-
-.hljs-attribute {
-  color: #e91988;
-}
+}*/

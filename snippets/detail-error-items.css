@@ -1,0 +1,5 @@
+.detail .errorContainer, .detail .items {
+  /* No font-family specified */
+  font-size: 28px;
+  color: #C8CDD2;
+}

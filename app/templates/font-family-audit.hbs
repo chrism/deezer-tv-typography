@@ -1,42 +1,107 @@
-<div class="container mx-auto px-4">
-  <h2 class="font-normal my-4">Typography audit of current service</h2>
+<h2 class="font-normal my-4 text-center">Typography audit of current service</h2>
 
+<div class="container mx-auto px-4">
   <div class="mb-8">
     {{code-snippet name='body.css'}}
   </div>
-
-  <FontSample
-    @text='Search button text'
-    @code='btn-search.css'
-    @css='color: #fff;
-    font-family: "Orange Sans 45 light", "HelveticaNeueLT Com 55 Roman", "Helvetica 55 Roman", helvetica;
-    font-size: 20px;'
-  />
-
-  <FontSample
-    @text='Search autocomplete header text'
-    @code='autocomplete.css'
-    @css='color: #8A8D93;
-    font-family: "Orange Sans 45 light", "HelveticaNeueLT Com 55 Roman", "Helvetica 55 Roman", helvetica'
-  />
-
-  <FontSample
-    @text='Empty label text'
-    @code='empty-label.css'
-    @css='font-family: "Orange Sans 55 roman", "HelveticaNeueLT Com 55 Roman", helvetica;
-    color: #C8CDD2'
-  />
-
-  <FontSample
-    @text='Menu item text'
-    @code='menu-item.css'
-    @css='font-size: 24px;
-    color: #fff;
-    font-family: "HelveticaNeueLT Com 65 Md", helvetica;'
-  />
 </div>
 
+<h2 class="font-normal my-4 text-center">Search styles</h2>
 
+<div class="bg-grey-darkest pt-10 pb-1 mb-8">
+  <div class="container mx-auto px-4">
+    <FontSample
+      @text='Search button text'
+      @code='btn-search.css'
+      @css='color: #fff;
+      font-family: "Orange Sans 45 light", "HelveticaNeueLT Com 55 Roman", "Helvetica 55 Roman", helvetica;
+      font-size: 20px;'
+    />
 
+    <FontSample
+      @text='Search autocomplete header text'
+      @code='autocomplete.css'
+      @css='color: #8A8D93;
+      font-family: "Orange Sans 45 light", "HelveticaNeueLT Com 55 Roman", "Helvetica 55 Roman", helvetica'
+    />
+  </div>
+</div>
+
+<h2 class="font-normal my-4 text-center">Miscellaneous styles</h2>
+
+<div class="bg-grey-darkest py-8">
+  <div class="container mx-auto px-4">
+    <FontSample
+      @text='Empty label text'
+      @code='empty-label.css'
+      @css='font-family: "Orange Sans 55 roman", "HelveticaNeueLT Com 55 Roman", helvetica;
+      color: #C8CDD2'
+    />
+
+    <FontSample
+      @text='Menu item text'
+      @code='menu-item.css'
+      @css='font-size: 24px;
+      color: #fff;
+      font-family: "HelveticaNeueLT Com 65 Md", helvetica;'
+    />
+
+    <FontSample
+      @text='Detail header title text'
+      @code='detail-header-title.css'
+      @css='font-family: "Orange Sans 55 roman", "HelveticaNeueLT Com 65 Md", helvetica;
+      color: #C8CDD2;
+      font-size: 32px;'
+    />
+
+    <FontSample
+      @text='Detail header subtitle text'
+      @code='detail-header-subtitle.css'
+      @css='font-family: "Orange Sans 55 roman", "HelveticaNeueLT Com 65 Md", helvetica;
+      font-size: 24px;
+      color: #727982'
+    />
+
+    <FontSample
+      @text='Detail header infos text'
+      @code='detail-header-infos.css'
+      @css='font-family: "Orange Sans 55 roman", "HelveticaNeueLT Com 65 Md", helvetica;
+      font-size: 18px;
+      color: #727982'
+    />
+
+    <FontSample
+      @text='Detail header infos span text'
+      @code='detail-header-infos-span.css'
+      @css='font-family: "Orange Sans 55 roman", "HelveticaNeueLT Com 65 Md", helvetica;
+      font-size: 22px;
+      color: #404048'
+    />
+
+    <FontSample
+      @text='Detail header favourite/radio button text'
+      @code='detail-header-button.css'
+      @css='font-family: "Orange Sans 45 light", "HelveticaNeueLT Com 55 Roman", "Helvetica 55 Roman", helvetica;
+      font-size: 20px;
+      color: #fff'
+    />
+
+    <FontSample
+      @text='Detail error/items text'
+      @code='detail-error-items.css'
+      @css='font-family: "Orange Sans 45 light", "HelveticaNeueLT Com 55 Roman", helvetica;
+      font-size: 28px;
+      color: #C8CDD2;'
+    />
+
+    <FontSample
+      @text='List item text'
+      @code='list-item.css'
+      @css='  color: #C8CDD2;
+        font-size: 22px;
+        font-family: "Orange Sans 45 light", "HelveticaNeueLT Com 55 Roman", "Helvetica 55 Roman", helvetica;'
+    />
+  </div>
+</div>
 
 {{outlet}}
