@@ -1,5 +1,7 @@
-<span style={{computedStyle}}>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
-<button type="button" name="button" {{action 'toggleCode'}} class="toggle-code-button">
+<span style={{computedStyle}}>{{@text}}</span>
+<button type="button" name="button" {{action 'toggleCode'}}
+  class="relative float-right text-xs text-grey border border-grey p-1 -mt-1 rounded focus:bg-blue focus:text-white focus:border-blue focus:outline-none"
+>
   {{#if showCode}}
     Hide code
   {{else}}
@@ -7,5 +9,7 @@
   {{/if}}
 </button>
 {{#if showCode}}
-  {{code-snippet name=@name}}
+  <div class="mt-4">
+    {{code-snippet name=@code}}
+  </div>
 {{/if}}

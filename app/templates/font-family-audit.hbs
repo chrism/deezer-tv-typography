@@ -1,31 +1,35 @@
-<div class="container mx-auto">
-  <h2>Typography audit of current service</h2>
+<div class="container mx-auto px-4">
+  <h2 class="font-normal my-4">Typography audit of current service</h2>
 
-  <div>
+  <div class="mb-8">
     {{code-snippet name='body.css'}}
   </div>
 
   <FontSample
-    @name='btn-search.css'
+    @text='Search button text'
+    @code='btn-search.css'
     @css='color: #fff;
     font-family: "Orange Sans 45 light", "HelveticaNeueLT Com 55 Roman", "Helvetica 55 Roman", helvetica;
     font-size: 20px;'
   />
 
   <FontSample
-    @name='autocomplete.css'
+    @text='Search autocomplete header text'
+    @code='autocomplete.css'
     @css='color: #8A8D93;
     font-family: "Orange Sans 45 light", "HelveticaNeueLT Com 55 Roman", "Helvetica 55 Roman", helvetica'
   />
 
   <FontSample
-    @name='empty-label.css'
+    @text='Empty label text'
+    @code='empty-label.css'
     @css='font-family: "Orange Sans 55 roman", "HelveticaNeueLT Com 55 Roman", helvetica;
     color: #C8CDD2'
   />
 
   <FontSample
-    @name='menu-item.css'
+    @text='Menu item text'
+    @code='menu-item.css'
     @css='font-size: 24px;
     color: #fff;
     font-family: "HelveticaNeueLT Com 65 Md", helvetica;'
