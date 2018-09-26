@@ -1,0 +1,69 @@
+<h2 class="font-normal my-4 text-center">Testing font stacks</h2>
+
+<StyleGroup @title="Basic styles" @bgColor="bg-grey-darkest" @textColor="text-white">
+  <FontSample
+    @text='sans-serif'
+    @code='stacks/sans-serif.css'
+    @css='font-family: sans-serif;'
+  />
+
+  <FontSample
+    @text='helvetica'
+    @code='stacks/helvetica.css'
+    @css='font-family: helvetica;'
+  />
+
+  <FontSample
+    @text='"Helvetica 55 Roman"'
+    @code='stacks/helvetica-55-roman.css'
+    @css='font-family: "Helvetica 55 Roman";'
+  />
+</StyleGroup>
+
+<StyleGroup @title="Orange Sans" @bgColor="bg-grey-darkest" @textColor="text-white">
+  <FontSample
+    @text='"Orange Sans 45 Light"'
+    @code='stacks/orange-sans-light.css'
+    @css='font-family: "Orange Sans 45 Light";'
+  />
+
+  <FontSample
+    @text='"Orange Sans 55 Roman"'
+    @code='stacks/orange-sans-roman.css'
+    @css='font-family: "Orange Sans 55 Roman";'
+  />
+
+  <FontSample
+    @text='"Orange Sans 65 Medium"'
+    @code='stacks/orange-sans-medium.css'
+    @css='font-family: "Orange Sans 65 Medium";'
+  />
+
+  <FontSample
+    @text='"Orange Sans 75 Bold"'
+    @code='stacks/orange-sans-bold.css'
+    @css='font-family: "Orange Sans 75 Bold";'
+  />
+</StyleGroup>
+
+<StyleGroup @title="HelveticaNeueLT Com" @bgColor="bg-grey-darkest" @textColor="text-white">
+  <FontSample
+    @text='"HelveticaNeueLT Com 55 Roman"'
+    @code='stacks/helvetica-neue-lt-com-55-roman.css'
+    @css='font-family: "HelveticaNeueLT Com 55 Roman";'
+  />
+
+  <FontSample
+    @text='"HelveticaNeueLT Com 65 Md"'
+    @code='stacks/helvetica-neue-lt-com-65-md.css'
+    @css='font-family: "HelveticaNeueLT Com 65 Md";'
+  />
+
+  <FontSample
+    @text='"HelveticaNeueLT Com 75 Bd"'
+    @code='stacks/helvetica-neue-lt-com-75-bd.css'
+    @css='font-family: "HelveticaNeueLT Com 75 Bd";'
+  />
+</StyleGroup>
+
+{{outlet}}
