@@ -4,7 +4,13 @@ const EmberApp = require('ember-cli/lib/broccoli/ember-app');
 
 module.exports = function(defaults) {
   let app = new EmberApp(defaults, {
-    includeHighlightStyle: false
+    includeHighlightStyle: false,
+    prember: {
+      urls: [
+        '/',
+        '/stacks'
+      ]
+    }
   });
 
   // Use `app.import` to add additional libraries to the generated
