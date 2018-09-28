@@ -1,16 +1,9 @@
 <span style={{computedStyle}}>{{@text}}</span>
-<button type="button" name="button" {{action 'toggleCode'}}
-  class="relative float-right text-xs text-grey border border-grey p-1 -mt-1 rounded
-  focus:bg-blue focus:text-white focus:border-blue focus:outline-none"
->
-  {{#if showCode}}
-    Hide code
-  {{else}}
-    Show code
-  {{/if}}
-</button>
-{{#if showCode}}
-  <div class="mt-4">
-    {{code-snippet name=@code}}
-  </div>
-{{/if}}
+
+<input id={{uniqId}} class="toggle-code" type="checkbox">
+<label for={{uniqId}}
+  class="relative float-right text-xs text-grey border border-grey p-1 -mt-1 rounded cursor-pointer block">CSS</label>
+
+<div class="mt-4 code-snippet">
+  {{code-snippet name=@code}}
+</div>

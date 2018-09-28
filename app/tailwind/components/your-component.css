@@ -39,3 +39,30 @@
 .hljs-comment {
   @apply text-grey-dark
 }
+
+.toggle-code[type="checkbox"] {
+  position: absolute;
+  left: -9999px;
+}
+
+.toggle-code:focus + label {
+  @apply bg-blue text-white border-transparent
+}
+
+.toggle-code + label + div {
+  display: none;
+}
+
+.toggle-code:checked + label + div {
+  display: block;
+}
+
+.toggle-code + label:after {
+  font-size: 10px;
+  margin-left: 5px;
+  content:'▼';
+}
+
+.toggle-code:checked + label:after {
+  content:'▲';
+}
