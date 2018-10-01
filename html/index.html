@@ -25,12 +25,20 @@
 
 <body>
   <h2 class="main-heading">
-  <a href="index.html" id="ember3" class="main-navigation-link active ember-view">Typography audit of current service</a>
+  <a href="index.html" id="ember3" class="main-navigation-link active ember-view" tabindex="-1">Typography audit of current service</a>
   <a href="stacks.html" id="ember4" class="main-navigation-link ember-view">Testing font stacks</a>
 </h2>
 
   <div class="container main-container">
     <div class="introduction">
+      <div class="introduction-text">
+        <p>This has been designed to be viewed on an Orange TV and was created to test the font performance across different STBs (set top boxes).</p>
+        <p>Use the remote control to view specific CSS for each element or navigate to the font stack tests.</p>
+
+        <p>This first screen has extracted the existing text styling code from the Deezer TV application to see how they render.</p>
+        <p>In total there are over 60 different font stacks used, but the aim is to be to reduce this down to two font stacks (one for regular, one for bold) which work consistently across all STBs.</p>
+
+      </div>
       <pre id="ember5" class="css ember-view">body {
   font-family: "Orange Sans 45 light", "HelveticaNeueLT Com 55 Roman", helvetica;
 }
@@ -538,6 +546,12 @@ body {
 
 
       </div>
+    </div>
+  </div>
+
+  <div class="container main-container">
+    <div class="footer">
+      TODO: Add more examples if this approach works.
     </div>
   </div>
 

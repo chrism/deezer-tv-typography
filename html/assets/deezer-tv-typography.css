@@ -33,88 +33,104 @@ body {
 .main-container {
   margin-left: auto;
   margin-right: auto;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: 1em;
+  padding-right: 1em;
 }
 
 .main-heading {
   font-weight: 400;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin-top: 1em;
+  margin-bottom: 2em;
   text-align: center;
 }
 
 .main-navigation-link {
-  border-radius: .5rem;
-  padding-top: .25rem;
-  padding-bottom: .25rem;
-  padding-left: .5rem;
-  padding-right: .5rem;
+  border-radius: .5em;
+  padding-top: .25em;
+  padding-bottom: .25em;
+  padding-left: .5em;
+  padding-right: .5em;
   text-decoration: none;
   color: #727982;
+  border: 1px solid #727982;
 }
 
 .active {
   color: black;
+  border-color: transparent;
 }
 
 .main-navigation-link:focus {
   background-color: #ff7900;
   color: #fff;
   outline: 0;
+  border-color: transparent;
 }
 
 .introduction {
-  margin-bottom: 2rem;
+  margin-bottom: 2em;
+}
+
+.introduction-text {
+  column-count: 2;
+}
+
+.introduction-text p:first-of-type {
+  margin-top: 0;
+}
+
+.footer {
+  margin-top: 2em;
+  margin-bottom: 2em;
 }
 
 .style-group-heading {
   font-weight: 400;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin-top: 1em;
+  margin-bottom: 1em;
   text-align: center;
 }
 
 .style-group-container {
-  padding-top: 2.5rem;
-  padding-bottom: .25rem;
-  margin-bottom: 1rem;
+  padding-top: 2.5em;
+  padding-bottom: .25em;
+  margin-bottom: 1em;
 }
 
 .style-group-content {
   margin-left: auto;
   margin-right: auto;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: 1em;
+  padding-right: 1em;
 }
 
 .css-button {
   position: relative;
   float: right;
-  font-size: .75rem;
+  font-size: .75em;
   color: #727982;
   border: 1px solid #727982;
-  padding: .25rem;
-  margin-top: -0.25rem;
-  border-radius: .25rem;
+  padding: .5em;
+  margin-top: -0.25em;
+  border-radius: .25em;
   cursor: pointer;
   display: block;
 }
 
 .code-snippet {
-  margin-top: 1rem;
+  margin-top: 1em;
 }
 
 .font-sample {
-  margin-bottom: 2rem;
+  margin-bottom: 2em;
 }
 
 .hljs {
-  border-radius: .5rem;
+  border-radius: .5em;
   border: 1px solid #727982;
   color: #727982;
-  padding: 1rem;
-  font-size: .875rem;
+  padding: 1em;
+  font-size: 1em;
   line-height: 1.5;
 }
 
@@ -131,7 +147,7 @@ body {
 }
 
 .text-white {
-  font-size: 1.5rem;
+  font-size: 1.5em;
   color: #FFFFFF;
 }
 
