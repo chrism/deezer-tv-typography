@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Deezer TV Typography</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link integrity="" rel="stylesheet" href="assets/vendor.css">
-    <link integrity="" rel="stylesheet" href="assets/deezer-tv-typography.css">
-    <link integrity="" rel="stylesheet" href="assets/tailwind.css">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Deezer TV Typography</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <script src="assets/highlight.pack.js"></script>
-    <script type="text/javascript">
+  <link integrity="" rel="stylesheet" href="assets/vendor.css">
+  <link integrity="" rel="stylesheet" href="assets/deezer-tv-typography.css">
+
+  <script src="assets/highlight.pack.js"></script>
+  <script type="text/javascript">
     function highlight() {
       var codeBlocks = document.querySelectorAll('pre');
       codeBlocks.forEach(function(block) {
@@ -20,25 +20,527 @@
       });
     }
     window.onload = highlight;
-    </script>
-  </head>
-  <body>
+  </script>
+</head>
 
-    <h2 class="font-normal my-4 text-center">
-      <a href="index.html" id="ember3" class="rounded-lg py-1 px-2 no-underline text-grey focus:bg-orange focus:text-white focus:outline-none active ember-view">Typography audit of current service</a>
-      <a href="stacks.html" id="ember4" class="rounded-lg py-1 px-2 no-underline text-grey focus:bg-orange focus:text-white focus:outline-none ember-view">Testing font stacks</a>
-    </h2>
+<body>
+  <h2 class="main-heading">
+  <a href="index.html" id="ember3" class="main-navigation-link active ember-view">Typography audit of current service</a>
+  <a href="stacks.html" id="ember4" class="main-navigation-link ember-view">Testing font stacks</a>
+</h2>
 
-    <div class="container mx-auto px-4">
-      <div class="mb-8">
-        <pre id="ember5" class="css ember-view">body {
-      font-family: "Orange Sans 45 light", "HelveticaNeueLT Com 55 Roman", helvetica;
-    }</pre>
+  <div class="container main-container">
+    <div class="introduction">
+      <pre id="ember5" class="css ember-view">body {
+  font-family: "Orange Sans 45 light", "HelveticaNeueLT Com 55 Roman", helvetica;
+}
+</pre>
+    </div>
+  </div>
+
+  <div id="ember6" class="ember-view">
+    <h2 class="style-group-heading">Search styles</h2>
+
+    <div class="bg-grey-darkest  style-group-container">
+      <div class="container style-group-content">
+
+        <div id="ember7" class="font-sample ember-view"><span style="color: #fff;
+    font-family: &quot;Orange Sans 45 light&quot;, &quot;HelveticaNeueLT Com 55 Roman&quot;, &quot;Helvetica 55 Roman&quot;, helvetica;
+    font-size: 20px;">Search button text</span>
+
+          <input id="id_ember7" class="toggle-code" type="checkbox">
+          <label for="id_ember7" class="css-button">CSS</label>
+
+          <div class="code-snippet">
+            <pre id="ember8" class="css ember-view">.searchButton .btnSearch {
+  color: #fff;
+  font-family: "Orange Sans 45 light", "HelveticaNeueLT Com 55 Roman", "Helvetica 55 Roman", helvetica;
+  font-size: 20px;
+}
+</pre>
+          </div>
+        </div>
+
+        <div id="ember9" class="font-sample ember-view"><span style="color: #8A8D93;
+    font-family: &quot;Orange Sans 45 light&quot;, &quot;HelveticaNeueLT Com 55 Roman&quot;, &quot;Helvetica 55 Roman&quot;, helvetica">Search autocomplete header text</span>
+
+          <input id="id_ember9" class="toggle-code" type="checkbox">
+          <label for="id_ember9" class="css-button">CSS</label>
+
+          <div class="code-snippet">
+            <pre id="ember10" class="css ember-view">.searchHeader .autocomplete {
+  color: #8A8D93;
+  font-family: "Orange Sans 45 light", "HelveticaNeueLT Com 55 Roman", "Helvetica 55 Roman", helvetica
+}
+</pre>
+          </div>
+        </div>
+
       </div>
     </div>
+  </div>
+
+  <div id="ember11" class="ember-view">
+    <h2 class="style-group-heading">Miscellaneous styles</h2>
+
+    <div class="bg-grey-darkest  style-group-container">
+      <div class="container style-group-content">
+
+        <div id="ember12" class="font-sample ember-view"><span style="font-family: &quot;Orange Sans 55 roman&quot;, &quot;HelveticaNeueLT Com 55 Roman&quot;, helvetica;
+    color: #C8CDD2">Empty label text</span>
+
+          <input id="id_ember12" class="toggle-code" type="checkbox">
+          <label for="id_ember12" class="css-button">CSS</label>
+
+          <div class="code-snippet">
+            <pre id="ember13" class="css ember-view">.emptyLabel, .emptyLabel2Line {
+  font-family: "Orange Sans 55 roman", "HelveticaNeueLT Com 55 Roman", helvetica;
+  color: #C8CDD2
+}
+</pre>
+          </div>
+        </div>
+
+        <div id="ember14" class="font-sample ember-view"><span style="font-size: 24px;
+    color: #fff;
+    font-family: &quot;HelveticaNeueLT Com 65 Md&quot;, helvetica;">Menu item text</span>
+
+          <input id="id_ember14" class="toggle-code" type="checkbox">
+          <label for="id_ember14" class="css-button">CSS</label>
+
+          <div class="code-snippet">
+            <pre id="ember15" class="css ember-view">.menu .menuItem .disabled, .menu .menuItem .firstline, .menu .menuItem .secondline, .menu .menuItem .title {
+  font-family: "HelveticaNeueLT Com 65 Md", helvetica;
+}
+
+.barMenu .menuItem {
+  font-size: 24px;
+  color: #fff;
+}
+</pre>
+          </div>
+        </div>
+
+        <div id="ember16" class="font-sample ember-view"><span style="  color: #C8CDD2;
+      font-size: 22px;
+      font-family: &quot;Orange Sans 45 light&quot;, &quot;HelveticaNeueLT Com 55 Roman&quot;, &quot;Helvetica 55 Roman&quot;, helvetica;">List item text</span>
+
+          <input id="id_ember16" class="toggle-code" type="checkbox">
+          <label for="id_ember16" class="css-button">CSS</label>
+
+          <div class="code-snippet">
+            <pre id="ember17" class="css ember-view">.list .listItem {
+  color: #C8CDD2;
+  font-size: 22px;
+  font-family: "Orange Sans 45 light", "HelveticaNeueLT Com 55 Roman", "Helvetica 55 Roman", helvetica;
+}
+</pre>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div id="ember18" class="ember-view">
+    <h2 class="style-group-heading">Detail styles</h2>
+
+    <div class="bg-grey-darkest  style-group-container">
+      <div class="container style-group-content">
+
+        <div id="ember19" class="font-sample ember-view"><span style="font-family: &quot;Orange Sans 55 roman&quot;, &quot;HelveticaNeueLT Com 65 Md&quot;, helvetica;
+    color: #C8CDD2;
+    font-size: 32px;">Detail header title text</span>
+
+          <input id="id_ember19" class="toggle-code" type="checkbox">
+          <label for="id_ember19" class="css-button">CSS</label>
+
+          <div class="code-snippet">
+            <pre id="ember20" class="css ember-view">.detail .header .infos, .detail .header .subTitle, .detail .header .title {
+  font-family: "Orange Sans 55 roman", "HelveticaNeueLT Com 65 Md", helvetica
+}
+
+.detail .header .title {
+  color: #C8CDD2;
+  font-size: 32px
+}
+</pre>
+          </div>
+        </div>
+
+        <div id="ember21" class="font-sample ember-view"><span style="font-family: &quot;Orange Sans 55 roman&quot;, &quot;HelveticaNeueLT Com 65 Md&quot;, helvetica;
+    font-size: 24px;
+    color: #727982">Detail header subtitle text</span>
+
+          <input id="id_ember21" class="toggle-code" type="checkbox">
+          <label for="id_ember21" class="css-button">CSS</label>
+
+          <div class="code-snippet">
+            <pre id="ember22" class="css ember-view">.detail .header .infos, .detail .header .subTitle, .detail .header .title {
+  font-family: "Orange Sans 55 roman", "HelveticaNeueLT Com 65 Md", helvetica
+}
+
+.detail .header .subTitle {
+  font-size: 24px;
+  color: #727982
+}
+</pre>
+          </div>
+        </div>
+
+        <div id="ember23" class="font-sample ember-view"><span style="font-family: &quot;Orange Sans 55 roman&quot;, &quot;HelveticaNeueLT Com 65 Md&quot;, helvetica;
+    font-size: 18px;
+    color: #727982">Detail header infos text</span>
+
+          <input id="id_ember23" class="toggle-code" type="checkbox">
+          <label for="id_ember23" class="css-button">CSS</label>
+
+          <div class="code-snippet">
+            <pre id="ember24" class="css ember-view">.detail .header .infos, .detail .header .subTitle, .detail .header .title {
+  font-family: "Orange Sans 55 roman", "HelveticaNeueLT Com 65 Md", helvetica
+}
+
+.detail .header .title {
+  font-size: 18px;
+  color: #727982;
+}
+</pre>
+          </div>
+        </div>
+
+        <div id="ember25" class="font-sample ember-view"><span style="font-family: &quot;Orange Sans 55 roman&quot;, &quot;HelveticaNeueLT Com 65 Md&quot;, helvetica;
+    font-size: 22px;
+    color: #404048">Detail header infos span text</span>
+
+          <input id="id_ember25" class="toggle-code" type="checkbox">
+          <label for="id_ember25" class="css-button">CSS</label>
+
+          <div class="code-snippet">
+            <pre id="ember26" class="css ember-view">.detail .header .infos span {
+  color: #404048;
+  font-family: "Orange Sans 55 roman", "HelveticaNeueLT Com 65 Md", helvetica;
+  font-size: 22px
+}
+</pre>
+          </div>
+        </div>
+
+        <div id="ember27" class="font-sample ember-view"><span style="font-family: &quot;Orange Sans 45 light&quot;, &quot;HelveticaNeueLT Com 55 Roman&quot;, &quot;Helvetica 55 Roman&quot;, helvetica;
+    font-size: 20px;
+    color: #fff">Detail header favourite/radio button text</span>
+
+          <input id="id_ember27" class="toggle-code" type="checkbox">
+          <label for="id_ember27" class="css-button">CSS</label>
+
+          <div class="code-snippet">
+            <pre id="ember28" class="css ember-view">.detail .header .favButton .favLabel, .detail .header .radioButton .radioLabel {
+  font-size: 20px;
+  font-family: "Orange Sans 45 light", "HelveticaNeueLT Com 55 Roman", "Helvetica 55 Roman", helvetica
+}
+
+.detail .header .favButton.stbActive, .detail .header .radioButton.stbActive {
+  color: #fff
+}
+</pre>
+          </div>
+        </div>
+
+        <div id="ember29" class="font-sample ember-view"><span style="font-family: &quot;Orange Sans 45 light&quot;, &quot;HelveticaNeueLT Com 55 Roman&quot;, helvetica;
+    font-size: 28px;
+    color: #C8CDD2;">Detail error/items text</span>
+
+          <input id="id_ember29" class="toggle-code" type="checkbox">
+          <label for="id_ember29" class="css-button">CSS</label>
+
+          <div class="code-snippet">
+            <pre id="ember30" class="css ember-view">.detail .errorContainer, .detail .items {
+  /* No font-family specified */
+  font-size: 28px;
+  color: #C8CDD2;
+}
+</pre>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div id="ember31" class="ember-view">
+    <h2 class="style-group-heading">Dialog styles</h2>
+
+    <div class="bg-almost-white  style-group-container">
+      <div class="container style-group-content">
+
+        <div id="ember32" class="font-sample ember-view"><span style="color: #727982;
+    font-family: &quot;Orange Sans 65 Medium&quot;, &quot;HelveticaNeueLT Com 65 Md&quot;, helvetica;
+    font-size: 32px;">Dialog block title text</span>
+
+          <input id="id_ember32" class="toggle-code" type="checkbox">
+          <label for="id_ember32" class="css-button">CSS</label>
+
+          <div class="code-snippet">
+            <pre id="ember33" class="css ember-view">.dialog .block .title, .dialog .block .title1, .dialog .block .title2 {
+  color: #727982;
+  font-family: "Orange Sans 65 Medium", "HelveticaNeueLT Com 65 Md", helvetica;
+}
+
+.dialog .block .title {
+  font-size: 32px;
+}
+</pre>
+          </div>
+        </div>
+
+        <div id="ember34" class="font-sample ember-view"><span style="color: #727982;
+    font-family: &quot;Orange Sans 65 Medium&quot;, &quot;HelveticaNeueLT Com 65 Md&quot;, helvetica;
+    font-size: 20px;">Dialog block title 2 text</span>
+
+          <input id="id_ember34" class="toggle-code" type="checkbox">
+          <label for="id_ember34" class="css-button">CSS</label>
+
+          <div class="code-snippet">
+            <pre id="ember35" class="css ember-view">.dialog .block .title, .dialog .block .title1, .dialog .block .title2 {
+  color: #727982;
+  font-family: "Orange Sans 65 Medium", "HelveticaNeueLT Com 65 Md", helvetica;
+}
+
+.dialog .block .title2 {
+  font-size: 20px;
+}
+</pre>
+          </div>
+        </div>
+
+        <div id="ember36" class="font-sample ember-view"><span style="color: #23232A;
+    font-weight: 700;
+    font-family: &quot;Orange Sans 45 light&quot;, &quot;HelveticaNeueLT Com 55 Roman&quot;, helvetica;
+    font-size: 20px;
+    letter-spacing: -1px">Dialog block content text</span>
+
+          <input id="id_ember36" class="toggle-code" type="checkbox">
+          <label for="id_ember36" class="css-button">CSS</label>
+
+          <div class="code-snippet">
+            <pre id="ember37" class="css ember-view">.dialog .block .content {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: -1px
+}
+
+body {
+  font-family: "Orange Sans 45 light", "HelveticaNeueLT Com 55 Roman", helvetica;
+}
+
+.dialogWrapper {
+  color: #23232A;
+}
+</pre>
+          </div>
+        </div>
+
+        <div id="ember38" class="font-sample ember-view"><span style="color: #23232A;
+    font-weight: 700;
+    font-family: &quot;Orange Sans 45 light&quot;, &quot;HelveticaNeueLT Com 55 Roman&quot;, helvetica;
+    font-size: 19px;
+    letter-spacing: -1px">Dialog block content 19 text</span>
+
+          <input id="id_ember38" class="toggle-code" type="checkbox">
+          <label for="id_ember38" class="css-button">CSS</label>
+
+          <div class="code-snippet">
+            <pre id="ember39" class="css ember-view">.dialog .block .content {
+  font-weight: 700;
+  letter-spacing: -1px
+}
+
+body {
+  font-family: "Orange Sans 45 light", "HelveticaNeueLT Com 55 Roman", helvetica;
+}
+
+.dialogWrapper {
+  color: #23232A;
+}
+
+.dialog .block .content.font19 {
+  font-size: 19px
+}
+</pre>
+          </div>
+        </div>
+
+        <div id="ember40" class="font-sample ember-view"><span style="font-family: &quot;Orange Sans 75 Bold&quot;, &quot;HelveticaNeueLT Com 75 Bd&quot;, helvetica;
+    color: #000;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: -1px">Dialog block oneButton content text</span>
+
+          <input id="id_ember40" class="toggle-code" type="checkbox">
+          <label for="id_ember40" class="css-button">CSS</label>
+
+          <div class="code-snippet">
+            <pre id="ember41" class="css ember-view">.dialog .block.oneButton .content {
+  font-family: "Orange Sans 75 Bold", "HelveticaNeueLT Com 75 Bd", helvetica;
+  color: #000;
+}
+
+.dialog .block .content {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: -1px
+}
+</pre>
+          </div>
+        </div>
+
+        <div id="ember42" class="font-sample ember-view"><span style="font-size: 24px;
+    font-weight: 700;
+    letter-spacing: -1px;
+    font-family: &quot;Orange Sans 45 light&quot;, &quot;HelveticaNeueLT Com 55 Roman&quot;, helvetica;
+    color: #007FEB;">Dialog block content account text</span>
+
+          <input id="id_ember42" class="toggle-code" type="checkbox">
+          <label for="id_ember42" class="css-button">CSS</label>
+
+          <div class="code-snippet">
+            <pre id="ember43" class="css ember-view">.dialog .block .content {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: -1px
+}
+
+body {
+  font-family: "Orange Sans 45 light", "HelveticaNeueLT Com 55 Roman", helvetica;
+}
+
+.dialog .block .content .account {
+  color: #007FEB;
+}
+</pre>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div id="ember44" class="ember-view">
+    <h2 class="style-group-heading">Dialog button styles</h2>
+
+    <div class="bg-almost-white  style-group-container">
+      <div class="container style-group-content">
+
+        <div id="ember45" class="font-sample ember-view"><span style="color: #f2f2f2;
+    background: #727982;
+    font-size: 20px;
+    font-family: &quot;HelveticaNeueLT Com 75 Bd&quot;, helvetica;
+    padding:0.3em">Dialog button text</span>
+
+          <input id="id_ember45" class="toggle-code" type="checkbox">
+          <label for="id_ember45" class="css-button">CSS</label>
+
+          <div class="code-snippet">
+            <pre id="ember46" class="css ember-view">.dialog .boffers, .dialog .button {
+  color: #f2f2f2;
+  background: #727982;
+}
+
+.dialog .button {
+  font-size: 20px;
+  font-family: "HelveticaNeueLT Com 75 Bd", helvetica;
+}
+</pre>
+          </div>
+        </div>
+
+        <div id="ember47" class="font-sample ember-view"><span style="color: #f2f2f2;
+    background: #727982;
+    font-size: 20px;
+    font-family: &quot;HelveticaNeueLT Com 55 Roman&quot;, helvetica;
+    padding:0.3em">Dialog button small text</span>
+
+          <input id="id_ember47" class="toggle-code" type="checkbox">
+          <label for="id_ember47" class="css-button">CSS</label>
+
+          <div class="code-snippet">
+            <pre id="ember48" class="css ember-view">.dialog .boffers, .dialog .button {
+  color: #f2f2f2;
+  background: #727982;
+}
+
+.dialog .button {
+  font-size: 20px;
+}
+
+.dialog .button .small {
+  font-family: "HelveticaNeueLT Com 55 Roman", helvetica
+}
+</pre>
+          </div>
+        </div>
+
+        <div id="ember49" class="font-sample ember-view"><span style="color: #f2f2f2;
+    background: #007FEB;
+    font-size: 20px;
+    font-family: &quot;HelveticaNeueLT Com 75 Bd&quot;, helvetica;
+    padding:0.3em">Dialog button active text</span>
+
+          <input id="id_ember49" class="toggle-code" type="checkbox">
+          <label for="id_ember49" class="css-button">CSS</label>
+
+          <div class="code-snippet">
+            <pre id="ember50" class="css ember-view">.dialog .boffers, .dialog .button {
+  color: #f2f2f2;
+}
+
+.dialog .button {
+  font-size: 20px;
+  font-family: "HelveticaNeueLT Com 75 Bd", helvetica;
+}
+
+.dialog .boffers.stbActive, .dialog .button.stbActive {
+  background: #007FEB !important
+}
+</pre>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div id="ember51" class="ember-view">
+    <h2 class="style-group-heading">Dialog input styles</h2>
+
+    <div class="bg-almost-white  style-group-container">
+      <div class="container style-group-content">
+
+        <div id="ember52" class="font-sample ember-view"><span style>Dialog input text</span>
+
+          <input id="id_ember52" class="toggle-code" type="checkbox">
+          <label for="id_ember52" class="css-button">CSS</label>
+
+          <div class="code-snippet">
+            <pre id="ember53" class="css ember-view">body {
+  font-family: "Orange Sans 45 light", "HelveticaNeueLT Com 55 Roman", helvetica;
+}
+
+.dialog .text-input {
+  color: #000;
+}
+
+.dialog .text-input .default {
+  color: #A6ABB2
+}
+</pre>
+          </div>
+        </div>
 
 
+      </div>
+    </div>
+  </div>
 
+</body>
 
-  </body>
 </html>

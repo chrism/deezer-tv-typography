@@ -1,1 +1,173 @@
-.active{color:#000}
+body {
+  font-family: sans-serif;
+}
+
+.container {
+  width: 100%;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 576px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 992px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+.main-container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.main-heading {
+  font-weight: 400;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.main-navigation-link {
+  border-radius: .5rem;
+  padding-top: .25rem;
+  padding-bottom: .25rem;
+  padding-left: .5rem;
+  padding-right: .5rem;
+  text-decoration: none;
+  color: #727982;
+}
+
+.active {
+  color: black;
+}
+
+.main-navigation-link:focus {
+  background-color: #ff7900;
+  color: #fff;
+  outline: 0;
+}
+
+.introduction {
+  margin-bottom: 2rem;
+}
+
+.style-group-heading {
+  font-weight: 400;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.style-group-container {
+  padding-top: 2.5rem;
+  padding-bottom: .25rem;
+  margin-bottom: 1rem;
+}
+
+.style-group-content {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.css-button {
+  position: relative;
+  float: right;
+  font-size: .75rem;
+  color: #727982;
+  border: 1px solid #727982;
+  padding: .25rem;
+  margin-top: -0.25rem;
+  border-radius: .25rem;
+  cursor: pointer;
+  display: block;
+}
+
+.code-snippet {
+  margin-top: 1rem;
+}
+
+.font-sample {
+  margin-bottom: 2rem;
+}
+
+.hljs {
+  border-radius: .5rem;
+  border: 1px solid #727982;
+  color: #727982;
+  padding: 1rem;
+  font-size: .875rem;
+  line-height: 1.5;
+}
+
+.hljs-string, .hljs-number {
+  color: #e91988;
+}
+
+.hljs-attribute {
+  color: #007feb;
+}
+
+.hljs-comment {
+  color: #444444;
+}
+
+.text-white {
+  font-size: 1.5rem;
+  color: #FFFFFF;
+}
+
+.bg-grey-darkest {
+  background-color: #23232a;
+}
+
+.bg-almost-white {
+  background-color: #f8f8f8;
+}
+
+.toggle-code[type="checkbox"] {
+  position: absolute;
+  left: -9999px;
+}
+
+.toggle-code:focus + label {
+  background-color: #007feb;
+  color: #fff;
+  border-color: transparent;
+}
+
+.toggle-code + label + div {
+  display: none;
+}
+
+.toggle-code:checked + label + div {
+  display: block;
+}
+
+.toggle-code + label:after {
+  font-size: 10px;
+  margin-left: 5px;
+  content:'▼';
+}
+
+.toggle-code:checked + label:after {
+  content:'▲';
+}

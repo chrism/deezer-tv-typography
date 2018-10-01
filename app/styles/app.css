@@ -165,6 +165,3 @@
 .toggle-code:checked + label:after {
   content:'▲';
 }
-
-
-/*! purgecss end ignore */

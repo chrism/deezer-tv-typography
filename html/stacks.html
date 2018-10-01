@@ -1,132 +1,193 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>DeezerTvTypography</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    
-<meta name="deezer-tv-typography/config/environment" content="%7B%22modulePrefix%22%3A%22deezer-tv-typography%22%2C%22environment%22%3A%22production%22%2C%22rootURL%22%3A%22/%22%2C%22locationType%22%3A%22auto%22%2C%22EmberENV%22%3A%7B%22FEATURES%22%3A%7B%7D%2C%22EXTEND_PROTOTYPES%22%3A%7B%22Date%22%3Afalse%7D%2C%22_APPLICATION_TEMPLATE_WRAPPER%22%3Afalse%2C%22_JQUERY_INTEGRATION%22%3Atrue%7D%2C%22APP%22%3A%7B%22name%22%3A%22deezer-tv-typography%22%2C%22version%22%3A%220.0.0+a8599fbf%22%7D%2C%22emberData%22%3A%7B%22enableRecordDataRFCBuild%22%3Afalse%7D%2C%22exportApplicationGlobal%22%3Afalse%7D" />
-<!-- EMBER_CLI_FASTBOOT_TITLE -->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Deezer TV Typography</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link integrity="" rel="stylesheet" href="/assets/vendor-d41d8cd98f00b204e9800998ecf8427e.css">
-    <link integrity="" rel="stylesheet" href="/assets/deezer-tv-typography-ccb62a08dcd106a2afb72333885e9209.css">
-    <link integrity="" rel="stylesheet" href="/assets/tailwind-7b8567f8185d70e8f666557cf1c58d32.css">
+  <link integrity="" rel="stylesheet" href="assets/vendor.css">
+  <link integrity="" rel="stylesheet" href="assets/deezer-tv-typography.css">
 
-    
-  </head>
-  <body>
-    <script type="x/boundary" id="fastboot-body-start"></script><h2 class="font-normal my-4 text-center">
-  <a href="/" id="ember56" class="rounded-lg py-1 px-2 no-underline text-grey focus:bg-orange focus:text-white focus:outline-none ember-view">Typography audit of current service</a> 
-  <a href="/stacks" id="ember57" class="rounded-lg py-1 px-2 no-underline text-grey focus:bg-orange focus:text-white focus:outline-none active ember-view">Testing font stacks</a>
+  <script src="assets/highlight.pack.js"></script>
+  <script type="text/javascript">
+    function highlight() {
+      var codeBlocks = document.querySelectorAll('pre');
+      codeBlocks.forEach(function(block) {
+        hljs.highlightBlock(block);
+      });
+    }
+    window.onload = highlight;
+  </script>
+</head>
+
+<body>
+  <h2 class="main-heading">
+  <a href="index.html" id="ember56" class="main-navigation-link ember-view">Typography audit of current service</a>
+  <a href="stacks.html" id="ember57" class="main-navigation-link active ember-view">Testing font stacks</a>
 </h2>
 
-<div id="ember58" class="ember-view"><h2 class="font-normal my-4 text-center">Basic styles</h2>
+  <div id="ember58" class="ember-view">
+    <h2 class="style-group-heading">Basic styles</h2>
 
-<div class="bg-grey-darkest text-white pt-10 pb-1 mb-4">
-  <div class="container mx-auto px-4">
-    
-  <div id="ember59" class="mb-8 ember-view"><span style="font-family: sans-serif;">sans-serif</span>
-<button name="button" class="relative float-right text-xs text-grey border border-grey p-1 -mt-1 rounded
-  focus:bg-blue focus:text-white focus:border-blue focus:outline-none" type="button">
-    Show code
-</button>
-<!----></div>
+    <div class="bg-grey-darkest text-white style-group-container">
+      <div class="container style-group-content">
 
-  <div id="ember61" class="mb-8 ember-view"><span style="font-family: helvetica;">helvetica</span>
-<button name="button" class="relative float-right text-xs text-grey border border-grey p-1 -mt-1 rounded
-  focus:bg-blue focus:text-white focus:border-blue focus:outline-none" type="button">
-    Show code
-</button>
-<!----></div>
+        <div id="ember59" class="font-sample ember-view"><span style="font-family: sans-serif;">sans-serif</span>
 
-  <div id="ember63" class="mb-8 ember-view"><span style="font-family: &quot;Helvetica 55 Roman&quot;;">"Helvetica 55 Roman"</span>
-<button name="button" class="relative float-right text-xs text-grey border border-grey p-1 -mt-1 rounded
-  focus:bg-blue focus:text-white focus:border-blue focus:outline-none" type="button">
-    Show code
-</button>
-<!----></div>
+          <input id="id_ember59" class="toggle-code" type="checkbox">
+          <label for="id_ember59" class="css-button">CSS</label>
 
+          <div class="code-snippet">
+            <pre id="ember60" class="css ember-view">.sans-serif {
+  font-family: sans-serif;
+}
+</pre>
+          </div>
+        </div>
+
+        <div id="ember61" class="font-sample ember-view"><span style="font-family: helvetica;">helvetica</span>
+
+          <input id="id_ember61" class="toggle-code" type="checkbox">
+          <label for="id_ember61" class="css-button">CSS</label>
+
+          <div class="code-snippet">
+            <pre id="ember62" class="css ember-view">.helvetica {
+  font-family: helvetica;
+}
+</pre>
+          </div>
+        </div>
+
+        <div id="ember63" class="font-sample ember-view"><span style="font-family: &quot;Helvetica 55 Roman&quot;;">"Helvetica 55 Roman"</span>
+
+          <input id="id_ember63" class="toggle-code" type="checkbox">
+          <label for="id_ember63" class="css-button">CSS</label>
+
+          <div class="code-snippet">
+            <pre id="ember64" class="css ember-view">.helvetica {
+  font-family: helvetica;
+}
+</pre>
+          </div>
+        </div>
+
+      </div>
+    </div>
   </div>
-</div>
-</div>
 
-<div id="ember65" class="ember-view"><h2 class="font-normal my-4 text-center">Orange Sans</h2>
+  <div id="ember65" class="ember-view">
+    <h2 class="style-group-heading">Orange Sans</h2>
 
-<div class="bg-grey-darkest text-white pt-10 pb-1 mb-4">
-  <div class="container mx-auto px-4">
-    
-  <div id="ember66" class="mb-8 ember-view"><span style="font-family: &quot;Orange Sans 45 Light&quot;;">"Orange Sans 45 Light"</span>
-<button name="button" class="relative float-right text-xs text-grey border border-grey p-1 -mt-1 rounded
-  focus:bg-blue focus:text-white focus:border-blue focus:outline-none" type="button">
-    Show code
-</button>
-<!----></div>
+    <div class="bg-grey-darkest text-white style-group-container">
+      <div class="container style-group-content">
 
-  <div id="ember68" class="mb-8 ember-view"><span style="font-family: &quot;Orange Sans 55 Roman&quot;;">"Orange Sans 55 Roman"</span>
-<button name="button" class="relative float-right text-xs text-grey border border-grey p-1 -mt-1 rounded
-  focus:bg-blue focus:text-white focus:border-blue focus:outline-none" type="button">
-    Show code
-</button>
-<!----></div>
+        <div id="ember66" class="font-sample ember-view"><span style="font-family: &quot;Orange Sans 45 Light&quot;;">"Orange Sans 45 Light"</span>
 
-  <div id="ember70" class="mb-8 ember-view"><span style="font-family: &quot;Orange Sans 65 Medium&quot;;">"Orange Sans 65 Medium"</span>
-<button name="button" class="relative float-right text-xs text-grey border border-grey p-1 -mt-1 rounded
-  focus:bg-blue focus:text-white focus:border-blue focus:outline-none" type="button">
-    Show code
-</button>
-<!----></div>
+          <input id="id_ember66" class="toggle-code" type="checkbox">
+          <label for="id_ember66" class="css-button">CSS</label>
 
-  <div id="ember72" class="mb-8 ember-view"><span style="font-family: &quot;Orange Sans 75 Bold&quot;;">"Orange Sans 75 Bold"</span>
-<button name="button" class="relative float-right text-xs text-grey border border-grey p-1 -mt-1 rounded
-  focus:bg-blue focus:text-white focus:border-blue focus:outline-none" type="button">
-    Show code
-</button>
-<!----></div>
+          <div class="code-snippet">
+            <pre id="ember67" class="css ember-view">.orange-sans-light {
+  font-family: "Orange Sans 45 Light";
+}
+</pre>
+          </div>
+        </div>
 
+        <div id="ember68" class="font-sample ember-view"><span style="font-family: &quot;Orange Sans 55 Roman&quot;;">"Orange Sans 55 Roman"</span>
+
+          <input id="id_ember68" class="toggle-code" type="checkbox">
+          <label for="id_ember68" class="css-button">CSS</label>
+
+          <div class="code-snippet">
+            <pre id="ember69" class="css ember-view">.orange-sans-roman {
+  font-family: "Orange Sans 55 Roman";
+}
+</pre>
+          </div>
+        </div>
+
+        <div id="ember70" class="font-sample ember-view"><span style="font-family: &quot;Orange Sans 65 Medium&quot;;">"Orange Sans 65 Medium"</span>
+
+          <input id="id_ember70" class="toggle-code" type="checkbox">
+          <label for="id_ember70" class="css-button">CSS</label>
+
+          <div class="code-snippet">
+            <pre id="ember71" class="css ember-view">.orange-sans-medium {
+  font-family: "Orange Sans 65 Medium";
+}
+</pre>
+          </div>
+        </div>
+
+        <div id="ember72" class="font-sample ember-view"><span style="font-family: &quot;Orange Sans 75 Bold&quot;;">"Orange Sans 75 Bold"</span>
+
+          <input id="id_ember72" class="toggle-code" type="checkbox">
+          <label for="id_ember72" class="css-button">CSS</label>
+
+          <div class="code-snippet">
+            <pre id="ember73" class="css ember-view">.orange-sans-bold {
+  font-family: "Orange Sans 75 Bold";
+}
+</pre>
+          </div>
+        </div>
+
+      </div>
+    </div>
   </div>
-</div>
-</div>
 
-<div id="ember74" class="ember-view"><h2 class="font-normal my-4 text-center">HelveticaNeueLT Com</h2>
+  <div id="ember74" class="ember-view">
+    <h2 class="style-group-heading">HelveticaNeueLT Com</h2>
 
-<div class="bg-grey-darkest text-white pt-10 pb-1 mb-4">
-  <div class="container mx-auto px-4">
-    
-  <div id="ember75" class="mb-8 ember-view"><span style="font-family: &quot;HelveticaNeueLT Com 55 Roman&quot;;">"HelveticaNeueLT Com 55 Roman"</span>
-<button name="button" class="relative float-right text-xs text-grey border border-grey p-1 -mt-1 rounded
-  focus:bg-blue focus:text-white focus:border-blue focus:outline-none" type="button">
-    Show code
-</button>
-<!----></div>
+    <div class="bg-grey-darkest text-white style-group-container">
+      <div class="container style-group-content">
 
-  <div id="ember77" class="mb-8 ember-view"><span style="font-family: &quot;HelveticaNeueLT Com 65 Md&quot;;">"HelveticaNeueLT Com 65 Md"</span>
-<button name="button" class="relative float-right text-xs text-grey border border-grey p-1 -mt-1 rounded
-  focus:bg-blue focus:text-white focus:border-blue focus:outline-none" type="button">
-    Show code
-</button>
-<!----></div>
+        <div id="ember75" class="font-sample ember-view"><span style="font-family: &quot;HelveticaNeueLT Com 55 Roman&quot;;">"HelveticaNeueLT Com 55 Roman"</span>
 
-  <div id="ember79" class="mb-8 ember-view"><span style="font-family: &quot;HelveticaNeueLT Com 75 Bd&quot;;">"HelveticaNeueLT Com 75 Bd"</span>
-<button name="button" class="relative float-right text-xs text-grey border border-grey p-1 -mt-1 rounded
-  focus:bg-blue focus:text-white focus:border-blue focus:outline-none" type="button">
-    Show code
-</button>
-<!----></div>
+          <input id="id_ember75" class="toggle-code" type="checkbox">
+          <label for="id_ember75" class="css-button">CSS</label>
 
+          <div class="code-snippet">
+            <pre id="ember76" class="css ember-view">.helvetica-neue-lt-com-55-roman {
+  font-family: "HelveticaNeueLT Com 55 Roman";
+}
+</pre>
+          </div>
+        </div>
+
+        <div id="ember77" class="font-sample ember-view"><span style="font-family: &quot;HelveticaNeueLT Com 65 Md&quot;;">"HelveticaNeueLT Com 65 Md"</span>
+
+          <input id="id_ember77" class="toggle-code" type="checkbox">
+          <label for="id_ember77" class="css-button">CSS</label>
+
+          <div class="code-snippet">
+            <pre id="ember78" class="css ember-view">.helvetica-neue-lt-com-65-md {
+  font-family: "HelveticaNeueLT Com 65 Md";
+}
+</pre>
+          </div>
+        </div>
+
+        <div id="ember79" class="font-sample ember-view"><span style="font-family: &quot;HelveticaNeueLT Com 75 Bd&quot;;">"HelveticaNeueLT Com 75 Bd"</span>
+
+          <input id="id_ember79" class="toggle-code" type="checkbox">
+          <label for="id_ember79" class="css-button">CSS</label>
+
+          <div class="code-snippet">
+            <pre id="ember80" class="css ember-view">.helvetica-neue-lt-com-75-bd {
+  font-family: "HelveticaNeueLT Com 75 Bd";
+}
+</pre>
+          </div>
+        </div>
+
+      </div>
+    </div>
   </div>
-</div>
-</div>
+</body>
 
-<!---->
-
-<script type="x/boundary" id="fastboot-body-end"></script>
-
-    <script src="/assets/vendor-9dfcbcbd058ad5969d2bf80ee6a74ca1.js" integrity="sha256-l7XrVcW+GJkZvMMiCdATLPAF8KNPrtzAbI3Ux0JL2AQ= sha512-9v18VLukAFzFulVmJeZKLX+19cszG0hMq61+6R4Yk1IZqjx6a4wwYF+9uvdtvsZsNGGk7rrVAcyP72v0TFMFzQ==" ></script>
-    <script src="/assets/deezer-tv-typography-7fbb05253962414753e998d71b075e48.js" integrity="sha256-joRSsoDnrJUsTaV/rDRZNdyK1LDd7/oEOwIRvb7cyAk= sha512-m8OYuBxj6Fz8L++YmzRW2PQuH5Ii5JS3vcbCcBQEoAnM9iASO4pcPsiWzSZKZxOVjzH77yo4iCJEbmx2pHFJsQ==" ></script>
-
-    
-  </body>
 </html>
