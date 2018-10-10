@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Modal test</title>
+    <link rel="stylesheet" href="modal.css">
+  </head>
+  <body>
+    <div class="dialogWrapper ng-isolate-scope" ng-class="{'noBkg':content().type==='wGuest'}" ng-if="$root.dialogShown" content="dialogContent">
+      <div id="dialog" class="dialog">
+        <div class="block exitService ng-scope ng-isolate-scope" stb-group="" stb-default="true" ng-if="content().type==='exitService'">
+          <div class="title ng-binding" ng-bind="content().title">Sortie</div>
+          <div class="content ng-binding ng-scope" ng-if="!$root.isUserKid()" ng-bind-html="content().message">Souhaitez-vous quitter le service ?</div>
+          <div class="footer">
+            <div stb-item="" stb-default="true" class="button ng-binding ng-isolate-scope stbActive" ng-click="$root.hideDialog()" ng-bind="content().cancel">Annuler</div><div stb-item="" class="button ng-binding ng-isolate-scope" ng-click="dest=content().goToHome;$root.hideDialog();$root.exit(dest);" ng-bind="content().validate">Quitter</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
