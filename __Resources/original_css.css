@@ -1,0 +1,4338 @@
+.loader, .splash, .splash .deezerLogo {
+  position: absolute
+}
+
+.browsehappy {
+  margin: .2em 0;
+  background: #ccc;
+  color: #000;
+  padding: .2em 0
+}
+
+.splash, body {
+  width: 1280px;
+  height: 720px;
+  background-color: #000
+}
+
+body {
+  font-family: "Orange Sans 45 light", "HelveticaNeueLT Com 55 Roman", helvetica
+}
+
+.splash {
+  z-index: 9
+}
+
+.splash.hidden {
+  display: none
+}
+
+.splash .deezerLogo {
+  left: 470px;
+  top: 331px
+}
+
+.container .deezerLogo {
+  position: absolute;
+  top: 35px;
+  left: 70px;
+  width: 262px;
+  height: 44px;
+  z-index: 500
+}
+
+.loader {
+  top: 50px;
+  left: 1125px;
+  width: 59px;
+  height: 15px;
+  z-index: 10
+}
+
+.searchButton, .searchHeader {
+  height: 45px;
+  top: 35px;
+  z-index: 11;
+  position: absolute
+}
+
+.searchHeader {
+  left: 385px;
+  width: 592px
+}
+
+.searchButton {
+  right: 100px;
+  width: 170px
+}
+
+.searchHeader .searchBkg {
+  position: absolute;
+  left: -385px;
+  width: 1280px;
+  height: 475px;
+  top: -60px;
+  background: #23232A
+}
+
+.searchHeader .searchBkg .logoDeezer {
+  position: absolute;
+  background: url(../assets/images/deezer-262x44.png) 0 no-repeat;
+  width: 262px;
+  height: 44px;
+  top: 60px;
+  left: 70px;
+  opacity: .5
+}
+
+.searchHeader .searchInput {
+  position: absolute;
+  width: 588px;
+  height: 41px;
+  z-index: 5;
+  border: 2px solid #8A8D93;
+  border-radius: 10px;
+  -webkit-backface-visibility: hidden
+}
+
+.searchButton .btnSearch {
+  position: absolute;
+  width: 170px;
+  height: 41px;
+  z-index: 5;
+  border: 2px solid #FFF;
+  border-radius: 10px;
+  color: #fff;
+  font-family: "Orange Sans 45 light", "HelveticaNeueLT Com 55 Roman", "Helvetica 55 Roman", helvetica;
+  font-size: 20px
+}
+
+.searchButton .btnSearch .txtBtnSearch {
+  height: 41px;
+  line-height: 41px
+}
+
+.searchButton .btnSearch.stbActive {
+  color: #fff;
+  background-color: #007FEB;
+  border: 2px solid #007FEB
+}
+
+.searchHeader .searchInput.stbActive {
+  border: 2px solid #007FEB;
+  background: rgba(32, 32, 45, 1)
+}
+
+.searchButton .searchIcon, .searchInput .searchIcon {
+  margin-left: 10px;
+  margin-right: 10px;
+  top: 6px;
+  float: left;
+  position: relative;
+  font-family: "Deezer Icons";
+  font-size: 25px
+}
+
+.searchInput .searchIcon {
+  color: #fff
+}
+
+.searchIcon:before {
+  content: '\e86d'
+}
+
+.searchIcon.selected {
+  color: #007FEB
+}
+
+.searchInput .text-input {
+  width: 530px !important;
+  float: left;
+  position: relative
+}
+
+.searchInput .text-input-content .default {
+  color: #727982
+}
+
+.searchHeader .autocomplete {
+  position: absolute;
+  top: 80px;
+  width: 1280px;
+  left: -385px;
+  background-color: #23232A;
+  color: #8A8D93;
+  font-family: "Orange Sans 45 light", "HelveticaNeueLT Com 55 Roman", "Helvetica 55 Roman", helvetica
+}
+
+.autocomplete .lAlbum, .autocomplete .lArtist, .autocomplete .lPlaylist, .autocomplete .lTrack {
+  position: absolute;
+  width: 260px;
+  height: 36px;
+  font-size: 20px;
+  color: #727982;
+  line-height: 36px
+}
+
+.autocomplete .iAlbum, .autocomplete .iArtist, .autocomplete .iPlaylist, .autocomplete .iTrack {
+  position: absolute;
+  width: 260px;
+  height: 200px;
+  top: 56px;
+  color: #FFF
+}
+
+.iAlbum .album, .iArtist .artist, .iPlaylist .playlist, .iTrack .track {
+  position: relative;
+  width: 260px;
+  height: 90px;
+  padding-bottom: 20px
+}
+
+.autocomplete .iArtist, .autocomplete .lArtist {
+  left: 74px
+}
+
+.autocomplete .iAlbum, .autocomplete .lAlbum {
+  left: 371px
+}
+
+.autocomplete .iTrack, .autocomplete .lTrack {
+  left: 668px
+}
+
+.autocomplete .iPlaylist, .autocomplete .lPlaylist {
+  left: 966px
+}
+
+.autocomplete .lAlbum:before, .autocomplete .lArtist:before, .autocomplete .lPlaylist:before, .autocomplete .lTrack:before {
+  width: 36px;
+  font-family: "Deezer Icons";
+  font-size: 20px;
+  text-align: center;
+  padding-right: 10px
+}
+
+.autocomplete .lArtist:before {
+  content: '\e838'
+}
+
+.autocomplete .lAlbum:before {
+  content: '\e802'
+}
+
+.autocomplete .lTrack:before {
+  content: '\e851'
+}
+
+.autocomplete .lPlaylist:before {
+  content: '\e85d'
+}
+
+.autocomplete .photo {
+  position: absolute;
+  width: 76px;
+  height: 76px;
+  top: -5px;
+  left: -5px;
+  border: 5px solid #23232A;
+  background: url(../assets/images/cover-76.jpg)
+}
+
+.autocomplete .desc, .autocomplete .title {
+  left: 96px;
+  width: 164px;
+  position: absolute;
+  overflow: hidden;
+  white-space: nowrap
+}
+
+.autocomplete .photo.loaded {
+  background: 0 0
+}
+
+.autocomplete .title {
+  font-size: 20px;
+  height: 37px;
+  line-height: 37px
+}
+
+.autocomplete .desc {
+  top: 37px;
+  height: 20px;
+  font-size: 14px;
+  line-height: 20px
+}
+
+.autocomplete .album.stbActive .photo, .autocomplete .artist.stbActive .photo, .autocomplete .playlist.stbActive .photo, .autocomplete .track.stbActive .photo {
+  border: 5px solid #007FEB
+}
+
+.container {
+  position: absolute;
+  width: 1280px;
+  height: 720px;
+  overflow: hidden;
+  background-color: #23232A
+}
+
+.container.hidden {
+  visibility: hidden
+}
+
+.container-fluid {
+  position: absolute;
+  top: 104px;
+  left: 145px;
+  width: 1135px;
+  height: 616px;
+  overflow: hidden
+}
+
+.scrollbar, .scroller {
+  width: 4px;
+  position: absolute
+}
+
+.container-fluid.wTab {
+  top: 144px;
+  height: 576px
+}
+
+.container-fluid.hp {
+  top: 0;
+  height: 720px
+}
+
+.errorContainer {
+  margin-top: 50px;
+  text-align: center
+}
+
+.errorContainer .errorMessage {
+  font-size: 32px;
+  color: #727982
+}
+
+.errorContainer .errorMessage.stbActive {
+  color: #007FEB
+}
+
+.scrollbar {
+  left: 1040px;
+  top: 0;
+  height: 544px;
+  border-radius: 0;
+  background: #000
+}
+
+.scrollbar.hidden {
+  visibility: hidden
+}
+
+.detail .scrollbar {
+  left: 624px
+}
+
+.wTab .scrollbar {
+  height: 504px
+}
+
+.scroller {
+  top: 0;
+  background-color: #55565D
+}
+
+.txt_noellipsis {
+  overflow: hidden;
+  white-space: normal
+}
+
+.txt_ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: pre;
+  width: auto
+}
+
+.txt_ellipsis.slide {
+  text-overflow: clip
+}
+
+.txt_normal {
+  font-size: 20px
+}
+
+.txt_title3 {
+  font-size: 24px
+}
+
+.txt_gray {
+  color: #CCC
+}
+
+.txt_white {
+  color: #FFF
+}
+
+img.loaded {
+  background: 0 0 !important
+}
+
+@keyframes fadeInFromNone {
+  0% {
+    display: none;
+    opacity: 0
+  }
+  1% {
+    display: block;
+    opacity: 0
+  }
+  100% {
+    display: block;
+    opacity: 1
+  }
+}
+
+.mosaic {
+  position: absolute;
+  left: 32px;
+  top: 0;
+  height: 100%;
+  width: 1103px;
+  float: left
+}
+
+.mosaic .errorContainer, .mosaic .items {
+  position: absolute;
+  top: 32px;
+  left: 0;
+  width: 1044px;
+  height: 584px;
+  overflow: hidden
+}
+
+.wTab .mosaic .errorContainer, .wTab .mosaic .items {
+  height: 544px
+}
+
+.mosaic .row {
+  transition: top .5s ease-in-out
+}
+
+.mosaic .row1 {
+  top: 0
+}
+
+.mosaic .row2 {
+  top: 231px
+}
+
+.mosaic .row3 {
+  top: 462px
+}
+
+.mosaic .row4 {
+  top: 693px
+}
+
+.mosaic .items.list, .wTab .mosaic .items.list {
+  top: 5px;
+  height: 611px
+}
+
+.wTab .mosaic .items.list {
+  height: 550px
+}
+
+.mosaic .icon {
+  font-family: "Deezer Icons"
+}
+
+.mosaic .bigIcon {
+  font-family: "Deezer icons";
+  font-size: 240px;
+  color: #32303A
+}
+
+.emptyLabel, .emptyLabel2Line {
+  color: #C8CDD2;
+  font-family: "Orange Sans 55 roman", "HelveticaNeueLT Com 55 Roman", helvetica
+}
+
+.defaultIcon:before {
+  content: '\e852'
+}
+
+.playlistsIcon:before {
+  content: '\e85D'
+}
+
+.albumsIcon:before {
+  content: '\e802'
+}
+
+.historyIcon:before {
+  content: '\e879'
+}
+
+.podcastsIcon:before {
+  content: '\e862'
+}
+
+.tracksIcon:before {
+  content: '\e851'
+}
+
+.artistsIcon:before {
+  content: '\e838'
+}
+
+.followersIcon:before, .followingsIcon:before {
+  content: '\e882'
+}
+
+.emptyLabel {
+  font-size: 36px
+}
+
+.emptyLabel2Line {
+  font-size: 24px
+}
+
+.groupHL {
+  position: relative;
+  font-family: "Orange Sans 55 roman", "HelveticaNeueLT Com 55 Roman", helvetica;
+  font-size: 20px;
+  color: #727982;
+  width: 1008px;
+  top: -12.5px;
+  height: 25px;
+  line-height: 50px;
+  text-align: center;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #727982
+}
+
+.groupHL .textHL {
+  padding-left: 10px;
+  padding-right: 10px;
+  background: #23232A
+}
+
+.groupItems {
+  position: relative;
+  width: inherit;
+  height: 210px
+}
+
+.groupItems.add_user {
+  height: 50px
+}
+
+.menu, .menu .barMenu {
+  position: absolute;
+  height: 608px
+}
+
+.menu {
+  width: 124px;
+  top: 0;
+  left: 0;
+  background-color: #23232A;
+  z-index: 9;
+  overflow: hidden;
+  float: none;
+  padding-top: 112px
+}
+
+.highPerf .menu {
+  -webkit-transition-property: width;
+  -webkit-transition-duration: .6s;
+  -webkit-transition-timing-function: ease-in
+}
+
+.menu .menuItem .title, .menu .playerButtons, .menu .subMenu, .menu .subscribe {
+  display: none;
+  opacity: 0
+}
+
+.menu.active .menuItem .title, .menu.active .playerButtons, .menu.active .subMenu, .menu.active .subscribe {
+  opacity: 1;
+  display: block
+}
+
+.highPerf .menu .menuItem .title, .highPerf .menu .playerButtons, .highPerf .menu .subMenu, .highPerf .menu .subscribe {
+  display: block;
+  -webkit-transition-property: opacity;
+  -webkit-transition-duration: .5s;
+  -webkit-transition-timing-function: ease-in
+}
+
+.player .menu {
+  width: 0
+}
+
+.menu.active {
+  width: 435px
+}
+
+.menu.active.sub {
+  width: 676px
+}
+
+.barMenu .menuItem {
+  font-size: 24px;
+  height: 44px;
+  line-height: 42px;
+  color: #fff;
+  position: relative;
+  width: 361px;
+  padding-left: 70px;
+  margin: 0 0 4px;
+  overflow: visible;
+  background: 0 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  border: 0 solid transparent
+}
+
+.kid .barMenu .menuItem {
+  height: 50px;
+  line-height: 58px;
+  margin-bottom: 8px;
+  padding-bottom: 8px
+}
+
+.guest .barMenu .menuItem {
+  height: 48px;
+  margin-top: 4px;
+  margin-bottom: 4px
+}
+
+.menu .menuItem .disabled, .menu .menuItem .firstline, .menu .menuItem .secondline, .menu .menuItem .title {
+  padding-left: 76px;
+  display: inline;
+  font-family: "HelveticaNeueLT Com 65 Md", helvetica;
+  float: left
+}
+
+.menu.active .barMenu .menuItem.offer.family.stbActive, .menu.active .barMenu .menuItem.stbActive {
+  background: 0 0;
+  background-color: rgba(50, 50, 58, 1);
+  border-right: 4px #007FEB solid
+}
+
+.menu.active .barMenu .menuItem.noBorder.stbActive {
+  border-right: 4px rgba(50, 50, 58, 1) solid
+}
+
+.menu .barMenu .menuItem.stbActive {
+  background: 0 0
+}
+
+.menu.sub .subMenu {
+  display: block
+}
+
+.menu .subMenu {
+  display: none;
+  position: absolute;
+  left: 427px;
+  width: 249px;
+  height: 608px;
+  overflow: hidden
+}
+
+.menu .subMenuContainer {
+  position: absolute;
+  padding-top: 3px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%
+}
+
+.menu .subMenu .menuItem {
+  font-size: 20px;
+  height: 36px;
+  line-height: 36px;
+  color: #FFF;
+  position: relative;
+  width: 231px;
+  padding-left: 15px;
+  margin: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  border: 0 solid transparent;
+  background: 0 0
+}
+
+.menu .subMenu .menuItem .title {
+  padding-left: 0
+}
+
+.menu .subMenu .menuItem.stbActive {
+  color: #fff;
+  background: 0 0;
+  background-color: rgba(50, 50, 58, 1);
+  border-right: 4px #007FEB solid
+}
+
+.menu .menuItem.selected, .menu .subMenu .menuItem.stbActive.selected {
+  color: #007FEB
+}
+
+.barMenu .menuItem .disabled, .menu .menuItem.selected .disabled, .menu .subMenu .menuItem.stbActive.selected .disabled {
+  color: #727982;
+  line-height: 42px
+}
+
+.menu .menuItem .listIcon {
+  position: absolute;
+  color: #fff;
+  font-size: 32px;
+  font-family: "Deezer Icons";
+  float: right
+}
+
+.menu .menuItem .iconDisabled, .menu .menuItem.selected .iconDisabled {
+  position: absolute;
+  font-size: 32px;
+  font-family: "Deezer Icons";
+  color: #727982
+}
+
+.menu .menuItem.selected .listIcon {
+  color: #007FEB
+}
+
+.menu .menuItem.home .listIcon {
+  width: 32px;
+  height: 30px;
+  background: url(../assets/images/home-icon.png) 0 no-repeat;
+  margin-top: 6px
+}
+
+.menu .menuItem.connect .listIcon {
+  width: 32px;
+  height: 30px;
+  background: url(../assets/images/change_account_icon.png) top no-repeat;
+  margin-top: 6px
+}
+
+.menu .menuItem.connect.selected .listIcon {
+  background-position: center
+}
+
+.kid .menu .menuItem.connect .listIcon, .kid .menu .menuItem.home .listIcon {
+  margin-top: 14px
+}
+
+.menu .menuItem.home.selected .listIcon {
+  background: url(../assets/images/home-icon.png) 100% no-repeat
+}
+
+.menuItem.recommendations .iconDisabled:before, .menuItem.recommendations .listIcon:before {
+  content: '\e842'
+}
+
+/*!*JNC Icon disabled*/
+
+.menuItem.user .iconDisabled:before {
+  content: '\e882'
+}
+
+.menuItem.playlist .listIcon:before {
+  content: '\e85d'
+}
+
+.menuItem.album .listIcon:before {
+  content: '\e802'
+}
+
+.menuItem.radio .listIcon:before {
+  content: '\e84F'
+}
+
+.menuItem.editorial .listIcon:before {
+  content: '\e852'
+}
+
+.menuItem.info .listIcon:before {
+  content: '\e862'
+}
+
+.menuItem.connectGuest .listIcon:before {
+  content: '\e83D'
+}
+
+.menuItem.user .listIcon:before {
+  content: '\e882'
+}
+
+.flagSub {
+  display: none
+}
+
+.menu.active .barMenu .menuItem .flagSub {
+  position: relative;
+  width: 15px;
+  float: right;
+  color: #fff;
+  font-size: 14px;
+  font-family: "Deezer Icons";
+  margin-right: 5px;
+  display: none
+}
+
+.menu.active .barMenu .menuItem.stbActive .flagSub {
+  background: 0 0;
+  background-color: rgba(50, 50, 58, 1);
+  color: #007FEB;
+  display: block
+}
+
+.menu.active .barMenu .menuItem.showArrow .flagSub {
+  background: #23232A;
+  color: #fff;
+  display: block
+}
+
+.kid .menuItem.editorial:after, .menuItem.info:after {
+  position: absolute;
+  bottom: -5px;
+  left: 48px;
+  content: "";
+  width: 310px;
+  background-color: #32323A
+}
+
+/*!*JNC New Icon for offer when user is connected*!*/
+
+.menu .menuItem.offer .listIcon {
+  width: 32px;
+  height: 34px;
+  background: url(../assets/images/sabonner_icon.png) top no-repeat;
+  padding-top: 2px
+}
+
+/*!*JNC New Icon for offer when user is connected selected mode*!*/
+
+.menu .menuItem.offer.selected .listIcon {
+  background-position: bottom;
+  padding-top: 6px
+}
+
+.menu .barMenu .menuItem.offer .iconSubscribe {
+  float: left;
+  width: 80px;
+  height: 43px;
+  border-radius: 10px;
+  background: url(../assets/images/sabonner_icon.png) 21px 1px no-repeat #000;
+  margin-left: -26px
+}
+
+.menu .subscribe {
+  margin-left: 35px;
+  padding-left: 39px
+}
+
+.menu.active .barMenu .menuItem.offer .subscribe {
+  background: #000;
+  border-radius: 10px;
+  color: #fff;
+  margin-bottom: 4px;
+  margin-top: 4px;
+  width: 180px
+}
+
+.menu.active .barMenu .menuItem.offer.stbActive {
+  border-color: none;
+  border-right: none;
+  background-color: rgba(50, 50, 50, 0)
+}
+
+.menu.active .menuItem.offer.selected .subscribe {
+  color: #007FEB
+}
+
+.menu .barMenu .menuItem.offer .subscribe, .menu .barMenu .menuItem.stbActive.offer .subscribe {
+  background: 0 0;
+  padding-top: 1px
+}
+
+.menu.active .barMenu .menuItem.stbActive.offer .subscribe {
+  background: #007FEB;
+  color: #fff
+}
+
+.menu.active .barMenu .menuItem.stbActive.offer .iconSubscribe {
+  background-position: 21px 1px;
+  background-color: #007FEB
+}
+
+.menu .barMenu .menuItem.offer.selected .iconSubscribe {
+  background-color: #000;
+  background-position: 20px -40px
+}
+
+.barMenu .menuItem.offer.selected .subscribe, .barMenu .menuItem.stbActive.selected .subscribe {
+  background: #007FEB
+}
+
+.menuItem.more .listIcon:before, .menuItem.more_guest .listIcon:before {
+  content: '\e86e'
+}
+
+.guest .menuItem.player {
+  top: 22px
+}
+
+.menuItem.player {
+  height: 55px;
+  top: 10px;
+  padding-left: 58px;
+  width: 373px
+}
+
+.kid .menuItem.player {
+  top: 120px
+}
+
+.menuItem.player img {
+  background-image: url(../assets/images/cover-56.jpg);
+  width: 56px;
+  height: 56px
+}
+
+.menuItem.player:before {
+  position: absolute;
+  top: -10px;
+  left: 48px;
+  content: "";
+  width: 310px;
+  background-color: #32323A
+}
+
+.menu .menuItem .firstline, .menu .menuItem .secondline {
+  position: absolute;
+  padding-left: 88px;
+  color: #FFF;
+  font-size: 20px;
+  line-height: 28px;
+  width: 215px
+}
+
+.menu .menuItem .secondline {
+  color: #c8cdd2;
+  padding-left: 88px;
+  display: inline;
+  font-size: 20px;
+  top: 28px
+}
+
+.menu .autoscroll {
+  position: relative;
+  width: 312px;
+  height: 100%;
+  overflow: hidden
+}
+
+.menu .autoscroll.slide {
+  overflow: visible
+}
+
+.menu .slide .txt_ellipsis {
+  text-overflow: clip;
+  width: auto
+}
+
+.menu .playerButtons, .player .menu .playerButtons {
+  position: absolute;
+  top: 508px;
+  left: 65px;
+  height: 60px;
+  width: 176px
+}
+
+.detail {
+  position: relative;
+  top: 0;
+  width: 1090px;
+  float: left;
+  height: 100%
+}
+
+.detail .detailPic {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background-image: url(../assets/images/cover-400.jpg);
+  background-position: 0 0
+}
+
+.detail .header {
+  position: absolute;
+  left: 32px;
+  width: 385px;
+  height: 544px;
+  top: 15px
+}
+
+.detail .header .detailInfos {
+  position: absolute;
+  top: 395px
+}
+
+.detail .header .detailPicContent {
+  position: absolute;
+  width: 385px;
+  height: 385px
+}
+
+.detail .header .detailPicContent.stbActive:after {
+  width: 375px;
+  height: 375px;
+  overflow: visible;
+  position: absolute;
+  border: 5px solid #007FEB;
+  top: 0;
+  left: 0;
+  content: ''
+}
+
+.detail .header .detailPic {
+  width: 100%;
+  height: 100%
+}
+
+.detail .detailPicContent.stbActive .selection {
+  display: block
+}
+
+.header .detailPicContent .selection {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 142px;
+  left: 142px;
+  display: none;
+  background-color: rgba(0, 0, 0, .5);
+  border-radius: 50px;
+  border: 3px solid rgba(255, 255, 255, .3)
+}
+
+.header .detailPicContent .selection .playPauseIcon {
+  position: absolute;
+  font-family: "Deezer Icons";
+  font-size: 40px;
+  line-height: 100px;
+  text-align: center;
+  width: 100%;
+  color: #f2f2f2
+}
+
+.detail .header .infos, .detail .header .subTitle, .detail .header .title {
+  width: 385px;
+  font-family: "Orange Sans 55 roman", "HelveticaNeueLT Com 65 Md", helvetica
+}
+
+.playPauseIcon:before {
+  content: '\e85b'
+}
+
+.header .detailPicContent.playing.stbActive .selection .playPauseIcon:before {
+  content: '\e856'
+}
+
+.favIcon:before, .loveIcon:before {
+  content: '\e84c'
+}
+
+.detail .header .subTitle, .detail .header .title {
+  height: 40px;
+  line-height: 40px;
+  left: 32px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap
+}
+
+.detail .header .subTitle.slide, .detail .header .title.slide {
+  text-overflow: clip
+}
+
+.detail .header .title {
+  color: #C8CDD2;
+  font-size: 32px
+}
+
+.detail .header .subTitle {
+  font-size: 24px;
+  color: #727982
+}
+
+.detail .header .infos {
+  position: absolute;
+  top: 100px;
+  height: 46px;
+  line-height: 46px;
+  font-size: 18px;
+  color: #727982;
+  text-align: right
+}
+
+.detail .header .infos span, .detail .infos .info1, .detail .infos .info2 {
+  position: relative;
+  float: right
+}
+
+.detail .header .infos span {
+  margin-left: 5px;
+  margin-right: 5px;
+  color: #404048;
+  font-family: "Orange Sans 55 roman", "HelveticaNeueLT Com 65 Md", helvetica;
+  font-size: 22px
+}
+
+.detail .header .favButton, .detail .header .radioButton {
+  top: 100px;
+  width: 126px;
+  height: 42px;
+  line-height: 42px;
+  font-size: 20px;
+  border: 2px solid #404048;
+  border-radius: 10px;
+  -webkit-backface-visibility: hidden;
+  color: #C8CDD2;
+  display: block;
+  margin-right: 10px;
+  float: left
+}
+
+.background, .playerButtons .disabled {
+  display: none
+}
+
+.detail.artist .header .favButton, .detail.artist .header .infos, .detail.artist .header .radioButton {
+  top: 70px
+}
+
+.detail .header .favButton .favIcon, .detail .header .favButton .loveIcon, .detail .header .radioButton .radioIcon {
+  margin-left: 10px;
+  font-family: "Deezer Icons";
+  font-size: 24px;
+  float: left
+}
+
+.detail .header .favButton.stbActive .favIcon, .detail .header .radioButton.stbActive .radioIcon {
+  color: #007FEB
+}
+
+.favIcon:before {
+  color: #007FEB
+}
+
+.radioIcon:before {
+  content: '\e85b'
+}
+
+.detail .header .favButton.stbActive .favIcon:before {
+  color: #fff;
+  content: '\e819'
+}
+
+.detail .header .favButton .favLabel, .detail .header .radioButton .radioLabel {
+  margin-left: 10px;
+  font-size: 20px;
+  float: left;
+  font-family: "Orange Sans 45 light", "HelveticaNeueLT Com 55 Roman", "Helvetica 55 Roman", helvetica
+}
+
+.detail .header .favButton.stbActive, .detail .header .radioButton.stbActive {
+  border: 2px solid #007FEB;
+  color: #fff
+}
+
+.detail .errorContainer, .detail .items {
+  position: absolute;
+  top: 15px;
+  left: 448px;
+  width: 628px;
+  height: 600px;
+  overflow: hidden;
+  margin-left: 0;
+  font-size: 28px;
+  color: #C8CDD2;
+  margin-top: 0;
+  text-align: left
+}
+
+.WTab .detail .errorContainer, .WTab .detail .items {
+  height: 560px
+}
+
+.back, .background {
+  top: 0;
+  left: 0;
+  width: 1280px;
+  height: 720px;
+  position: absolute
+}
+
+.detail .errorMessage {
+  margin-top: 30px;
+  font-size: 32px;
+  color: #fff;
+  line-height: 40px
+}
+
+.player .container-fluid {
+  left: 0;
+  width: 1280px
+}
+
+.back:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url(../assets/images/radial_lighter_24.png)
+}
+
+.player .search .text-input {
+  background-color: #000
+}
+
+.player .stream .cover {
+  position: absolute;
+  left: 440px;
+  width: 400px;
+  height: 400px;
+  background-image: url(../assets/images/cover-400.jpg);
+  box-shadow: 0 5px 15px 5px rgba(35, 35, 42, .5)
+}
+
+.player .stream .content {
+  position: absolute;
+  top: 445px;
+  left: 286px;
+  width: 708px;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center
+}
+
+.player .stream .title {
+  color: #f2f2f2;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, .5)
+}
+
+.player .stream .album, .player .stream .artist {
+  color: rgba(200, 205, 210, .7);
+  text-shadow: 0 1px 1px rgba(0, 0, 0, .5)
+}
+
+.player .stream .album {
+  font-size: 18px
+}
+
+.player .playerInfos {
+  position: absolute;
+  left: 375px;
+  height: 100%;
+  width: 400px
+}
+
+.player .playerInfos .duration, .player .playerInfos .timer {
+  color: #fff;
+  position: absolute;
+  font-size: 18px;
+  top: 20px
+}
+
+.player .playerInfos .timer {
+  left: 0
+}
+
+.player .playerInfos .duration {
+  right: 0
+}
+
+.player .progressBar {
+  position: absolute;
+  width: 217px;
+  top: 28px;
+  left: 100px;
+  height: 5px;
+  background: #23232A;
+  overflow: hidden
+}
+
+.player .progressBar .scroller {
+  background-color: #007FEB;
+  height: 100%;
+  width: 0
+}
+
+.player .playerButtons {
+  top: 516px;
+  position: absolute;
+  left: 65px;
+  height: 60px;
+  width: 1135px
+}
+
+.playerButtons .albumBtn, .playerButtons .artistBtn, .playerButtons .loveBtn, .playerButtons .lyricsBtn, .playerButtons .nextBtn, .playerButtons .playBtn, .playerButtons .playlistBtn, .playerButtons .previousBtn, .playerButtons .repeatBtn, .playerButtons .shuffleBtn {
+  position: absolute;
+  border: 2px solid transparent;
+  color: #727982;
+  font-family: "Deezer Icons";
+  text-align: center
+}
+
+.playerButtons .active, .playerButtons .repeatBtn .active, .playerButtons .shuffleBtn .active.playerButtons .shuffleBtn .active, .playerButtons.stbActive .selected.active {
+  color: #007FEB
+}
+
+.playerButtons .hide {
+  visibility: hidden
+}
+
+.playerButtons .nextBtn, .playerButtons .previousBtn {
+  width: 44px;
+  height: 44px;
+  margin-top: 6px;
+  border-radius: 24px;
+  font-size: 22px;
+  line-height: 44px;
+  -webkit-backface-visibility: hidden
+}
+
+.playerButtons .albumBtn, .playerButtons .artistBtn, .playerButtons .loveBtn, .playerButtons .lyricsBtn, .playerButtons .playlistBtn {
+  width: 50px;
+  height: 50px;
+  margin-top: 3px;
+  border-radius: 26px;
+  font-size: 32px;
+  line-height: 50px;
+  -webkit-backface-visibility: hidden
+}
+
+.playerButtons .repeatBtn, .playerButtons .shuffleBtn {
+  width: 32px;
+  height: 32px;
+  margin-top: 14px;
+  border-radius: 18px;
+  font-size: 24px;
+  line-height: 32px;
+  -webkit-backface-visibility: hidden
+}
+
+.playerButtons .previousBtn {
+  left: 0
+}
+
+.previousBtn:before {
+  content: '\e863'
+}
+
+.playerButtons .playBtn {
+  width: 56px;
+  height: 56px;
+  border-radius: 30px;
+  font-size: 40px;
+  line-height: 56px;
+  -webkit-backface-visibility: hidden;
+  left: 58px
+}
+
+.playBtn:before {
+  content: '\e85b'
+}
+
+.playBtn.playing:before {
+  content: '\e856'
+}
+
+.playerButtons .nextBtn {
+  left: 128px
+}
+
+.barMenu .playerButtons .nextBtn, .barMenu .playerButtons .playBtn, .barMenu .playerButtons .previousBtn {
+  border-radius: 57px;
+  border: 2px solid #c8cdd2;
+  color: #c8cdd2
+}
+
+.barMenu .playerButtons .stbActive, .playerButtons .stbActive {
+  color: #fff;
+  border: 2px solid #007FEB
+}
+
+.playerButtons .loveBtn.active, .playerButtons .lyricsBtn.active, .playerButtons .repeatBtn.active, .playerButtons .shuffleBtn.active {
+  color: #007FEB
+}
+
+.nextBtn:before {
+  content: '\e853'
+}
+
+.playerButtons .repeatBtn {
+  left: 0
+}
+
+.repeatBtn:before {
+  content: '\e868'
+}
+
+.repeatBtn.repeatOnce:before {
+  content: '\e869'
+}
+
+.playerButtons .shuffleBtn {
+  left: 43px
+}
+
+.shuffleBtn:before {
+  content: '\e870'
+}
+
+.playerButtons .lyricsBtn {
+  left: 892px
+}
+
+.lyricsBtn:before {
+  content: '\e84d'
+}
+
+.playerButtons .loveBtn {
+  left: 942px
+}
+
+.loveBtn:before {
+  content: '\e84c'
+}
+
+.playerButtons .playlistBtn {
+  left: 992px
+}
+
+.playlistBtn:before {
+  content: '\e85e'
+}
+
+.playerButtons .albumBtn {
+  left: 1042px
+}
+
+.albumBtn:before {
+  content: '\e802'
+}
+
+.playerButtons .artistBtn {
+  left: 1092px
+}
+
+.artistBtn:before {
+  content: '\e838'
+}
+
+.playerButtons .single {
+  left: 942px
+}
+
+.tabContent {
+  z-index: 1;
+  top: 104px;
+  position: absolute;
+  height: 40px;
+  left: 142px;
+  width: 1078px
+}
+
+.tabs, .tabsLine {
+  position: absolute;
+  left: 35px;
+  width: 1008px
+}
+
+.tabsLine {
+  height: 4px;
+  background-color: #32323A;
+  top: 36px
+}
+
+.tabs {
+  top: 0;
+  height: 40px;
+  overflow: hidden;
+  line-height: 36px
+}
+
+.tabs .tabList {
+  position: relative;
+  white-space: nowrap;
+  float: left;
+  left: 0;
+  transition-duration: .5s
+}
+
+.tabs .tab {
+  width: 252px;
+  height: 36px;
+  text-transform: uppercase;
+  text-align: center;
+  display: inline-block;
+  color: #fff;
+  border-bottom: 4px solid transparent;
+  font-size: 18px
+}
+
+.tabs .tab.stbActive {
+  border-bottom: 4px solid #007FEB
+}
+
+.tabs .tab.selected {
+  color: #007FEB
+}
+
+.dotsIcon {
+  position: absolute;
+  font-size: 32px;
+  font-family: "Deezer Icons";
+  color: #f2f2f2;
+  top: 0;
+  width: 35px;
+  background-color: #23232A
+}
+
+.grid, .grid .item {
+  position: relative;
+  float: left
+}
+
+.dotsIcon:before {
+  content: '\e855'
+}
+
+.dotsIcon.prev {
+  left: 0
+}
+
+.dotsIcon.next {
+  left: 1043px
+}
+
+.grid {
+  width: 100%
+}
+
+.grid.gridXY {
+  height: 550px
+}
+
+.grid .item {
+  width: 176px;
+  height: 225px;
+  margin-right: 32px;
+  margin-bottom: 20px;
+  display: inline-block
+}
+
+.connect .grid .item, .disconnect .grid .item {
+  position: relative;
+  width: 150px;
+  height: 187px;
+  float: left;
+  margin-right: 10px;
+  margin-left: 8px;
+  display: inline-block;
+  text-align: center
+}
+
+.connect .grid .item.add_user {
+  height: 50px;
+  margin: 0
+}
+
+.grid .item.stbActive::after {
+  width: 166px;
+  height: 166px;
+  overflow: visible;
+  position: absolute;
+  border-width: 5px;
+  border-color: #007FEB;
+  border-style: solid;
+  top: 0;
+  left: 0;
+  content: ''
+}
+
+.grid .item.add_user.stbActive::after {
+  border: none
+}
+
+.connect .grid .item.user.stbActive::after, .disconnect .grid .item.user.stbActive::after {
+  width: 102px;
+  height: 102px;
+  border-radius: 75px;
+  overflow: visible;
+  position: absolute;
+  border-width: 4px;
+  border-color: #007FEB;
+  border-style: solid;
+  margin-left: 20px;
+  content: '';
+  background-position: 0 0
+}
+
+.connect .grid .item.user.active::before, .disconnect .grid .item.user.active::before, .grid .connect.item.user.stbActive::after, .grid .disconnect.item.user.stbActive::after {
+  top: 88px;
+  left: 88px;
+  line-height: 2;
+  font-family: "Deezer Icons";
+  width: 27px;
+  height: 27px;
+  content: '\e81d';
+  font-size: 14px;
+  z-index: 1;
+  color: #fff;
+  position: absolute;
+  text-align: center
+}
+
+.connect .grid .item.user.active::before, .disconnect .grid .item.user.active::before {
+  right: 10px;
+  background: #c8cdd2;
+  border-radius: 75px;
+  border: none;
+  margin-left: 15px;
+  margin-top: -6px
+}
+
+.grid .connect.item.user.stbActive::after, .grid .disconnect.item.user.stbActive::after {
+  background: #007FEB;
+  border-radius: 75px;
+  border: none
+}
+
+.connect .grid .item.active.stbActive::before, .disconnect .grid .item.active.stbActive::before {
+  color: #fff;
+  background-color: #007FEB
+}
+
+.grid .item img {
+  width: 176px;
+  height: 176px;
+  background-image: url(../assets/images/cover-176.jpg);
+  background-position: 0 0
+}
+
+.connect .grid .item img, .disconnect .grid .item img {
+  width: 102px;
+  height: 102px;
+  border-radius: 75px;
+  background-image: url(../assets/images/avatar-missing-grey-56x56.png);
+  background-size: 100%;
+  border: 4px solid #c8cdd2;
+  -webkit-backface-visibility: hidden
+}
+
+.connect .grid .buttonAddUser {
+  position: absolute;
+  top: 470px;
+  width: 375px;
+  height: 50px;
+  left: 300px;
+  color: #FFF;
+  font-size: 20px;
+  font-family: "Orange Sans 45 light", "HelveticaNeueLT Com 45 Roman", "Helvetica 45 Roman", helvetica;
+  border-radius: 10px;
+  -webkit-backface-visibility: hidden;
+  background-color: #727982;
+  text-align: center;
+  line-height: 50px
+}
+
+.grid .item.artist img, .grid .item.user img {
+  background-position: 0 -102px
+}
+
+.grid .item.podcast img {
+  background-position: 0 -352px
+}
+
+.grid .item .edito {
+  width: 176px
+}
+
+.connect .grid .item .edito, .disconnect .grid .item .edito {
+  width: 150px
+}
+
+.grid .item .edito .title {
+  font-size: 20px;
+  color: #C8CDD2;
+  line-height: 25px
+}
+
+.connect .grid .item .edito .title, .disconnect .grid .item .edito .title {
+  font-size: 20px;
+  color: #FFF;
+  line-height: 25px;
+  margin-top: 10px;
+  text-align: center;
+  width: 150px;
+  font-family: "Orange Sans 45", "HelveticaNeueLT Com 45", helvetica
+}
+
+.grid .item .edito .desc {
+  font-size: 16px;
+  color: #727982;
+  line-height: 20px
+}
+
+.connect .grid .item .edito .desc, .disconnect .grid .item .edito .desc {
+  font-size: 16px;
+  color: #c8cdd2;
+  line-height: 20px;
+  width: 150px;
+  text-align: center
+}
+
+.grid .item.stbActive .edito .desc, .grid .item.stbActive .edito .title {
+  color: #FFF
+}
+
+.connect .grid .item.stbActive .edito .desc, .disconnect .grid .item.stbActive .edito .desc {
+  color: #c8cdd2
+}
+
+.grid .item .pausing, .grid .item .playing, .grid .item.stbActive .radio {
+  background-size: 38px 38px;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: block;
+  position: absolute;
+  top: 48px;
+  left: 48px;
+  width: 76px;
+  height: 76px;
+  background-color: rgba(0, 0, 0, .5);
+  border-radius: 50px;
+  -webkit-backface-visibility: hidden;
+  border: 3px solid rgba(255, 255, 255, .3)
+}
+
+.grid .item .playing {
+  background-image: url(../assets/images/equalizer.gif)
+}
+
+.grid .item .pausing {
+  background-image: url(../assets/images/paused_equalizer.png)
+}
+
+.grid .item.stbActive .pausing, .grid .item.stbActive .playing, .grid .item.stbActive .radio {
+  background-image: none;
+  position: absolute;
+  color: #f2f2f2;
+  text-align: center;
+  font-size: 40px;
+  font-family: "Deezer Icons";
+  line-height: 76px
+}
+
+.grid .item.stbActive .playing:before {
+  content: '\e856'
+}
+
+.grid .item.stbActive .pausing:before, .grid .item.stbActive .radio:before {
+  content: '\e85B'
+}
+
+.grid .addUser {
+  position: absolute;
+  top: 000px;
+  left: 316.5px;
+  right: 20px;
+  text-align: center;
+  width: 375px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: #727982;
+  font-family: "Orange Sans 65", "HelveticaNeueLT Com 65", helvetica;
+  letter-spacing: normal;
+  font-size: 20px;
+  color: #fff;
+  line-height: 50px
+}
+
+.list, .scrollableGrid {
+  top: 0;
+  position: relative
+}
+
+.grid .stbActive .addUser {
+  background-color: #007FEB
+}
+
+.grid .addUser.spacer {
+  margin-top: 210px
+}
+
+.list {
+  width: 100%;
+  float: left;
+  -webkit-transition-duration: .5s
+}
+
+.mosaic .items .list {
+  width: 1008px
+}
+
+.detail .items .list {
+  width: 590px
+}
+
+.list .listItem {
+  width: inherit;
+  color: #C8CDD2;
+  font-size: 22px;
+  border-bottom: 2px solid #404048;
+  font-family: "Orange Sans 45 light", "HelveticaNeueLT Com 55 Roman", "Helvetica 55 Roman", helvetica;
+  position: relative;
+  background: 0 0;
+  height: 48px;
+  line-height: 48px;
+  margin: 0 auto;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis
+}
+
+.list.double .listItem {
+  height: 75px;
+  line-height: 35px
+}
+
+.list .listItem.stbActive {
+  border-bottom: 2px solid #007FEB;
+  background: 0 0
+}
+
+.list .listItem.stbActive .subTitle, .list .listItem.stbActive .track .duration, .list .listItem.stbActive .track .title, .list .listItem.stbActive .trackPosition {
+  color: #fff
+}
+
+.list .listItem.stbActive .inactive, .list .listItem.stbActive .subTitle.inactive, .list .listItem.stbActive .track .duration.inactive, .list .listItem.stbActive .track .title.inactive, .list .listItem.stbActive .trackPosition.inactive {
+  color: #727982
+}
+
+.list .listItem .equalizer.image {
+  background-image: url(../assets/images/equalizer.gif);
+  background-size: 14px 20px
+}
+
+.equalizer {
+  width: 14px;
+  height: 20px;
+  left: 10px;
+  top: 14px;
+  position: absolute;
+  display: none;
+  overflow: hidden
+}
+
+.list .listItem .trackPosition {
+  left: 5px;
+  color: #727982;
+  display: block;
+  position: absolute;
+  font-size: 24px
+}
+
+.list .listItem .pausing, .list .listItem .playing {
+  background-size: 14px 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: block;
+  position: absolute;
+  top: 12px;
+  left: 5px;
+  width: 14px;
+  height: 20px
+}
+
+.list .listItem .playing {
+  background-image: url(../assets/images/equalizer.gif)
+}
+
+.list .listItem .pausing {
+  background-image: url(../assets/images/paused_equalizer.png)
+}
+
+.list .listItem .title, .list.double .listItem .subTitle {
+  position: absolute;
+  width: 400px;
+  left: 55px;
+  padding-right: 10px
+}
+
+.list .listItem .inactive {
+  color: #727982
+}
+
+.list .listItem .subTitle {
+  color: #727982;
+  left: 490px;
+  position: absolute;
+  width: 400px
+}
+
+.detail .list .listItem .subTitle {
+  display: none
+}
+
+.detail .list.double .listItem .subTitle {
+  display: block
+}
+
+.list .listItem .duration {
+  right: 0;
+  width: 80px;
+  position: absolute;
+  text-align: right;
+  font-size: 18px;
+  color: #727982
+}
+
+.list .listItem .trackCover {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  left: 5px;
+  top: 5px;
+  background-image: url(../assets/images/cover-32.jpg)
+}
+
+.dialogWrapper {
+  display: table;
+  width: 1280px;
+  height: 720px;
+  background: rgba(38, 38, 45, .8);
+  vertical-align: middle;
+  color: #23232A;
+  position: absolute;
+  z-index: 100
+}
+
+.dialog {
+  display: table-cell;
+  vertical-align: middle;
+  margin: 0;
+  padding: 0
+}
+
+.dialog b {
+  font-family: "Orange Sans 75 Bold", "HelveticaNeueLT Com 75 Bd", helvetica
+}
+
+.dialog .block .title, .dialog .block .title1, .dialog .block .title2 {
+  color: #727982;
+  font-family: "Orange Sans 65 Medium", "HelveticaNeueLT Com 65 Md", helvetica;
+  text-align: center
+}
+
+.dialog .block {
+  background-color: #F8F8F8;
+  border-radius: 10px;
+  -webkit-backface-visibility: hidden;
+  top: initial;
+  left: initial;
+  height: initial;
+  position: relative;
+  margin: auto;
+  padding: 20px;
+  width: 552px
+}
+
+.dialog .block .title {
+  height: 54px;
+  font-size: 32px;
+  margin: 10px 10px 16px;
+  border-bottom: 2px silver solid
+}
+
+.dialog .block .title1 {
+  font-size: 32px
+}
+
+.dialog .block .title2 {
+  font-size: 20px;
+  margin-bottom: 10px
+}
+
+.dialog .block .title3 {
+  text-align: center;
+  margin-bottom: 50px;
+  border-bottom: 2px silver solid
+}
+
+.dialog .block.oneButton .title {
+  margin-bottom: 50px
+}
+
+.dialog .block .content {
+  font-size: 24px;
+  text-align: center;
+  overflow: hidden;
+  font-weight: 700;
+  line-height: 44px;
+  letter-spacing: -1px
+}
+
+.dialog .block .content.font19 {
+  font-size: 19px
+}
+
+.dialog .block.oneButton .content {
+  font-family: "Orange Sans 75 Bold", "HelveticaNeueLT Com 75 Bd", helvetica;
+  line-height: 30px;
+  color: #000;
+  margin-bottom: 50px
+}
+
+.dialog .block.subscription .content {
+  margin-top: 40px;
+  line-height: normal
+}
+
+.black, .center {
+  margin: auto
+}
+
+.dialog .block .content .account {
+  color: #007FEB;
+  max-width: 400px;
+  margin: auto;
+  display: inline-block;
+  text-align: center;
+  position: relative
+}
+
+.black {
+  color: #000;
+  white-space: nowrap;
+  float: left;
+  display: inline-block;
+  overflow: visible;
+  text-align: center;
+  position: absolute
+}
+
+.dialog .boffers, .dialog .button {
+  color: #f2f2f2;
+  background: #727982;
+  text-align: center;
+  -webkit-backface-visibility: hidden
+}
+
+.dialog .block.listBox .cancelButton, .dialog .playlist {
+  margin-right: 20px
+}
+
+.dialog .button {
+  border-radius: 10px;
+  width: 260px;
+  height: 50px;
+  border: none;
+  font-size: 20px;
+  font-family: "HelveticaNeueLT Com 75 Bd", helvetica;
+  line-height: 48px
+}
+
+.dialog .backendDown .button, .dialog .message .button, .dialog .playerError .button, .dialog .requestReload .button {
+  width: 100%
+}
+
+.dialog .subscription .button {
+  width: 157px
+}
+
+.dialog .button .small {
+  font-family: "HelveticaNeueLT Com 55 Roman", helvetica
+}
+
+.dialog .button.abo {
+  width: 364px
+}
+
+.dialog .button.abo.guest {
+  width: 100%
+}
+
+.dialog .button.closed {
+  font-family: "Deezer Icons";
+  font-size: 36px;
+  border-radius: 40px;
+  width: 40px;
+  height: 40px;
+  float: right;
+  right: 0;
+  line-height: 40px
+}
+
+.dialog .button.closed:before {
+  content: '\e819'
+}
+
+.dialog .deezerLogo {
+  position: relative;
+  top: 32px;
+  left: 141px;
+  margin-top: 5px;
+  margin-bottom: 30px
+}
+
+.dialog .boffers {
+  height: 44px;
+  border: none;
+  font-size: 24px;
+  margin-top: 25px
+}
+
+.dialog .boffers.stbActive, .dialog .button.stbActive {
+  background: #007FEB !important
+}
+
+.dialog .idInput, .dialog .passwordInput {
+  width: 510px;
+  height: 44px;
+  position: relative;
+  float: left;
+  margin-bottom: 50px
+}
+
+.dialog .text-input {
+  color: #000;
+  border: 2px solid #A6ABB2;
+  padding-right: 0
+}
+
+.dialog .text-input .default {
+  color: #A6ABB2
+}
+
+.dialog .text-input.focus {
+  color: #000;
+  background-color: #fff;
+  border: 2px solid #007FEB
+}
+
+.dialog .caret, .dialog .caret.focus {
+  background-color: #000
+}
+
+.dialog .block.familyAccounts .content .account {
+  position: relative;
+  width: 520px;
+  font-size: 20px;
+  height: 70px;
+  line-height: 30px;
+  text-align: left
+}
+
+.dialog .block.familyAccounts .content .account.stbActive {
+  background-color: rgba(1, 153, 207, .1)
+}
+
+.dialog .block.familyAccounts .content .account .icon-arrow {
+  position: absolute;
+  top: 25px;
+  right: 12px;
+  color: #CCC;
+  line-height: 1;
+  font-family: "Deezer Icons"
+}
+
+.dialog .block.familyAccounts .content .account .icon-arrow:after {
+  content: '\e80d'
+}
+
+.dialog .block.familyAccounts .content .account.selected .icon-arrow:after {
+  content: '\e81d';
+  color: #007FEB
+}
+
+.dialog .block.familyAccounts .content .account .cover {
+  position: absolute;
+  left: 30px;
+  top: 10px;
+  border-radius: 25px;
+  -webkit-backface-visibility: hidden;
+  background-image: url(../assets/images/avatar-missing-grey-56x56.png);
+  width: 56px;
+  height: 56px
+}
+
+.dialog .block.familyAccounts .content .account .firstLine, .dialog .block.familyAccounts .content .account .secondLine {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  position: absolute;
+  width: 375px;
+  left: 100px
+}
+
+.dialog .block.familyAccounts .content .account .firstLine {
+  top: 10px;
+  font-size: 22px;
+  color: #23232A
+}
+
+.dialog .block.familyAccounts .content .account .secondLine {
+  font-size: 16px;
+  top: 40px;
+  line-height: 20px
+}
+
+.dialog .block.familyAccounts .content .account .secondLine.mainAccount {
+  color: #007FEB
+}
+
+.dialog .block.familyAccounts .content .account .secondLine.kidAccount {
+  color: #E91988
+}
+
+.dialog .block.familyAccounts .content .account .secondLine.secondAccount {
+  color: #727982
+}
+
+.dialog .footer {
+  margin-top: 80px;
+  height: 50px
+}
+
+.dialog .subscription .footer {
+  margin-top: 40px
+}
+
+.dialog .message .footer {
+  margin-top: 50px;
+  height: 50px
+}
+
+.dialog .guest .footer {
+  margin-top: 25px
+}
+
+.dialog .connect .footer {
+  margin-top: 50px
+}
+
+.dialog .disconnect .footer {
+  margin-top: 10px
+}
+
+.dialog .block.listBox {
+  height: 345px;
+  width: 570px
+}
+
+.dialog .carousel {
+  width: 587px;
+  height: 215px;
+  margin-bottom: 10px;
+  position: absolute;
+  left: 20px;
+  overflow: hidden
+}
+
+.dialog .carousel .listItems, .dialog .playlistTitle {
+  left: 0;
+  position: absolute
+}
+
+.dialog .carousel .listItems.highPerf {
+  -webkit-transition: left 250ms ease-in-out
+}
+
+.dialog .playlist {
+  width: 176px;
+  height: 210px;
+  top: 0;
+  position: absolute
+}
+
+.dialog .carousel img, .dialog .playlistItem {
+  width: 176px;
+  height: 176px
+}
+
+.dialog .carousel img {
+  position: absolute;
+  background-image: url(../assets/images/cover-176.jpg);
+  background-position: 0 0
+}
+
+.dialog .stbActive .playlistItem {
+  position: absolute;
+  width: 166px;
+  height: 166px;
+  border-width: 5px;
+  border-color: #007FEB;
+  border-style: solid
+}
+
+.dialog .playlistTitle {
+  width: 176px;
+  height: 25px;
+  overflow: hidden;
+  font-family: "Orange Sans 75 Bold", "HelveticaNeueLT Com 75 Bd", helvetica;
+  line-height: 25px;
+  color: #000;
+  top: 180px;
+  font-size: 20px
+}
+
+.dialog .block.smartloginSuccess .containerButton .st1Btn4, .dialog .block.smartloginSuccess .st3ContainerMsg, .dialog .block.smartloginSuccess .title {
+  font-family: "Orange Sans 75", "HelveticaNeueLT Com 75", helvetica
+}
+
+.dialog .block.listBox .button {
+  float: left;
+  height: 48px;
+  width: 275px
+}
+
+.dialog .block.listBox .buttonPanel {
+  position: absolute;
+  top: 315px;
+  width: 100%;
+  height: 48px
+}
+
+.dialog .block.smartloginSuccess {
+  position: absolute;
+  top: 120px;
+  left: 160px;
+  width: 1005px;
+  height: 590px;
+  border-radius: 0;
+  background: rgba(38, 38, 45, .8);
+  margin-top: 0;
+  z-index: 101;
+  padding-left: 15px
+}
+
+.dialog .block.smartloginSuccess .title {
+  font-size: 36px;
+  line-height: 36px;
+  text-align: center;
+  width: 985px;
+  height: 36px;
+  color: #fff;
+  border: none
+}
+
+.dialog .block.smartloginSuccess .st2Msg1 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff
+}
+
+.dialog .block.smartloginSuccess .device {
+  position: absolute;
+  left: 160px;
+  top: 210px
+}
+
+.dialog .block.smartloginSuccess .st3ContainerMsg {
+  position: absolute;
+  left: 330px;
+  top: 210px
+}
+
+.dialog .block.smartloginSuccess .containerButton {
+  position: absolute;
+  text-align: center;
+  top: 430px;
+  width: inherit;
+  height: 60px
+}
+
+.dialog .block.smartloginSuccess .containerButton .st1Btn4 {
+  margin: 22px auto 0;
+  line-height: 50px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 20px;
+  color: #fff;
+  border-radius: 10px;
+  -webkit-backface-visibility: hidden;
+  background-color: #4F4F55;
+  display: block;
+  width: 486px
+}
+
+.dialog .block.smartloginSuccess .containerButton .st1Btn4.stbActive {
+  background-color: #007FEB
+}
+
+.dialogWrapper.noBkg {
+  background: 0 0
+}
+
+.dialog .block.welcomeGuest {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1240px;
+  height: 680px;
+  border-radius: 0;
+  background: rgba(38, 38, 45, .9);
+  margin-top: 0;
+  z-index: 101
+}
+
+.dialog .block.welcomeGuest .content, .dialog .block.welcomeGuest .title {
+  left: 175px;
+  width: 1008px;
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal
+}
+
+.dialog .block.welcomeGuest .title {
+  position: absolute;
+  height: 39px;
+  overflow: hidden;
+  font-family: "Orange Sans 55 roman", "HelveticaNeueLT Com 65 Md", helvetica;
+  font-size: 32px;
+  line-height: 39px;
+  letter-spacing: normal;
+  text-align: center;
+  color: #FFF;
+  top: 122px;
+  border-bottom: none
+}
+
+.dialog .block.welcomeGuest .content, .dialog .block.welcomeGuest .panBtn {
+  font-family: "Orange Sans 65", "HelveticaNeueLT Com 65", helvetica;
+  color: #FFF;
+  position: absolute
+}
+
+.dialog .block.welcomeGuest .content {
+  top: 190px;
+  height: 130px;
+  font-size: 18px;
+  line-height: 43px;
+  letter-spacing: -.1px;
+  text-align: left
+}
+
+.dialog .block.welcomeGuest .content .content1, .dialog .block.welcomeGuest .content .content2, .dialog .block.welcomeGuest .content .content3 {
+  height: 43px
+}
+
+.dialog .block.welcomeGuest .panBtn {
+  width: 770px;
+  height: 265px;
+  top: 335px;
+  left: 294px;
+  text-align: center;
+  letter-spacing: -.1px;
+  font-weight: 500;
+  background-color: rgba(0, 0, 0, .3)
+}
+
+.dialog .block.welcomeGuest .panBtn .panFree {
+  position: absolute;
+  width: 365px;
+  height: 265px;
+  top: 0;
+  left: 0;
+  border: 2px solid #727982
+}
+
+.dialog .block.welcomeGuest .panBtn .panFree .wgpLine1, .dialog .block.welcomeGuest .panBtn .panPremium .wgpLine1 {
+  position: absolute;
+  width: inherit;
+  height: 20px;
+  font-size: 16px;
+  line-height: 16px;
+  top: 17px;
+  left: 0
+}
+
+.dialog .block.welcomeGuest .panBtn .panFree .wgpType, .dialog .block.welcomeGuest .panBtn .panPremium .wgpType {
+  font-family: "Orange Sans 55 roman", "HelveticaNeueLT Com 65 Md", helvetica;
+  position: absolute;
+  width: inherit;
+  height: 28px;
+  font-size: 24px;
+  line-height: 24px;
+  top: 42px;
+  left: 0;
+  font-weight: 400
+}
+
+.dialog .block.welcomeGuest .panBtn .panFree .wgpLine2, .dialog .block.welcomeGuest .panBtn .panPremium .wgpLine2 {
+  position: absolute;
+  height: 18px;
+  top: 84px;
+  line-height: 1.13;
+  left: 158px
+}
+
+.txtLine2 {
+  float: left;
+  margin-left: 15px
+}
+
+.dialog .block.welcomeGuest .panBtn .panFree .wgpLine3, .dialog .block.welcomeGuest .panBtn .panPremium .wgpLine3 {
+  position: absolute;
+  height: 18px;
+  top: 113px;
+  line-height: 1.13;
+  left: 72px
+}
+
+.dialog .block.welcomeGuest .panBtn .panPremium .wgpLine3.noLimit {
+  left: 117px
+}
+
+.dialog .block.welcomeGuest .panBtn .panFree .wgpLine4, .dialog .block.welcomeGuest .panBtn .panPremium .wgpLine4 {
+  position: absolute;
+  height: 18px;
+  top: 140px;
+  line-height: 1.13;
+  left: 58px
+}
+
+.dialog .block.welcomeGuest .panBtn .panPremium {
+  position: absolute;
+  width: 365px;
+  height: 265px;
+  top: 0;
+  left: 405px;
+  border: 2px solid #727982
+}
+
+.dialog .block.welcomeGuest .button, .dialog .block.welcomeGuest .panBtn .panFree .button, .dialog .block.welcomeGuest .panBtn .panPremium .button {
+  font-family: "Orange Sans 55 roman", "HelveticaNeueLT Com 65 Md", helvetica;
+  position: absolute;
+  top: 190px;
+  font-size: 18px;
+  line-height: 44px;
+  font-weight: 400;
+  height: 44px
+}
+
+.dialog .block.welcomeGuest .panBtn .panFree.active, .dialog .block.welcomeGuest .panBtn .panPremium.active {
+  border: 2px solid #007FEB
+}
+
+.dialog .block.welcomeGuest .panBtn .panFree .button.connect {
+  width: 167px;
+  left: 99px
+}
+
+.dialog .block.welcomeGuest .panBtn .panPremium .button.connect {
+  left: 20px;
+  width: 167px
+}
+
+.dialog .block.welcomeGuest .panBtn .panPremium .button.aboG {
+  left: 207px;
+  width: 138px
+}
+
+.dialog .block.welcomeGuest .contentFooter {
+  position: absolute;
+  top: 627px;
+  left: 352px;
+  width: 502;
+  height: 44px;
+  font-family: "Orange Sans 65", "HelveticaNeueLT Com 65", helvetica;
+  color: #FFF;
+  text-align: left;
+  font-size: 16px;
+  line-height: 1.38;
+  letter-spacing: -.1px;
+  font-weight: 500
+}
+
+.dialog .block.welcomeGuest .button.continue {
+  width: 135px;
+  left: 873px;
+  top: 625px
+}
+
+.dialog .button.connect {
+  width: 157px;
+  margin-right: 20px
+}
+
+.dialog .block.connectName, .dialog .block.connectPwd, .dialog .block.createPlaylist {
+  position: absolute;
+  top: 80px;
+  left: 0;
+  width: 1240px;
+  height: 330px;
+  opacity: 1;
+  border-radius: 0;
+  background-color: #23232A;
+  margin-top: 0
+}
+
+.dialog .block.connectName .content, .dialog .block.connectPwd .content, .dialog .block.createPlaylist .content {
+  position: absolute;
+  width: 549px;
+  height: 190px;
+  left: 370px;
+  top: 50px;
+  margin: 0
+}
+
+.dialog .block.connectName .error, .dialog .block.connectName .title1, .dialog .block.connectName .title2, .dialog .block.connectName .txtTitle, .dialog .block.connectPwd .title1, .dialog .block.connectPwd .title2, .dialog .block.connectPwd .txtTitle, .dialog .block.createPlaylist .title, .dialog .block.createPlaylist .txtTitle {
+  position: absolute;
+  width: 540px;
+  height: 36px;
+  overflow: hidden;
+  font-family: "Orange Sans 65", "HelveticaNeueLT Com 65", helvetica;
+  font-size: 36px;
+  line-height: 36px;
+  color: #FFF;
+  top: 50px;
+  left: 370px;
+  border-bottom: none
+}
+
+.dialog .block.connectName .title2, .dialog .block.connectPwd .title2 {
+  font-size: 16px;
+  top: 90px;
+  line-height: 16px;
+  font-family: "Orange Sans 75", "HelveticaNeueLT Com 75", helvetica
+}
+
+.dialog .block.connectName .error, .dialog .block.connectName .txtTitle, .dialog .block.connectPwd .txtTitle, .dialog .block.createPlaylist .txtTitle {
+  height: 16px;
+  font-size: 16px;
+  line-height: 16px;
+  top: 160px;
+  left: 370px;
+  font-family: "Orange Sans 75", "HelveticaNeueLT Com 75", helvetica
+}
+
+.dialog .block.connectName .error {
+  top: 250px;
+  padding-left: 40px;
+  height: 40px;
+  line-height: 30px;
+  color: red;
+  background: url(../assets/images/keyboard_sprite_sheet.png) -80px 0 no-repeat
+}
+
+.dialog .block.connectName .idInput, .dialog .block.connectPwd .idInput, .dialog .block.createPlaylist .idInput {
+  position: absolute;
+  top: 140px;
+  left: 0;
+  width: 540px;
+  height: 44px
+}
+
+.dialog .block.connectName .stbActive .text-input.focus, .dialog .block.connectPwd .stbActive .text-input.focus, .dialog .block.createPlaylist .stbActive .text-input.focus {
+  color: #FFF;
+  background-color: #23232A;
+  border: 2px solid #007FEB;
+  padding-left: 5px
+}
+
+.dialog .block.connectName .caret, .dialog .block.connectName .caret.focus, .dialog .block.connectPwd .caret, .dialog .block.connectPwd .caret.focus, .dialog .block.createPlaylist .caret, .dialog .block.createPlaylist .caret.focus {
+  background-color: #fff
+}
+
+.dialog .block.newPlaylist .footer {
+  margin-top: 30px
+}
+
+.dialog .block.children .buttonPanel {
+  display: none
+}
+
+.popupList {
+  position: relative;
+  width: 270px
+}
+
+.block.children .popupList {
+  width: 100%;
+  float: none
+}
+
+.dialog .content .popupList .list {
+  padding: 0;
+  margin: 0
+}
+
+.dialog .content .popupList .listItem {
+  width: 270px;
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  border: none;
+  border-bottom: 2px solid #EEE;
+  font-family: "Orange Sans 45 light", "HelveticaNeueLT Com 55 Roman", "Helvetica 55 Roman", helvetica;
+  height: 41px;
+  line-height: 41px;
+  text-align: left;
+  overflow: hidden
+}
+
+.dialog .block .content .popupList .listItem.stbActive {
+  background-color: rgba(1, 153, 207, .1)
+}
+
+.dialog .block .content .message-blue {
+  color: #007FEB;
+  width: 400px;
+  margin: auto
+}
+
+.dialog .content .popupList .listItem .stbActive {
+  color: #3c3c3c;
+  background: 0 0
+}
+
+.dialog .content .popupList .listItem .itemTitle {
+  display: inline
+}
+
+.dialog .content .popupList .scrollbar {
+  height: 260px;
+  left: 277px;
+  top: 0;
+  background-color: #A6ABB2;
+  width: 3px
+}
+
+.dialog .content .popupList .scrollbar .scroller {
+  background-color: #727982;
+  width: 3px
+}
+
+.dialog .block.listBox .content {
+  position: relative;
+  left: 240px;
+  width: 280px;
+  height: 260px
+}
+
+.dialog .block.listBox .playlistName {
+  background-color: transparent;
+  position: absolute;
+  width: 218px;
+  height: 44px;
+  bottom: 142px;
+  left: 0;
+  line-height: 40px;
+  border-radius: 10px;
+  -webkit-backface-visibility: hidden;
+  color: #8A8D93;
+  font-size: 26px;
+  text-align: none;
+  z-index: 9999
+}
+
+.dialog .block.listBox .text-input, .dialog .block.listBox .text-input.focus {
+  color: #000;
+  border: 2px solid #A6ABB2;
+  padding-left: 5px
+}
+
+.dialog .block.listBox .stbActive .text-input.focus {
+  color: #000;
+  background-color: #fff;
+  border: 2px solid #007FEB
+}
+
+.block.listBox .playlistName .text {
+  overflow: hidden;
+  position: absolute;
+  width: 218px;
+  color: #3c3c3c
+}
+
+.dialog .block.listBox .playlistName .textBox .cursorInput {
+  height: 26px;
+  top: 8px
+}
+
+.dialog .block.listBox .playlistName .textBox div {
+  vertical-align: top
+}
+
+.dialog .icon {
+  font-family: "Deezer Icons"
+}
+
+.home .header .labelUser, .userInfo {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-family: "Orange Sans 55 roman", "HelveticaNeueLT Com 65 Md", helvetica;
+  white-space: nowrap
+}
+
+.dialog .icon.sizeMini {
+  position: absolute;
+  font-size: 8px;
+  top: 4px
+}
+
+.dialog .loader {
+  position: relative;
+  top: 0;
+  left: 0;
+  margin: auto;
+  width: 100%;
+  height: 15px;
+  text-align: center
+}
+
+.home .homeBckgd {
+  top: 0;
+  left: 30px;
+  position: absolute;
+  height: 300px;
+  width: 1008px;
+  z-index: 0
+}
+
+.home .homeBckgd.empty {
+  background-image: url(../assets/images/header_adult.jpg)
+}
+
+.kid .home .homeBckgd.empty {
+  background-image: url(../assets/images/header_kids.jpg)
+}
+
+.wTab .home .homeBckgd {
+  height: 360px
+}
+
+.wTab .home .homeBckgd.empty {
+  background-image: url(../assets/images/header_adult_360.jpg)
+}
+
+.kid .wTab .home .homeBckgd.empty {
+  background-image: url(../assets/images/header_kids_360.jpg)
+}
+
+.home .homeBckgd:after {
+  height: 100%;
+  width: 100%;
+  content: '';
+  position: absolute;
+  top: 0;
+  background-image: url(../assets/images/header_overlay.png)
+}
+
+.wTab .home .homeBckgd:after {
+  background-image: url(../assets/images/header_overlay_profile.png)
+}
+
+.home .header {
+  position: absolute;
+  top: 116px;
+  left: 30px;
+  height: 175px;
+  width: 1008px
+}
+
+.wTab .home .header {
+  top: 185px
+}
+
+.home .header .userIcon {
+  position: absolute;
+  top: 3px;
+  left: 267px;
+  border-radius: 75px;
+  border: 3px solid #f2f2f2;
+  -webkit-backface-visibility: hidden;
+  background-position: -20px -200px;
+  background-image: url(../assets/images/cover-176.jpg);
+  width: 138px;
+  height: 138px
+}
+
+.home .header .labelUser {
+  top: 0;
+  position: absolute;
+  color: #fff;
+  left: 430px;
+  width: 572px;
+  height: 60px;
+  font-size: 28px;
+  line-height: 25px
+}
+
+.userInfo {
+  position: absolute;
+  top: 34px;
+  font-size: 20px;
+  line-height: 36px;
+  color: #C8CDD2;
+  background: 0 0
+}
+
+.home .header .labelUser .userProfile {
+  font-size: 22px;
+  line-height: 22px;
+  color: #CCC
+}
+
+.home .header .labelUser .userProfile.main {
+  color: #007FEB
+}
+
+.home .header .labelUser .userProfile.kid {
+  color: #E91988
+}
+
+.home .header .buttonConnect, .home .header .flowButton {
+  position: absolute;
+  top: 80px;
+  left: 431px;
+  width: 310px;
+  height: 56px;
+  color: #FFF;
+  font-size: 34px;
+  font-family: "Deezer Icons";
+  border-radius: 10px;
+  -webkit-backface-visibility: hidden;
+  border: 2px solid #FFF;
+  line-height: 50px
+}
+
+.home .header .followButton {
+  position: absolute;
+  width: 255px;
+  left: 455px
+}
+
+.home .header .followUserIcon {
+  position: absolute;
+  left: 292px
+}
+
+.home .header .followlabelUser {
+  position: absolute;
+  left: 457px;
+  top: 30px
+}
+
+.home .header .flowButton.stbActive, .home .header.guest .buttonConnect.stbActive, .home .header.guest .flowButton.stbActive {
+  background-color: #007FEB !important;
+  border-color: #007FEB
+}
+
+.flowButton.paused.stbActive:before, .flowButton:before {
+  content: '\e85b';
+  position: absolute;
+  left: 14px;
+  top: 5px
+}
+
+.flowButton.playing.stbActive:before {
+  content: '\e856'
+}
+
+.flowButton.paused:before, .flowButton.playing:before {
+  content: ''
+}
+
+.home .header.guest .buttonConnect, .home .header.guest .flowButton {
+  top: 40px
+}
+
+.home .header.guest .flowButton {
+  left: 220px;
+  width: 306px;
+  background-color: #727982 !important;
+  border-color: #727982
+}
+
+.home .header.guest .buttonConnect {
+  left: 550px;
+  width: 238px
+}
+
+.home .header.guest .buttonConnect .connect {
+  position: absolute;
+  top: 3px;
+  left: 20px;
+  width: 218px;
+  overflow: visible;
+  line-height: 50px
+}
+
+.home .header.guest .buttonConnect .connect:before {
+  position: absolute;
+  content: '\e83d'
+}
+
+.home .header.guest .buttonConnect .connectInfo {
+  position: absolute;
+  font-family: "Orange Sans 45 light", "HelveticaNeueLT Com 55 Roman", "Helvetica 55 Roman", helvetica;
+  font-size: 24px;
+  width: 140px;
+  left: 72px;
+  white-space: nowrap;
+  line-height: 28px;
+  top: 14px
+}
+
+.home .flowButton .equalizer {
+  display: none;
+  position: absolute;
+  top: 6px;
+  left: 14px;
+  width: 38px;
+  height: 38px;
+  overflow: hidden
+}
+
+.home .playing .equalizer {
+  background-image: url(../assets/images/equalizer.gif);
+  background-size: 38px 38px;
+  display: block
+}
+
+.home .paused .equalizer {
+  background-image: url(../assets/images/paused_equalizer.png);
+  background-size: 38px 38px;
+  display: block
+}
+
+.stbActive.paused .equalizer, .stbActive.playing .equalizer {
+  display: none
+}
+
+.home .flowButton .equalizer-bar.equalizer-bar-1 {
+  left: 0
+}
+
+.home .flowButton .equalizer-bar {
+  width: 10px
+}
+
+.equalizer .equalizer-bar.equalizer-bar-1 {
+  top: 50%;
+  -webkit-animation: equalizer-bar-1 .75s linear infinite
+}
+
+.home .flowButton .equalizer-bar.equalizer-bar-2 {
+  left: 12px
+}
+
+.equalizer .equalizer-bar.equalizer-bar-2 {
+  left: 5px;
+  top: 30%;
+  -webkit-animation: equalizer-bar-2 .75s linear infinite
+}
+
+.equalizer .equalizer-bar {
+  position: absolute;
+  height: 100%;
+  background-color: #f2f2f2
+}
+
+.home .flowButton .equalizer-bar.equalizer-bar-3 {
+  left: 24px
+}
+
+.equalizer .equalizer-bar.equalizer-bar-3 {
+  left: 10px;
+  top: 70%;
+  -webkit-animation: equalizer-bar-3 .75s linear infinite
+}
+
+.paused .equalizer .equalizer-bar {
+  -webkit-animation-play-state: paused
+}
+
+.home .flowButton .buttonLabel {
+  left: 65px;
+  position: absolute;
+  font-size: 24px;
+  top: 8px;
+  line-height: 20px;
+  font-family: "Orange Sans 55 roman", "HelveticaNeueLT Com 65 Md", helvetica
+}
+
+.home .flowButton .buttonLabelFollow {
+  top: 8px;
+  line-height: 37px
+}
+
+.home .flowButton .buttonLabel .info {
+  font-size: 16px;
+  line-height: 19px;
+  font-family: "Orange Sans 45 light", "HelveticaNeueLT Com 55 Roman", "Helvetica 55 Roman", helvetica
+}
+
+.home .content {
+  position: absolute;
+  top: 320px;
+  height: 400px;
+  left: 30px;
+  width: 1008px;
+  overflow: hidden
+}
+
+.home .content.guest {
+  overflow: visible;
+  width: 1103px;
+  top: 310px
+}
+
+.home .content .mosaic {
+  left: 0;
+  top: 10px
+}
+
+.home .content.guest .scrollbar {
+  height: 355px
+}
+
+.home .content .mix {
+  left: -32px;
+  overflow: visible
+}
+
+.wTab .home .content {
+  top: 380px;
+  height: 340px
+}
+
+.home .scrollableContent {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0
+}
+
+.scrollableContent .items {
+  position: relative;
+  top: 0
+}
+
+.scrollableContent .mix {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: visible
+}
+
+.home .content .horizontal {
+  position: relative;
+  margin-bottom: 30px;
+  width: 100%;
+  height: 290px
+}
+
+.wTab .content .horizontal {
+  margin-bottom: 20px
+}
+
+.home .content .horizontal.edito {
+  height: 176px
+}
+
+.content.guest .stripTitle, .horizontal .stripTitle {
+  height: 60px;
+  width: 1008px;
+  font-size: 20px;
+  color: #727982;
+  overflow: hidden;
+  text-align: center
+}
+
+.content.guest .stripTitle {
+  width: 1008px
+}
+
+.content.guest .stripTitle .text, .horizontal .stripTitle .text {
+  position: relative;
+  display: inline-block;
+  padding: 0 20px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  font-size: 20px;
+  color: #727982
+}
+
+.content.guest .stripTitle .text:after, .content.guest .stripTitle .text:before, .horizontal .stripTitle .text:after, .horizontal .stripTitle .text:before {
+  background-color: #727982;
+  content: "";
+  height: 1px;
+  position: absolute;
+  top: 50%;
+  width: 500px
+}
+
+.content.guest .stripTitle .text:after, .horizontal .stripTitle .text:after {
+  margin-left: 20px
+}
+
+.content.guest .stripTitle .text:before, .horizontal .stripTitle .text:before {
+  right: 100%
+}
+
+.horizontalScrollable {
+  position: relative;
+  left: 0;
+  white-space: nowrap;
+  float: left
+}
+
+.horizontalScrollable .item {
+  position: relative;
+  display: inline-block;
+  margin-right: 32px;
+  width: 176px;
+  color: #fff
+}
+
+.horizontalScrollable .item .cover {
+  width: 176px;
+  height: 176px
+}
+
+.horizontalScrollable .item .cover img {
+  background-image: url(../assets/images/cover-176.jpg);
+  background-position: 0 0;
+  width: 176px;
+  height: 176px
+}
+
+.horizontalScrollable .item.editoArtists .cover img {
+  background-position: 0 -176px
+}
+
+.horizontalScrollable .item.stbActive:after {
+  width: 168px;
+  height: 168px;
+  border: 4px solid #007FEB;
+  top: 0;
+  left: 0;
+  position: absolute;
+  content: ""
+}
+
+.horizontal.edito .horizontalScrollable .item .cover:after {
+  height: 100%;
+  width: 100%;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url(../assets/images/home_screen_links_bg.png)
+}
+
+.horizontal.edito .horizontalScrollable .item .edito {
+  position: absolute;
+  top: auto;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+  font-size: 22px
+}
+
+.horizontalScrollable .item .edito {
+  position: relative;
+  font-size: 20px;
+  top: 10px
+}
+
+.horizontalScrollable .item .edito .desc {
+  font-size: 16px;
+  color: #727982;
+  line-height: 20px
+}
+
+.horizontal.edito .horizontalScrollable .item .edito .desc {
+  display: none
+}
+
+.horizontal.edito .item .contentIcon {
+  position: absolute;
+  font-family: "Deezer Icons";
+  font-size: 45px;
+  width: 100%;
+  text-align: center;
+  height: 45px;
+  top: 40px
+}
+
+.item.editoRelease .contentIcon:before {
+  content: '\e852'
+}
+
+.item.editoTracks .contentIcon:before {
+  content: '\e851'
+}
+
+.item.editoAlbums .contentIcon:before {
+  content: '\e802'
+}
+
+.item.editoArtists .contentIcon:before {
+  content: '\e838'
+}
+
+.item.editoPlaylists .contentIcon:before {
+  content: '\e85d'
+}
+
+.carousel-player {
+  position: absolute;
+  left: 0
+}
+
+.carousel-player.left {
+  -webkit-transition: left 1s ease-in-out
+}
+
+.carousel-player .block-limit {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background-image: url(../assets/images/degrade.png);
+  background-repeat: no-repeat
+}
+
+.carousel-player .text-limit {
+  position: absolute;
+  top: 0;
+  width: 400px;
+  height: 70px;
+  padding-top: 10px;
+  font-size: 16px;
+  text-align: center;
+  overflow: hidden;
+  color: #fff;
+  -webkit-transition: top 1s ease-in-out
+}
+
+.faqView, .offerView {
+  position: relative;
+  overflow: hidden
+}
+
+.carousel-player.stbActive .block-limit {
+  background: #007FEB !important;
+  opacity: .8
+}
+
+.carousel-player.stbActive .text-limit {
+  font-size: 16px;
+  text-align: center;
+  overflow: hidden;
+  color: #fff;
+  top: 160px;
+  transition: top ease-out .5s
+}
+
+.faqView {
+  color: #8A8D93;
+  font-size: 20px;
+  margin: 32px;
+  width: 1008px;
+  padding-right: 45px;
+  max-height: 475px
+}
+
+.faqView .right {
+  float: right
+}
+
+.faqView .req {
+  margin-bottom: 30px;
+  border-bottom: 2px solid #32323a;
+  margin-top: 30px
+}
+
+.faqView .question {
+  margin-bottom: 30px;
+  font-size: 32px;
+  line-height: 40px;
+  color: #c2c9d2
+}
+
+.faqView .answer {
+  margin-bottom: 30px;
+  font-size: 24px;
+  line-height: 32px;
+  color: #858692
+}
+
+.faqView .link {
+  color: #c2c9d2
+}
+
+.faqView.col {
+  padding-top: 100px
+}
+
+.faqView.col .gridItem {
+  height: 440px
+}
+
+.faqView.col .req {
+  width: 180px;
+  float: left;
+  border-bottom: none;
+  margin: 0 10px
+}
+
+.faqView.col .question {
+  text-align: center;
+  font-size: 24px;
+  line-height: 32px;
+  color: #C2C9D2
+}
+
+.faqView.col .icon {
+  font-size: 48px;
+  margin-bottom: 20px;
+  line-height: 48px
+}
+
+.faqView.col .answer {
+  margin-bottom: 0;
+  font-size: 18px;
+  text-align: left;
+  color: #858692
+}
+
+.faqView .scroller.focused {
+  background-color: #007FEB
+}
+
+.faqView .icon {
+  font-family: "Deezer icons"
+}
+
+.lyricsIcon:before {
+  content: '\e84d'
+}
+
+.favouriteIcon:before, .loveIcon:before {
+  content: '\e84c'
+}
+
+.addPlaylistIcon:before {
+  content: '\e85e'
+}
+
+.albumIcon:before {
+  content: '\e802'
+}
+
+.artistIcon:before {
+  content: '\e838'
+}
+
+.offerView {
+  margin: 23px 31px 0;
+  width: 1075px;
+  height: 580px;
+  font-family: "Orange Sans 65 Medium", "HelveticaNeueLT Com 65 Md", helvetica;
+  font-size: 20px;
+  color: #fff
+}
+
+.keyboard, .lyrics, .lyrics .label, .lyrics .sync, .lyrics .sync .line, .offerView .notice {
+  position: absolute
+}
+
+.offerView .deezerIcon, .offerView .multiProfilsIcon {
+  float: left;
+  width: 29px;
+  margin-right: 13px;
+  text-align: center
+}
+
+.offerView .deezerIcon {
+  font-family: "Deezer Icons";
+  font-size: 20px;
+  line-height: 24px
+}
+
+.offerView .center .deezerIcon {
+  margin: 0;
+  float: none
+}
+
+.offerView .multiProfilsIcon {
+  background: url(../assets/images/6_profils_icon.png) 0 no-repeat;
+  height: 18px;
+  margin-top: 7px
+}
+
+.offerView .center {
+  text-align: center
+}
+
+.offerView .small {
+  font-size: 16px
+}
+
+.offerView .smallc {
+  font-size: 16px;
+  line-height: .9
+}
+
+.offerView .title {
+  font-family: "Orange Sans 75", "HelveticaNeueLT Com 75", helvetica;
+  font-size: 36px;
+  line-height: 36px;
+  text-align: center;
+  width: 1075px;
+  height: 36px
+}
+
+.offerView .subtitle {
+  font-family: "Orange Sans 65", "HelveticaNeueLT Com 65", helvetica;
+  font-size: 18px;
+  text-align: center;
+  color: #C8CDD2;
+  margin: 10px 0 24px;
+  width: 1075px;
+  height: 35px
+}
+
+.offerView .notice {
+  top: 489px;
+  left: 0;
+  width: 400px;
+  height: 41px;
+  font-size: 16px;
+  color: #C8CDD2
+}
+
+.offerView .table {
+  display: table;
+  margin-left: 0
+}
+
+.offerView .row {
+  display: table-row;
+  height: 37px
+}
+
+.offerView .cell {
+  display: table-cell;
+  height: 37px;
+  width: 150px;
+  vertical-align: middle
+}
+
+.offerView .label {
+  width: 517px;
+  color: #fff;
+  letter-spacing: 1.3px
+}
+
+.offerView .separation {
+  width: 20px
+}
+
+.offerView .family, .offerView .free, .offerView .premium {
+  width: 150px;
+  color: #c8cdd2
+}
+
+.offerView.familyAccount .family, .offerView.familyAccount .family .button, .offerView.familyAccount .family .header, .offerView.familyAccount .family .triangle, .offerView.freeAccount .free, .offerView.freeAccount .free .button, .offerView.freeAccount .free .header, .offerView.freeAccount .free .triangle, .offerView.premiumAccount .premium, .offerView.premiumAccount .premium .button, .offerView.premiumAccount .premium .header, .offerView.premiumAccount .premium .triangle {
+  background-color: #4F4F55;
+  color: #c8cdd2
+}
+
+.offerView .family .button, .offerView .header, .offerView .premium .button, .offerView .triangle {
+  background-color: #c8cdd2
+}
+
+.offerView.familyAccount .button, .offerView.premiumAccount .premium .button {
+  background-color: transparent
+}
+
+.offerView .familySelected .family, .offerView .premiumSelected .premium {
+  color: #007FEB
+}
+
+.offerView .familySelected .family .button, .offerView .familySelected .family .triangle, .offerView .premiumSelected .premium .button, .offerView .premiumSelected .premium .triangle {
+  background-color: #007FEB;
+  color: #fff
+}
+
+.offerView .familySelected .family .header, .offerView .premiumSelected .premium .header {
+  font-family: "Orange Sans 75", "HelveticaNeueLT Com 75", helvetica;
+  background-color: #007FEB;
+  color: #fff
+}
+
+.offerView .triangle {
+  width: 21px;
+  height: 11px;
+  -webkit-mask-image: url(../assets/images/triangle-mask.png);
+  -webkit-mask-repeat: no-repeat;
+  margin: 0 0 19px 64px
+}
+
+.offerView .button, .offerView .header {
+  width: 150px;
+  font-size: 20px;
+  font-family: "Orange Sans 75", "HelveticaNeueLT Com 75", helvetica;
+  text-align: center;
+  vertical-align: middle
+}
+
+.offerView .header {
+  line-height: 58px;
+  height: 58px;
+  text-transform: uppercase;
+  color: #727982
+}
+
+.offerView .button {
+  margin: 20px 0 0;
+  line-height: 50px;
+  color: #fff;
+  border-radius: 15px;
+  -webkit-backface-visibility: hidden
+}
+
+.lyrics {
+  top: 20px;
+  left: 0;
+  width: 1280px;
+  height: 100%;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-name: fadeInFromNone
+}
+
+.lyrics .hidden {
+  display: none !important
+}
+
+.lyrics .textLyrics {
+  position: absolute;
+  left: 80px;
+  width: 1120px;
+  height: 390px;
+  color: #fff;
+  text-align: center;
+  overflow: hidden
+}
+
+.lyrics .label {
+  white-space: pre-line;
+  width: 1120px;
+  font-size: 30px;
+  line-height: 48px
+}
+
+.lyrics .sync {
+  top: 70px;
+  left: 64px;
+  height: 400px;
+  overflow: visible
+}
+
+.lyrics .sync .line {
+  top: 200px;
+  width: 1152px;
+  padding: 25px;
+  text-align: center;
+  font-size: 50px;
+  line-height: 50px;
+  border-left: none;
+  word-wrap: break-word;
+  white-space: normal;
+  -webkit-box-sizing: border-box;
+  color: #fff;
+  opacity: 0
+}
+
+.lyrics .sync .line.secondLine {
+  opacity: .7;
+  -webkit-transition: opacity 1s ease-in-out;
+  top: 190px
+}
+
+.lyrics .sync .line.finished {
+  opacity: 0;
+  top: -50px !important
+}
+
+.lyrics .sync .line.highlight {
+  top: 0 !important;
+  background-color: rgba(0, 127, 235, .6);
+  opacity: 1;
+  -webkit-transition: top 1s ease-in-out
+}
+
+.lyrics .sync .line.finished {
+  -webkit-transition: opacity 1s ease-in-out, top 1s ease-in-out
+}
+
+.lyrics .scrollbar {
+  left: 1116px
+}
+
+.lyrics .scrollbar .scroller {
+  background-color: #727982
+}
+
+.keyboard {
+  width: 1280px;
+  left: 0;
+  top: 320px;
+  height: 0;
+  border-radius: 0;
+  opacity: 1;
+  z-index: 101
+}
+
+.keyboard.active {
+  height: 250px;
+  top: 450px;
+  background-color: #23232A
+}
+
+.keyboard.email.active {
+  height: 300px;
+  top: 400px
+}
+
+.kbContent {
+  position: relative;
+  width: 1280px;
+  height: inherit;
+  top: 0;
+  background-color: #32303A;
+  padding-top: 40px
+}
+
+.keyboard.email.active .kbContent {
+  padding-top: 20px
+}
+
+.kbLine {
+  width: 700px;
+  height: 52px;
+  float: none;
+  margin-left: 80px
+}
+
+.kbLineEmail {
+  width: 1280px;
+  height: 60px;
+  float: none;
+  margin-left: 340px
+}
+
+.kbContent .kbItem {
+  font-family: "Orange Sans 75", "HelveticaNeueLT Com 75", helvetica;
+  color: #C8C0D2;
+  text-align: center;
+  font-size: 26px;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  float: left;
+  line-height: 40px
+}
+
+.kbItem.W1, .kbItem.W2, .kbItem.W3, .kbItem.W4, .kbItem.W5 {
+  font-family: "Deezer Icons"
+}
+
+.kbItem.emailItem {
+  width: 150px;
+  font-size: 16px
+}
+
+.kbItemSP {
+  width: 12px;
+  height: 40px;
+  float: left
+}
+
+.kbItem.W1, .kbItem.W2 {
+  width: 74px
+}
+
+.kbItem.W3 {
+  width: 95px
+}
+
+.kbItem.W4 {
+  width: 290px
+}
+
+.kbItem.W5 {
+  width: 50px
+}
+
+.kbItem.W6 {
+  width: 95px
+}
+
+.kbItem.W09 {
+  width: 40px;
+  height: 40px
+}
+
+.kbItem.W10 {
+  font-size: 18px;
+  line-height: 40px;
+  width: 120px;
+  color: #8A8D93
+}
+
+.kbItem.W10.active {
+  color: #FFF
+}
+
+.kbContent .kbItem.stbActive {
+  background-color: #007FEB;
+  color: #FFF;
+  border-radius: 5px;
+  width: 40px
+}
+
+.kbLineEmail .kbItem.stbActive {
+  background-color: #007FEB;
+  color: #FFF;
+  border-radius: 5px;
+  width: 150px;
+  height: 40px;
+  font-size: 16px;
+  line-height: 40px
+}
+
+.kbItem.W10.stbActive {
+  width: 120px
+}
+
+.icons {
+  height: 340px;
+  width: 140px;
+  position: absolute;
+  top: 0;
+  left: 750px;
+  margin-top: 40px
+}
+
+.icons .kbItem.ibksp, .icons .kbItem.ishift, .icons .kbItem.ispace {
+  height: 40px;
+  margin-left: 50px;
+  margin-bottom: 12px
+}
+
+.icons.email {
+  top: 40px
+}
+
+.icons .kbItem.ibksp {
+  width: 40px;
+  background: url(../assets/images/keyboard_sprite_sheet.png) no-repeat
+}
+
+.icons .kbItem.ibksp.stbActive {
+  background: url(../assets/images/keyboard_sprite_sheet.png) -40px 0 no-repeat #007FEB;
+  border-radius: 5px;
+  width: 40px
+}
+
+.icons .kbItem.ishift {
+  width: 40px;
+  background: url(../assets/images/keyboard_sprite_sheet.png) 0 -40px no-repeat
+}
+
+.icons .kbItem.ishift.stbActive {
+  background: url(../assets/images/keyboard_sprite_sheet.png) -40px -40px no-repeat #007FEB;
+  border-radius: 5px;
+  width: 40px
+}
+
+.icons .kbItem.ishift.active {
+  background: url(../assets/images/keyboard_shift_on.png) no-repeat
+}
+
+.icons .kbItem.ishift.active.stbActive {
+  background: url(../assets/images/keyboard_sprite_sheet.png) -40px -40px no-repeat #007FEB;
+  border-radius: 5px;
+  width: 40px
+}
+
+.icons .kbItem.ispace {
+  width: 40px;
+  background: url(../assets/images/keyboard_sprite_sheet.png) 0 -80px no-repeat
+}
+
+.icons .kbItem.ispace.stbActive {
+  background: url(../assets/images/keyboard_sprite_sheet.png) -40px -80px no-repeat #007FEB;
+  border-radius: 5px;
+  width: 40px
+}
+
+.icons .iarrows {
+  position: absolute;
+  top: 156px;
+  height: 52px;
+  width: 140px
+}
+
+.icons .iarrows .kbItem.ileft {
+  height: 40px;
+  width: 40px;
+  left: 28px;
+  background: url(../assets/images/keyboard_sprite_sheet.png) 0 -120px no-repeat;
+  position: absolute
+}
+
+.icons .iarrows .kbItem.ileft.stbActive {
+  background: url(../assets/images/keyboard_sprite_sheet.png) -40px -120px no-repeat #007FEB;
+  border-radius: 5px;
+  width: 40px
+}
+
+.icons .iarrows .kbItem.iright {
+  height: 40px;
+  width: 40px;
+  left: 72px;
+  background: url(../assets/images/keyboard_sprite_sheet.png) 0 -160px no-repeat;
+  position: absolute
+}
+
+.icons .iarrows .kbItem.iright.stbActive {
+  background: url(../assets/images/keyboard_sprite_sheet.png) -40px -160px no-repeat #007FEB;
+  border-radius: 5px;
+  width: 40px
+}
+
+.buttons {
+  width: 358px;
+  height: 340px;
+  position: absolute;
+  top: 0;
+  right: 0
+}
+
+.buttons.email {
+  top: 40px
+}
+
+.buttons .bCancel, .buttons .bOk {
+  width: 260px;
+  height: 50px;
+  color: #FFF;
+  background: #727982;
+  border-radius: 5px;
+  font-family: "Orange Sans 75", "HelveticaNeueLT Com 75", helvetica;
+  text-align: center;
+  font-size: 26px;
+  line-height: 50px;
+  position: absolute;
+  right: 90px
+}
+
+.buttons .bOk {
+  top: 70px
+}
+
+.buttons .bCancel {
+  top: 156px
+}
+
+.buttons .bCancel.stbActive, .buttons .bOk.stbActive {
+  width: 260px;
+  background: #007FEB
+}
+
+.loginInProgress, .smartloginView {
+  position: relative;
+  margin: 23px 31px 0;
+  width: 1005px;
+  height: 580px;
+  overflow: hidden;
+  font-family: "Orange Sans 65 Medium", "HelveticaNeueLT Com 65 Md", helvetica;
+  font-size: 20px;
+  color: #fff
+}
+
+.smartloginView .container {
+  width: 1005px;
+  height: 485px
+}
+
+.loginInProgress {
+  position: absolute;
+  width: 1280px;
+  height: 580px;
+  left: 0;
+  top: 90px;
+  z-index: 9;
+  background-color: #23232A;
+  overflow: visible
+}
+
+body {
+  margin: 0;
+  padding: 0
+}
+
+.smartloginView .subtitle, .smartloginView .title {
+  font-family: "Orange Sans 75", "HelveticaNeueLT Com 75", helvetica;
+  font-size: 36px;
+  line-height: 36px;
+  text-align: center;
+  width: 1005px;
+  height: 36px
+}
+
+.smartloginView .subtitle {
+  font-family: "Orange Sans 65", "HelveticaNeueLT Com 65", helvetica;
+  font-size: 18px;
+  color: #C8CDD2;
+  margin: 10px 0 24px;
+  width: 1005px
+}
+
+.Msg, .s1, .s2, .s3, .smartloginView .imglabel, .smartloginView .or {
+  font-family: "Orange Sans 75", "HelveticaNeueLT Com 75", helvetica
+}
+
+.smartloginView .imglabel, .smartloginView .or {
+  font-size: 20px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.4;
+  height: 56px;
+  color: #fff;
+  vertical-align: middle;
+  text-align: center;
+  margin: 38px 0 0
+}
+
+.smartloginView .or {
+  font-size: 30px;
+  height: 360px;
+  color: #c8cdd2;
+  margin-top: 110px
+}
+
+.mobile, .remote {
+  margin: 60px auto 0;
+  width: 100px;
+  height: 160px;
+  background: url(../assets/images/mobile-illustration.png) 0 no-repeat;
+  display: block
+}
+
+.remote {
+  width: 68px;
+  background: url(../assets/images/remote-illustration.png) 0 no-repeat
+}
+
+.container2 {
+  height: 44px;
+  margin-top: 37px
+}
+
+.left, .right {
+  float: left;
+  width: 400px
+}
+
+.center {
+  float: left;
+  width: 205px
+}
+
+.smartloginView .button, .smartloginView .st1Btn1, .smartloginView .st1Btn2, .smartloginView .st1Btn3, .smartloginView .st1Btn4 {
+  margin: 22px auto 0;
+  width: 211px;
+  line-height: 50px;
+  text-align: center;
+  vertical-align: middle;
+  font-family: "Orange Sans 75", "HelveticaNeueLT Com 75", helvetica;
+  font-size: 20px;
+  color: #fff;
+  border-radius: 10px;
+  -webkit-backface-visibility: hidden;
+  background-color: #4F4F55;
+  display: block
+}
+
+.smartloginView .st1Btn1, .smartloginView .st1Btn2, .smartloginView .st1Btn3, .smartloginView .st1Btn4 {
+  display: inline-block;
+  margin-right: 20px;
+  width: 185px
+}
+
+.smartloginView .st1Btn2 {
+  width: 353px;
+  margin-right: 0
+}
+
+.smartloginView .st1Btn3 {
+  width: 352px
+}
+
+.smartloginView .st1Btn4 {
+  width: 486px;
+  margin-right: 0
+}
+
+.smartloginView .button.stbActive, .smartloginView .st1Btn1.stbActive, .smartloginView .st1Btn2.stbActive, .smartloginView .st1Btn3.stbActive, .smartloginView .st1Btn4.stbActive {
+  background-color: #007FEB
+}
+
+.containerBtn {
+  width: 1005px
+}
+
+.containerSmsInput {
+  margin: 50px auto 0;
+  width: 552px
+}
+
+.smartloginView .smsInput {
+  width: 100%;
+  height: 45px;
+  display: inline-block;
+  border-radius: 10px;
+  border: 3px solid #007feb;
+  vertical-align: middle;
+  text-align: center
+}
+
+.smartloginView .smsInput .default {
+  color: #A6ABB2
+}
+
+.smartloginView .smsInput.focus {
+  color: #000;
+  background-color: #fff;
+  border: 2px solid #007FEB
+}
+
+.containerBtn {
+  text-align: center;
+  margin-top: 81px
+}
+
+.Msg {
+  position: inherit;
+  clear: both;
+  margin-top: 80px;
+  font-size: 24px;
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: .2px;
+  text-align: center;
+  color: #fff
+}
+
+.s1 {
+  width: 345px
+}
+
+.s2 {
+  width: 385px
+}
+
+.s3 {
+  width: 195px
+}
+
+.s1, .s2, .s3 {
+  line-height: 44px;
+  display: table-cell;
+  font-size: 18px;
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+  text-align: left;
+  vertical-align: middle;
+  color: #32303a;
+  padding-left: 10px;
+  margin-top: 37px;
+  background-color: #727982
+}
+
+.s1.select, .s2.select, .s3.select {
+  background-color: #FFF
+}
+
+.ar1, .ar2, .ar3 {
+  margin: 60px auto 0;
+  width: 25px;
+  height: 44px;
+  background: url(../assets/images/arrow1.png) 0 no-repeat;
+  display: table-cell
+}
+
+.ar2 {
+  background: url(../assets/images/arrow2.png) 0 no-repeat
+}
+
+.ar3 {
+  width: 24px;
+  background: url(../assets/images/arrow3.png) 0 no-repeat
+}
+
+.a1, .a2, .a3 {
+  display: table-cell;
+  border-style: solid;
+  border-color: #000 transparent #000 #727982;
+  background-color: #727982;
+  margin-top: 37px;
+  border-top: 22px solid transparent;
+  border-bottom: 22px solid transparent;
+  border-left: 22px solid #727982
+}
+
+.a2 {
+  border-left: 22px solid #FFF
+}
+
+.a3 {
+  border-color: transparent transparent transparent #FFF;
+  background-color: #FFF
+}
+
+.st1ErrorContainer {
+  position: absolute;
+  display: table;
+  text-align: center;
+  margin-top: 20px;
+  margin-left: 226px
+}
+
+.errorIcon, .smartloginError {
+  display: table-cell;
+  height: 30px
+}
+
+.smartloginError {
+  padding-top: 0;
+  padding-left: 10px;
+  color: #dc3434;
+  font-size: 16px;
+  text-align: center;
+  font-weight: 400;
+  line-height: 30px
+}
+
+.errorIcon {
+  width: 30px;
+  background: url(../assets/images/keyboard_sprite_sheet.png) -80px 0 no-repeat;
+  margin-top: 10px
+}
+
+.containerBtn.error {
+  text-align: center;
+  margin-top: 28px
+}
+
+.st2Container {
+  display: table;
+  margin-top: 70px;
+  margin-left: 221px
+}
+
+.st2ContainerMsg {
+  display: table-cell;
+  margin-top: 0;
+  vertical-align: top
+}
+
+.device, .st2Mobile {
+  height: 130px;
+  display: inline-block
+}
+
+.st2Mobile {
+  width: 81px;
+  background: url(../assets/images/mobile2.png) 0 no-repeat;
+  margin-left: auto;
+  margin-right: 40px
+}
+
+.st2Msg1, .st2Msg2, .st2Msg3 {
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: .2px
+}
+
+.st2Msg1 {
+  margin-top: 10px
+}
+
+.st2Msg2 {
+  font-size: 18px;
+  color: #c8cdd2;
+  margin-top: 20px
+}
+
+.st2Msg3 {
+  margin-top: 77px
+}
+
+.containerBtn2 {
+  text-align: center;
+  margin-top: 50px
+}
+
+.st2Msg1.error, .st2Msg2.error {
+  margin: 83px auto 0;
+  text-align: center
+}
+
+.st2Msg2.error {
+  margin-top: 10px
+}
+
+.device {
+  width: 170px;
+  background: url(../assets/images/device-illustration.png) 0 no-repeat;
+  margin-top: 20px
+}
+
+.st3Container {
+  display: table;
+  margin-top: 60px;
+  margin-left: 85px
+}
+
+.st3ContainerMsg {
+  display: table-cell;
+  margin-top: 0;
+  vertical-align: top;
+  padding-left: 40px
+}
