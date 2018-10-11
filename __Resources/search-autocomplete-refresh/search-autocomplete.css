@@ -1,0 +1,30 @@
+.autocomplete .desc {
+  top: 37px;
+  height: 20px;
+  font-size: 16px; // IMPORTANT
+  line-height: 20px;
+}
+
+.searchHeader .autocomplete {
+  position: absolute;
+  top: 80px;
+  width: 1280px;
+  left: -385px;
+  background-color: #23232A;
+  color: #8A8D93; // GET RID OF THIS
+  font-family: "Orange Sans 45 light", "HelveticaNeueLT Com 55 Roman", "Helvetica 55 Roman", helvetica; // GET RID OF THIS
+}
+
+.autocomplete .lAlbum, .autocomplete .lArtist, .autocomplete .lPlaylist, .autocomplete .lTrack {
+  position: absolute;
+  width: 260px;
+  height: 36px;
+  font-size: 20px;
+  color: #c8cdd2; // LIGHTEN USING SILVER
+  line-height: 36px;
+}
+
+.autocomplete .album.stbActive .photo, .autocomplete .artist.stbActive .photo, .autocomplete .playlist.stbActive .photo, .autocomplete .track.stbActive .photo {
+  border: 3px solid #007FEB; // REDUCE WIDTH
+  // ALSO MAKE OTHER TEXT BLUE
+}

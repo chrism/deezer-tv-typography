@@ -1,0 +1,72 @@
+.wTab .mosaic .errorContainer, .wTab .mosaic .items {
+  height: 544px;
+}
+
+.mosaic .errorContainer, .mosaic .items {
+  position: absolute;
+  top: 32px;
+  left: 0;
+  width: 1044px;
+  height: 584px;
+  overflow: hidden;
+}
+
+.errorContainer {
+  margin-top: 50px;
+  text-align: center;
+}
+
+user agent stylesheetdiv {
+  display: block;
+}
+
+.mosaic .bigIcon {
+  font-family: "Deezer icons";
+  padding-top: 50px; // THIS IS IMPORTANT
+  font-size: 150px; // THIS IS IMPORTANT
+  color: #32303A;
+
+}
+
+.mosaic .icon {
+  font-family: "Deezer Icons";
+}
+
+.artistsIcon:before {
+  content: 'e838';
+}
+
+.mosaic .icon {
+  font-family: "Deezer Icons";
+}
+
+.favouriteIcon:before, .loveIcon:before {
+  content: 'e84c';
+}
+
+.favIcon:before, .loveIcon:before {
+  content: 'e84c';
+}
+
+.emptyLabel {
+  font-size: 24px; // THIS IS IMPORTANT
+}
+
+.emptyLabel, .emptyLabel2Line {
+  color: #727982;
+}
+
+.tabs .tab {
+  width: 252px;
+  height: 36px;
+  text-transform: uppercase;
+  text-align: center;
+  display: inline-block;
+  color: #fff;
+  border-bottom: 4px solid transparent;
+  font-size: 20px; // THIS IS IMPORTANT
+}
+
+body {
+  font-family: "HelveticaNeueLT Com 55 Roman", helvetica;
+}

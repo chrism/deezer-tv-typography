@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" href="search-autocomplete.css">
+</head>
+
+<body>
+  <div class="container" ng-class="{'player':$root.isPlayer,'guest':$root.isUserGuest(),'kid':$root.isUserFamily() &amp;&amp; $root.user.subProfiles[$root.user.profileIndex].is_kid}">
+    <!-- ngIf: $root.isPlayer --><img class="deezerLogo" src="assets/images/deezer-262x44.png">
+    <!-- ngIf: $root.searchShown -->
+    <div ng-if="$root.searchShown" class="searchButton ng-scope ng-isolate-scope" stb-group="">
+      <div id="btnSearch" class="btnSearch ng-isolate-scope" stb-item="" stb-default="true" ng-click="$root.activateSearch()">
+        <div class="searchIcon"></div>
+        <div class="txtBtnSearch ng-binding" ng-bind="$root.searchWord()">Rechercher</div>
+      </div>
+    </div>
+    <!-- end ngIf: $root.searchShown -->
+    <!-- ngIf: $root.searchActivated -->
+    <!-- ngIf: $root.menuItems -->
+    <stb-menu stb-group="" stb-default="false" class="menu ng-scope ng-isolate-scope" ng-if="$root.menuItems">
+      <div class="barMenu ng-isolate-scope" stb-item="" stb-default="true">
+        <!-- ngRepeat: item in menuItems track by $index -->
+        <div bindonce="" ng-repeat="item in menuItems track by $index" id="menu_0" class="menuItem ng-scope home" bo-class="{'home':true,'noBorder' : item.subMenu, 'family':(item.type==='offer' &amp;&amp; $root.isUserFamily() || $root.isUserPremiumPlus())}">
+          <!--JNC Use different class for display Guest user-->
+          <!-- boIf: item.type !== 'player' -->
+          <div bo-class="{'listIcon':!item.isDisabled&amp;&amp;!item.isSubscribe, 'iconDisabled':item.isDisabled, 'iconSubscribe':item.isSubscribe}" bo-if="item.type !== 'player'" class="ng-scope listIcon"></div>
+          <!-- boIf: item.type !== 'player' -->
+          <div bo-class="{'title':!item.isDisabled&amp;&amp;!item.isSubscribe, 'disabled':item.isDisabled, 'subscribe':item.isSubscribe}" bo-bind="item.title" bo-if="item.type !== 'player'" class="ng-scope title">Accueil</div>
+          <!-- boIf: item.type !== 'player' && item.subMenu -->
+          <!-- boIf: item.type === 'player' -->
+        </div>
+        <!-- end ngRepeat: item in menuItems track by $index -->
+        <div bindonce="" ng-repeat="item in menuItems track by $index" id="menu_1" class="menuItem ng-scope offer" bo-class="{'offer':true,'noBorder' : item.subMenu, 'family':(item.type==='offer' &amp;&amp; $root.isUserFamily() || $root.isUserPremiumPlus())}">
+          <!--JNC Use different class for display Guest user-->
+          <!-- boIf: item.type !== 'player' -->
+          <div bo-class="{'listIcon':!item.isDisabled&amp;&amp;!item.isSubscribe, 'iconDisabled':item.isDisabled, 'iconSubscribe':item.isSubscribe}" bo-if="item.type !== 'player'" class="ng-scope iconSubscribe"></div>
+          <!-- boIf: item.type !== 'player' -->
+          <div bo-class="{'title':!item.isDisabled&amp;&amp;!item.isSubscribe, 'disabled':item.isDisabled, 'subscribe':item.isSubscribe}" bo-bind="item.title" bo-if="item.type !== 'player'" class="ng-scope subscribe">S'ABONNER</div>
+          <!-- boIf: item.type !== 'player' && item.subMenu -->
+          <!-- boIf: item.type === 'player' -->
+        </div>
+        <!-- end ngRepeat: item in menuItems track by $index -->
+        <div bindonce="" ng-repeat="item in menuItems track by $index" id="menu_2" class="menuItem ng-scope user stbActive selected" bo-class="{'user':true,'noBorder' : item.subMenu, 'family':(item.type==='offer' &amp;&amp; $root.isUserFamily() || $root.isUserPremiumPlus())}">
+          <!--JNC Use different class for display Guest user-->
+          <!-- boIf: item.type !== 'player' -->
+          <div bo-class="{'listIcon':!item.isDisabled&amp;&amp;!item.isSubscribe, 'iconDisabled':item.isDisabled, 'iconSubscribe':item.isSubscribe}" bo-if="item.type !== 'player'" class="ng-scope listIcon"></div>
+          <!-- boIf: item.type !== 'player' -->
+          <div bo-class="{'title':!item.isDisabled&amp;&amp;!item.isSubscribe, 'disabled':item.isDisabled, 'subscribe':item.isSubscribe}" bo-bind="item.title" bo-if="item.type !== 'player'" class="ng-scope title">Ma musique</div>
+          <!-- boIf: item.type !== 'player' && item.subMenu -->
+          <!-- boIf: item.type === 'player' -->
+        </div>
+        <!-- end ngRepeat: item in menuItems track by $index -->
+        <div bindonce="" ng-repeat="item in menuItems track by $index" id="menu_3" class="menuItem ng-scope recommendations" bo-class="{'recommendations':true,'noBorder' : item.subMenu, 'family':(item.type==='offer' &amp;&amp; $root.isUserFamily() || $root.isUserPremiumPlus())}">
+          <!--JNC Use different class for display Guest user-->
+          <!-- boIf: item.type !== 'player' -->
+          <div bo-class="{'listIcon':!item.isDisabled&amp;&amp;!item.isSubscribe, 'iconDisabled':item.isDisabled, 'iconSubscribe':item.isSubscribe}" bo-if="item.type !== 'player'" class="ng-scope listIcon"></div>
+          <!-- boIf: item.type !== 'player' -->
+          <div bo-class="{'title':!item.isDisabled&amp;&amp;!item.isSubscribe, 'disabled':item.isDisabled, 'subscribe':item.isSubscribe}" bo-bind="item.title" bo-if="item.type !== 'player'" class="ng-scope title">Recommandé pour vous</div>
+          <!-- boIf: item.type !== 'player' && item.subMenu -->
+          <!-- boIf: item.type === 'player' -->
+        </div>
+        <!-- end ngRepeat: item in menuItems track by $index -->
+        <div bindonce="" ng-repeat="item in menuItems track by $index" id="menu_4" class="menuItem ng-scope editorial noBorder" bo-class="{'editorial':true,'noBorder' : item.subMenu, 'family':(item.type==='offer' &amp;&amp; $root.isUserFamily() || $root.isUserPremiumPlus())}">
+          <!--JNC Use different class for display Guest user-->
+          <!-- boIf: item.type !== 'player' -->
+          <div bo-class="{'listIcon':!item.isDisabled&amp;&amp;!item.isSubscribe, 'iconDisabled':item.isDisabled, 'iconSubscribe':item.isSubscribe}" bo-if="item.type !== 'player'" class="ng-scope listIcon"></div>
+          <!-- boIf: item.type !== 'player' -->
+          <div bo-class="{'title':!item.isDisabled&amp;&amp;!item.isSubscribe, 'disabled':item.isDisabled, 'subscribe':item.isSubscribe}" bo-bind="item.title" bo-if="item.type !== 'player'" class="ng-scope title">Nouveautés &amp; Tops</div>
+          <!-- boIf: item.type !== 'player' && item.subMenu -->
+          <div class="flagSub ng-binding ng-scope" bo-if="item.type !== 'player' &amp;&amp; item.subMenu"></div>
+          <!-- boIf: item.type === 'player' -->
+        </div>
+        <!-- end ngRepeat: item in menuItems track by $index -->
+        <div bindonce="" ng-repeat="item in menuItems track by $index" id="menu_5" class="menuItem ng-scope radio" bo-class="{'radio':true,'noBorder' : item.subMenu, 'family':(item.type==='offer' &amp;&amp; $root.isUserFamily() || $root.isUserPremiumPlus())}">
+          <!--JNC Use different class for display Guest user-->
+          <!-- boIf: item.type !== 'player' -->
+          <div bo-class="{'listIcon':!item.isDisabled&amp;&amp;!item.isSubscribe, 'iconDisabled':item.isDisabled, 'iconSubscribe':item.isSubscribe}" bo-if="item.type !== 'player'" class="ng-scope listIcon"></div>
+          <!-- boIf: item.type !== 'player' -->
+          <div bo-class="{'title':!item.isDisabled&amp;&amp;!item.isSubscribe, 'disabled':item.isDisabled, 'subscribe':item.isSubscribe}" bo-bind="item.title" bo-if="item.type !== 'player'" class="ng-scope title">Mix</div>
+          <!-- boIf: item.type !== 'player' && item.subMenu -->
+          <!-- boIf: item.type === 'player' -->
+        </div>
+        <!-- end ngRepeat: item in menuItems track by $index -->
+        <div bindonce="" ng-repeat="item in menuItems track by $index" id="menu_6" class="menuItem ng-scope info noBorder" bo-class="{'info':true,'noBorder' : item.subMenu, 'family':(item.type==='offer' &amp;&amp; $root.isUserFamily() || $root.isUserPremiumPlus())}">
+          <!--JNC Use different class for display Guest user-->
+          <!-- boIf: item.type !== 'player' -->
+          <div bo-class="{'listIcon':!item.isDisabled&amp;&amp;!item.isSubscribe, 'iconDisabled':item.isDisabled, 'iconSubscribe':item.isSubscribe}" bo-if="item.type !== 'player'" class="ng-scope listIcon"></div>
+          <!-- boIf: item.type !== 'player' -->
+          <div bo-class="{'title':!item.isDisabled&amp;&amp;!item.isSubscribe, 'disabled':item.isDisabled, 'subscribe':item.isSubscribe}" bo-bind="item.title" bo-if="item.type !== 'player'" class="ng-scope title">Podcasts</div>
+          <!-- boIf: item.type !== 'player' && item.subMenu -->
+          <div class="flagSub ng-binding ng-scope" bo-if="item.type !== 'player' &amp;&amp; item.subMenu"></div>
+          <!-- boIf: item.type === 'player' -->
+        </div>
+        <!-- end ngRepeat: item in menuItems track by $index -->
+        <div bindonce="" ng-repeat="item in menuItems track by $index" id="menu_7" class="menuItem ng-scope connect" bo-class="{'connect':true,'noBorder' : item.subMenu, 'family':(item.type==='offer' &amp;&amp; $root.isUserFamily() || $root.isUserPremiumPlus())}">
+          <!--JNC Use different class for display Guest user-->
+          <!-- boIf: item.type !== 'player' -->
+          <div bo-class="{'listIcon':!item.isDisabled&amp;&amp;!item.isSubscribe, 'iconDisabled':item.isDisabled, 'iconSubscribe':item.isSubscribe}" bo-if="item.type !== 'player'" class="ng-scope listIcon"></div>
+          <!-- boIf: item.type !== 'player' -->
+          <div bo-class="{'title':!item.isDisabled&amp;&amp;!item.isSubscribe, 'disabled':item.isDisabled, 'subscribe':item.isSubscribe}" bo-bind="item.title" bo-if="item.type !== 'player'" class="ng-scope title">Changer d'utilisateur</div>
+          <!-- boIf: item.type !== 'player' && item.subMenu -->
+          <!-- boIf: item.type === 'player' -->
+        </div>
+        <!-- end ngRepeat: item in menuItems track by $index -->
+        <div bindonce="" ng-repeat="item in menuItems track by $index" id="menu_8" class="menuItem ng-scope more noBorder" bo-class="{'more':true,'noBorder' : item.subMenu, 'family':(item.type==='offer' &amp;&amp; $root.isUserFamily() || $root.isUserPremiumPlus())}">
+          <!--JNC Use different class for display Guest user-->
+          <!-- boIf: item.type !== 'player' -->
+          <div bo-class="{'listIcon':!item.isDisabled&amp;&amp;!item.isSubscribe, 'iconDisabled':item.isDisabled, 'iconSubscribe':item.isSubscribe}" bo-if="item.type !== 'player'" class="ng-scope listIcon"></div>
+          <!-- boIf: item.type !== 'player' -->
+          <div bo-class="{'title':!item.isDisabled&amp;&amp;!item.isSubscribe, 'disabled':item.isDisabled, 'subscribe':item.isSubscribe}" bo-bind="item.title" bo-if="item.type !== 'player'" class="ng-scope title">Plus...</div>
+          <!-- boIf: item.type !== 'player' && item.subMenu -->
+          <div class="flagSub ng-binding ng-scope" bo-if="item.type !== 'player' &amp;&amp; item.subMenu"></div>
+          <!-- boIf: item.type === 'player' -->
+        </div>
+        <!-- end ngRepeat: item in menuItems track by $index -->
+        <div bindonce="" ng-repeat="item in menuItems track by $index" id="menu_9" class="menuItem ng-scope player" bo-class="{'player':true,'noBorder' : item.subMenu, 'family':(item.type==='offer' &amp;&amp; $root.isUserFamily() || $root.isUserPremiumPlus())}">
+          <!--JNC Use different class for display Guest user-->
+          <!-- boIf: item.type !== 'player' -->
+          <!-- boIf: item.type !== 'player' -->
+          <!-- boIf: item.type !== 'player' && item.subMenu -->
+          <!-- boIf: item.type === 'player' -->
+          <div class="autoscroll ng-scope" bo-if="item.type === 'player'"> <img class="listIcon loaded" ng-src="https://deezerapi.vct.pgw.orange.fr/images/dzcdn/e-cdns-images/images/misc/0116684cacf082e6fdb6b7362d4498bd/56x56-000000-80-0-0.jpg" hide-img-on-error="" onload="className='listIcon loaded'" src="https://deezerapi.vct.pgw.orange.fr/images/dzcdn/e-cdns-images/images/misc/0116684cacf082e6fdb6b7362d4498bd/56x56-000000-80-0-0.jpg">
+            <div class="firstline txt_ellipsis ng-binding" ng-bind="$root.isplaying ?$root.playlist.list[menuPlayerIndex].title:$root.playlist.stoppedTitle">Mix Hip Hop</div>
+            <div class="secondline txt_ellipsis ng-binding" ng-bind="$root.isplaying ?$root.playlist.list[menuPlayerIndex].artist_name:$root.playlist.stoppedDesc"></div>
+          </div>
+        </div>
+        <!-- end ngRepeat: item in menuItems track by $index -->
+        <div class="playerButtons">
+          <!-- ngIf: !$root.playlist.infinite && ($root.playingIndex>0 || $root.isRepeat) -->
+          <div id="playPauseButtonMenu" class="playBtn" ng-class="{'playing':$root.isplaying &amp;&amp; !$root.ispaused}"></div>
+          <!-- ngIf: $root.playlist.infinite || $root.playingIndex<$root.playlist.list_qty-1 || $root.isRepeat -->
+        </div>
+      </div>
+      <div class="subMenu">
+        <div class="subMenuContainer" id="subList" style="top: 0px;"></div>
+      </div>
+    </stb-menu>
+    <!-- end ngIf: $root.menuItems -->
+    <!-- ngIf: $root.tabs -->
+    <stb-tab class="tabContent ng-scope" ng-if="$root.tabs">
+      <div class="tabsLine"></div>
+      <div class="dotsIcon prev" ng-show="$root.tabs.length&gt;4 &amp;&amp; activeIndex&gt;0"></div>
+      <div class="tabs ng-isolate-scope" stb-group="" stb-default="false">
+        <div class="tabList" h-scroll="" style="left: 0px;">
+          <!-- ngRepeat: tab in $root.tabs track by $index -->
+          <div class="tab ng-binding ng-scope ng-isolate-scope" stb-item="" ng-repeat="tab in $root.tabs track by $index" ng-class="{'selected':$root.tabIndex===$index}" idx="$index" ng-bind="tab.name" id_tab="0" ng-click="deactivate();$root.pressTab($index)"
+            stb-default="false">ma musique</div>
+          <!-- end ngRepeat: tab in $root.tabs track by $index -->
+          <div class="tab ng-binding ng-scope ng-isolate-scope" stb-item="" ng-repeat="tab in $root.tabs track by $index" ng-class="{'selected':$root.tabIndex===$index}" idx="$index" ng-bind="tab.name" id_tab="1" ng-click="deactivate();$root.pressTab($index)"
+            stb-default="false">mes coups de coeur</div>
+          <!-- end ngRepeat: tab in $root.tabs track by $index -->
+          <div class="tab ng-binding ng-scope ng-isolate-scope" stb-item="" ng-repeat="tab in $root.tabs track by $index" ng-class="{'selected':$root.tabIndex===$index}" idx="$index" ng-bind="tab.name" id_tab="2" ng-click="deactivate();$root.pressTab($index)"
+            stb-default="false">mes playlists</div>
+          <!-- end ngRepeat: tab in $root.tabs track by $index -->
+          <div class="tab ng-binding ng-scope ng-isolate-scope selected stbActive" stb-item="" ng-repeat="tab in $root.tabs track by $index" ng-class="{'selected':$root.tabIndex===$index}" idx="$index" ng-bind="tab.name" id_tab="3" ng-click="deactivate();$root.pressTab($index)"
+            stb-default="true">mes albums</div>
+          <!-- end ngRepeat: tab in $root.tabs track by $index -->
+          <div class="tab ng-binding ng-scope ng-isolate-scope" stb-item="" ng-repeat="tab in $root.tabs track by $index" ng-class="{'selected':$root.tabIndex===$index}" idx="$index" ng-bind="tab.name" id_tab="4" ng-click="deactivate();$root.pressTab($index)"
+            stb-default="false">mes artistes</div>
+          <!-- end ngRepeat: tab in $root.tabs track by $index -->
+          <div class="tab ng-binding ng-scope ng-isolate-scope" stb-item="" ng-repeat="tab in $root.tabs track by $index" ng-class="{'selected':$root.tabIndex===$index}" idx="$index" ng-bind="tab.name" id_tab="5" ng-click="deactivate();$root.pressTab($index)"
+            stb-default="false">mes podcasts</div>
+          <!-- end ngRepeat: tab in $root.tabs track by $index -->
+          <div class="tab ng-binding ng-scope ng-isolate-scope" stb-item="" ng-repeat="tab in $root.tabs track by $index" ng-class="{'selected':$root.tabIndex===$index}" idx="$index" ng-bind="tab.name" id_tab="6" ng-click="deactivate();$root.pressTab($index)"
+            stb-default="false">mon historique</div>
+          <!-- end ngRepeat: tab in $root.tabs track by $index -->
+          <div class="tab ng-binding ng-scope ng-isolate-scope" stb-item="" ng-repeat="tab in $root.tabs track by $index" ng-class="{'selected':$root.tabIndex===$index}" idx="$index" ng-bind="tab.name" id_tab="7" ng-click="deactivate();$root.pressTab($index)"
+            stb-default="false">followings</div>
+          <!-- end ngRepeat: tab in $root.tabs track by $index -->
+          <div class="tab ng-binding ng-scope ng-isolate-scope" stb-item="" ng-repeat="tab in $root.tabs track by $index" ng-class="{'selected':$root.tabIndex===$index}" idx="$index" ng-bind="tab.name" id_tab="8" ng-click="deactivate();$root.pressTab($index)"
+            stb-default="false">followers</div>
+          <!-- end ngRepeat: tab in $root.tabs track by $index -->
+        </div>
+      </div>
+      <div class="dotsIcon next" ng-show="$root.tabs.length&gt;4 &amp;&amp; activeIndex&lt;$root.tabs.length-1"></div>
+    </stb-tab>
+    <!-- end ngIf: $root.tabs -->
+    <!-- uiView:  -->
+    <div ui-view="" class="container-fluid ng-scope wTab" ng-class="{'wTab':$root.tabs,'hp':$root.isHome}">
+      <div class="mosaic user albums" index="0" active-index="-1" tab-index="2" type="user" id="1525517002">
+        <!-- ngIf: items.length>0 -->
+        <!-- ngIf: isEmpty -->
+        <div class="errorContainer ng-scope" ng-if="isEmpty">
+          <div class="bigIcon ng-binding" ng-bind-html="iconBackground"><span class="icon albumsIcon"></span></div>
+          <div class="emptyLabel ng-binding" ng-bind-html="errorLabel"><br>Vous aimez un album ?<br>Ajoutez-le à vos favoris en cliquant sur <span class="icon loveIcon"></span></div>
+        </div>
+        <!-- end ngIf: isEmpty -->
+      </div>
+    </div>
+    <!-- ngIf: $root.loginInProgress -->
+    <stb-keyboard class="keyboard" ng-class="{'active':$root.showKeyboard}"></stb-keyboard>
+  </div>
+</body>
+
+</html>

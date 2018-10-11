@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Modal test</title>
+  <link rel="stylesheet" href="modal.css">
+</head>
+
+<body>
+  <div class="dialogWrapper ng-isolate-scope" ng-class="{'noBkg':content().type==='wGuest'}" ng-if="$root.dialogShown" content="dialogContent">
+    <div id="dialog" class="dialog">
+      <div class="block subscription ng-scope ng-isolate-scope" stb-group="" stb-default="true" ng-if="content().type==='subscription'">
+        <div stb-item="" class="button closed ng-isolate-scope" ng-click="$root.hideDialog()"></div>
+        <img class="deezerLogo" src="assets/images/deezer_logo_black.png">
+        <div class="content ng-binding" ng-class="{'font19':content().font19}" ng-bind-html="content().message">Envie d'ajouter cet album à votre musique ?<br>Abonnez-vous ou connectez-vous</div>
+        <div class="footer">
+          <!-- ngIf: $root.isUserGuest() -->
+          <div stb-item="" ng-if="$root.isUserGuest()" class="button ng-binding ng-scope ng-isolate-scope" stb-default="false" ng-click="$root.hideDialog();displayAuthent()" ng-bind="content().yes">Fermer</div>
+          <div stb-item="" ng-if="$root.isUserGuest()" class="button ng-binding ng-scope ng-isolate-scope" stb-default="false" ng-click="$root.hideDialog();displayAuthent()" ng-bind="content().yes">Se connecter</div>
+          <!-- end ngIf: $root.isUserGuest() -->
+          <div stb-item="" ng-class="{'guest':!$root.isUserGuest()}" class="button abo ng-binding ng-isolate-scope stbActive" stb-default="true" ng-click="$root.hideDialog(true);displayOffers()" ng-bind-html="content().subscriptionButton">S'abonner<span class="small"> - à partir de </span>1€<span class="small">/mois</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
