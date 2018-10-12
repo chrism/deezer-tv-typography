@@ -1,0 +1,42 @@
+.searchButton {
+  // width: 170px; remove these fixed widths
+
+  right: 100px;
+}
+
+.searchButton .btnSearch {
+  // font-family: "Orange Sans 45 light","HelveticaNeueLT Com 55 Roman","Helvetica 55 Roman",helvetica; remove these fonts
+  // position: absolute; remove this
+  // width: 170px; remove these fixed widths
+
+  height: 41px;
+  z-index: 5;
+  border: 2px solid #FFF;
+  border-radius: 10px;
+  color: white;
+  font-size: 20px;
+}
+
+.searchButton .searchIcon, .searchInput .searchIcon {
+  // float: left; don't use float
+  // margin-left: 10px; get rid of margins on the icon, already using positioning
+  // margin-right: 10px; use it for the text content as icon size fixed
+
+  position: absolute; // change to absolute it's the text that the container should adapt to
+
+  left: 14px; // use absolute positioning and left to set icon position
+
+  top: 8px;
+  font-family: "Deezer Icons";
+  font-size: 25px;
+}
+.searchButton .btnSearch .txtBtnSearch {
+  height: 41px;
+  line-height: 41px;
+
+  // padding for space, margin for icon, position relative to
+  position: relative;
+  margin-left: 30px;
+  padding-left: 24px;
+  padding-right: 20px;
+}

@@ -1,0 +1,54 @@
+.home .header.guest .buttonConnect {
+  left: 550px;
+  // width: 238px; get rid of these widths
+}
+
+.home .header .buttonConnect, .home .header .flowButton {
+  position: absolute;
+  top: 80px;
+  left: 431px;
+  // width: 310px; more fixed widths??
+  height: 56px;
+  color: #FFF;
+  font-size: 34px;
+  font-family: "Deezer Icons";
+  border-radius: 10px;
+  -webkit-backface-visibility: hidden;
+  border: 2px solid #FFF;
+  line-height: 50px;
+}
+
+.home .header.guest .buttonConnect .connectInfo {
+  // font-family: "Orange Sans 45 light","HelveticaNeueLT Com 55 Roman","Helvetica 55 Roman",helvetica;
+  // width: 140px;
+  // left: 72px;
+  // top: 14px;
+
+  // position: absolute;
+  position: relative; // use relative to fix container, not icon
+  // line-height: 28px;
+  line-height: 50px use height of button;
+
+  font-size: 24px;
+  // white-space: nowrap; why??
+
+  // add this - was all that due to a span, not block element?
+  display: block;
+  padding-left: 24px;
+  padding-right: 20px;
+  margin-left: 37px;
+}
+.home .header.guest .buttonConnect .connect {
+  position: absolute;
+
+  // use proper positions
+  // top: 3px;
+  top: 10px;
+  // left: 14px;
+  left: 15px;
+
+  // get rid of this stuff
+  // width: 218px;
+  // overflow: visible;
+  // line-height: 50px;
+}

@@ -1,8 +1,15 @@
 # Deezer TV typography
 
-## Including Code Styling
+## Access to test site
 
-Add this extra code
+Access the test site for typography hosted on S3 with this link.
+http://deezer-typography.s3-website.eu-west-3.amazonaws.com/
+
+## Hosting locally
+
+If access online isn't possible there is a version which works locally [available here](html/index.html)
+
+Note: there is no javascript required for this local version besides for the code highlighting.
 
 ```html
 <script src="assets/highlight.pack.js"></script>
@@ -17,132 +24,34 @@ window.onload = highlight;
 </script>
 ```
 
+## Design harmonization
 
+To continue work and test feasibility of design updates there are some code examples with included CSS modifications to help with each area.
 
-## Fixing buttons and adaptable widths
+### Modals
 
-An example of the buttons working and expanding to content.
+* [Current modal](__Resources/modal/modal.html)
+* [Refresh modal simple](__Resources/modal-refresh-simple/modal.html)
+* [Refresh modal logo](__Resources/modal-refresh-logo/modal.html)
 
-```css
-.searchButton {
-  // width: 170px; remove these fixed widths
+### Buttons
 
-  right: 100px;
-}
+* [Search button](__Resources/buttons/search_button.css)
+* [Se connecter button](__Resources/buttons/se_connecter_button.css)
 
-.searchButton .btnSearch {
-  // font-family: "Orange Sans 45 light","HelveticaNeueLT Com 55 Roman","Helvetica 55 Roman",helvetica; remove these fonts
-  // position: absolute; remove this
-  // width: 170px; remove these fixed widths
+### Main navigation
 
-  height: 41px;
-  z-index: 5;
-  border: 2px solid #FFF;
-  border-radius: 10px;
-  color: white;
-  font-size: 20px;
-}
+* [S'abonner navigation link](__Resources/navigation_menu/s_abonner.css)
 
-.searchButton .searchIcon, .searchInput .searchIcon {
-  // float: left; don't use float
-  // margin-left: 10px; get rid of margins on the icon, already using positioning
-  // margin-right: 10px; use it for the text content as icon size fixed
+### Search transition animation
 
-  position: absolute; // change to absolute it's the text that the container should adapt to
+Video uploaded to S3 here:
+http://deezer-tv.s3.amazonaws.com/search_animation.mp4
 
-  left: 14px; // use absolute positioning and left to set icon position  
+### Search autocomplete
 
-  top: 8px;
-  font-family: "Deezer Icons";
-  font-size: 25px;
-}
-.searchButton .btnSearch .txtBtnSearch {
-  height: 41px;
-  line-height: 41px;
+* [Autocomplete headers and focus state](__Resources/search-autocomplete-refresh/search-autocomplete.html)
 
-  // padding for space, margin for icon, position relative to
-  position: relative;
-  margin-left: 30px;
-  padding-left: 24px;
-  padding-right: 20px;
-}
+### Empty states
 
-```
-
-Se connecter example
-
-
-```css
-.home .header.guest .buttonConnect {
-  left: 550px;
-  // width: 238px; get rid of these widths
-}
-
-.home .header .buttonConnect, .home .header .flowButton {
-  position: absolute;
-  top: 80px;
-  left: 431px;
-  // width: 310px; more fixed widths??
-  height: 56px;
-  color: #FFF;
-  font-size: 34px;
-  font-family: "Deezer Icons";
-  border-radius: 10px;
-  -webkit-backface-visibility: hidden;
-  border: 2px solid #FFF;
-  line-height: 50px;
-}
-
-.home .header.guest .buttonConnect .connectInfo {
-  // font-family: "Orange Sans 45 light","HelveticaNeueLT Com 55 Roman","Helvetica 55 Roman",helvetica;
-  // width: 140px;
-  // left: 72px;
-  // top: 14px;
-
-  // position: absolute;
-  position: relative; // use relative to fix container, not icon
-  // line-height: 28px;
-  line-height: 50px use height of button;
-
-  font-size: 24px;
-  // white-space: nowrap; why??
-
-  // add this - was all that due to a span, not block element?
-  display: block;
-  padding-left: 24px;
-  padding-right: 20px;
-  margin-left: 37px;  
-}
-.home .header.guest .buttonConnect .connect {
-  position: absolute;
-
-  // use proper positions
-  // top: 3px;
-  top: 10px;
-  // left: 14px;
-  left: 15px;
-
-  // get rid of this stuff
-  // width: 218px;
-  // overflow: visible;
-  // line-height: 50px;
-}
-
-
-```
-
-
-
-
-## S'ABONNER BUTTON IN Menu
-
-```CSS
-.menu.active .barMenu .menuItem.offer .subscribe {
-  background: #000;
-  border-radius: 10px;
-  color: #fff;
-  margin-bottom: 4px;
-  margin-top: 4px;
-  width: 75%; // changed from fixed width to make wider — but all the fixed widths seem a mess
-}
-```
+* [Empty state](__Resources/empty-states-refresh/empty_states.html)

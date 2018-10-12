@@ -1,0 +1,8 @@
+.menu.active .barMenu .menuItem.offer .subscribe {
+  background: #000;
+  border-radius: 10px;
+  color: #fff;
+  margin-bottom: 4px;
+  margin-top: 4px;
+  width: 75%; // changed from fixed width to make wider — but all the fixed widths seem a mess
+}
