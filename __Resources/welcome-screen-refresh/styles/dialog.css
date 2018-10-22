@@ -480,206 +480,90 @@
 * Welcome Guest Dialog
 */
 
+.welcomeGuest {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1280px;
+  height: 720px;
+  background: rgba(38, 38, 45, 0.9);
+}
+
+.welcomeGuest .welcomeGuest-container {
+  position: absolute;
+  top: 122px;
+  left: 175px;
+  width: 1008px;
+  color: white;
+  text-align: center;
+}
+
+.welcomeGuest .title {
+  font-size: 32px;
+}
+
+.welcomeGuest .content {
+  margin: 30px 0;
+  font-size: 20px;
+  text-align: left;
+}
+
+.welcomeGuest .panFree {
+  margin-right: 30px;
+}
+
+.welcomeGuest .panFree, .welcomeGuest .panPremium {
+  display: inline-block;
+  box-sizing: border-box;
+  border: 2px solid #727982;
+  background-color: rgba(0, 0, 0, 0.3);
+
+  width: 365px;
+
+  text-align: center;
+  padding: 20px;
+}
+
+.welcomeGuest .panFree.active, .welcomeGuest .panPremium.active {
+  border-color: #007FEB;
+}
+
+.welcomeGuest .buttons-container .button:first-child {
+  margin-left: 0;
+}
+
+.welcomeGuest ul {
+  list-style: none;
+  margin: 20px 0;
+  padding: 0;
+  line-height: 1.5;
+}
+
+.welcomeGuest .wgpType {
+  font-size: 24px;
+}
+
+.welcomeGuest ul li:before {
+  content: '● ';
+}
+
+.welcomeGuest .footer-container {
+  margin-top: 30px;
+}
+
+.welcomeGuest .contentFooter {
+  width: 500px;
+  display: inline-block;
+  text-align: left;
+}
+
+.welcomeGuest .footer-container .button {
+  vertical-align: top;
+}
+
 .dialogWrapper.noBkg {
   background: none;
 }
-
-.dialog .block.welcomeGuest {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  width: 1280px;
-  height: 720px;
-  border-radius: 0px;
-  background: rgba(38, 38, 45, 0.9);
-  margin-top: 0px;
-  z-index: 101;
-}
-
-.dialog .block.welcomeGuest .title {
-  position: absolute;
-  width: 1008px;
-  height: 39px;
-  overflow: hidden;
-  font-size: 32px;
-  line-height: 39px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  letter-spacing: normal;
-  text-align: center;
-  color: #FFFFFF;
-  top: 122px;
-  left: 175px;
-  border-bottom: none;
-  /*background: rgba(38, 38, 45, 1);*/
-}
-
-.dialog .block.welcomeGuest .content {
-  position: absolute;
-  left: 175px;
-  top: 190px;
-  height: 130px;
-  width: 1008px;
-  font-size: 18px;
-  line-height: 43px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  text-align: left;
-  color: #FFFFFF;
-}
-
-.dialog .block.welcomeGuest .content .content1 {
-  height: 43px;
-}
-
-.dialog .block.welcomeGuest .content .content2 {
-  height: 43px;
-}
-
-.dialog .block.welcomeGuest .content .content3 {
-  height: 43px;
-}
-
-.dialog .block.welcomeGuest .panBtn {
-  position: absolute;
-  width: 770px;
-  height: 265px;
-  top: 335px;
-  left: 294px;
-  color: #FFFFFF;
-  text-align: center;
-  font-weight: 500;
-  background-color: rgba(0, 0, 0, 0.3);
-}
-
-.dialog .block.welcomeGuest .panBtn .panFree {
-  position: absolute;
-  width: 365px;
-  height: 265px;
-  top: 0px;
-  left: 0px;
-  border: solid 2px #727982;
-}
-
-.dialog .block.welcomeGuest .panBtn .panFree .wgpLine1,
-.dialog .block.welcomeGuest .panBtn .panPremium .wgpLine1 {
-  position: absolute;
-  width: inherit;
-  height: 20px;
-  font-size: 16px;
-  line-height: 16px;
-  top: 17px;
-  left: 0px;
-}
-
-.dialog .block.welcomeGuest .panBtn .panFree .wgpType,
-.dialog .block.welcomeGuest .panBtn .panPremium .wgpType {
-  position: absolute;
-  width: inherit;
-  height: 28px;
-  font-size: 24px;
-  line-height: 24px;
-  top: 42px;
-  left: 0px;
-  font-weight: normal;
-}
-
-.dialog .block.welcomeGuest .panBtn .panFree .wgpLine2,
-.dialog .block.welcomeGuest .panBtn .panPremium .wgpLine2 {
-  position: absolute;
-  height: 18px;
-  top: 84px;
-  line-height: 1.13;
-  left: 158px;
-}
-
-.txtLine2 {
-  float: left;
-  margin-left: 15px;
-}
-
-.dialog .block.welcomeGuest .panBtn .panFree .wgpLine3,
-.dialog .block.welcomeGuest .panBtn .panPremium .wgpLine3 {
-  position: absolute;
-  height: 18px;
-  top: 113px;
-  line-height: 1.13;
-  left: 72px;
-}
-
-.dialog .block.welcomeGuest .panBtn .panPremium .wgpLine3.noLimit {
-  left: 117px;
-}
-
-.dialog .block.welcomeGuest .panBtn .panFree .wgpLine4,
-.dialog .block.welcomeGuest .panBtn .panPremium .wgpLine4 {
-  position: absolute;
-  height: 18px;
-  top: 140px;
-  line-height: 1.13;
-  left: 58px;
-}
-
-.dialog .block.welcomeGuest .panBtn .panPremium {
-  position: absolute;
-  width: 365px;
-  height: 265px;
-  top: 0px;
-  left: 405px;
-  border: solid 2px #727982;
-}
-
-.dialog .block.welcomeGuest .panBtn .panPremium .button,
-.dialog .block.welcomeGuest .panBtn .panFree .button,
-.dialog .block.welcomeGuest .button {
-  position: absolute;
-  top: 190px;
-  font-size: 18px;
-}
-
-.dialog .block.welcomeGuest .panBtn .panFree.active,
-.dialog .block.welcomeGuest .panBtn .panPremium.active {
-  border: solid 2px #007FEB;
-}
-
-.dialog .block.welcomeGuest .panBtn .panFree .button.connect {
-  left: 99px;
-}
-
-.dialog .block.welcomeGuest .panBtn .panPremium .button.connect {
-  left: 20px;
-}
-
-.dialog .block.welcomeGuest .panBtn .panPremium .button.aboG {
-  left: 207px;
-}
-
-.dialog .block.welcomeGuest .contentFooter {
-  position: absolute;
-  top: 627px;
-  left: 352px;
-  width: 502;
-  height: 44px;
-  color: #FFFFFF;
-  text-align: left;
-  font-size: 16px;
-  line-height: 1.38;
-  font-weight: 500;
-}
-
-.dialog .block.welcomeGuest .button.continue {
-  left: 873px;
-  top: 625px;
-}
-
-
-/*.dialog .button.connect {
-  width: 157px;
-  margin-right: 20px;
-}*/
-
 
 /**
 * Create Playlist / login / password Dialog
