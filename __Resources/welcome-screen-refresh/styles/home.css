@@ -1,0 +1,599 @@
+@-webkit-keyframes equalizer-bar-1 {
+  0% {
+    top: 50%;
+  }
+  25% {
+    top: 90%;
+  }
+  50% {
+    top: 50%;
+  }
+  75% {
+    top: 10%;
+  }
+  100% {
+    top: 50%;
+  }
+}
+
+@-webkit-keyframes equalizer-bar-2 {
+  0% {
+    top: 90%;
+  }
+  25% {
+    top: 50%;
+  }
+  50% {
+    top: 10%;
+  }
+  75% {
+    top: 50%;
+  }
+  100% {
+    top: 90%;
+  }
+}
+
+@-webkit-keyframes equalizer-bar-3 {
+  0% {
+    top: 10%
+  }
+  25% {
+    top: 50%
+  }
+  50% {
+    top: 90%
+  }
+  75% {
+    top: 50%
+  }
+  100% {
+    top: 10%
+  }
+}
+
+.home .homeBckgd {
+  top: 0px;
+  left: 30px;
+  position: absolute;
+  height: 300px;
+  width: 1008px;
+  z-index: 0;
+}
+
+.home .homeBckgd.empty {
+  background-image: url('../assets/images/header_adult.jpg');
+}
+
+.kid .home .homeBckgd.empty {
+  background-image: url('../assets/images/header_kids.jpg');
+}
+
+.wTab .home .homeBckgd {
+  height: 360px;
+}
+
+.wTab .home .homeBckgd.empty {
+  background-image: url('../assets/images/header_adult_360.jpg');
+}
+
+.kid .wTab .home .homeBckgd.empty {
+  background-image: url('../assets/images/header_kids_360.jpg');
+}
+
+.home .homeBckgd:after {
+  height: 100%;
+  width: 100%;
+  content: '';
+  position: absolute;
+  top: 0;
+  background-image: url('../assets/images/header_overlay.png');
+}
+
+.wTab .home .homeBckgd:after {
+  background-image: url('../assets/images/header_overlay_profile.png');
+}
+
+.home .header {
+  position: absolute;
+  top: 116px;
+  left: 30px;
+  height: 175px;
+  width: 1008px;
+}
+
+.wTab .home .header {
+  top: 185px;
+}
+
+.home .header .userIcon {
+  position: absolute;
+  top: 3px;
+  left: 267px;
+  width: 144px;
+  height: 144px;
+  border-radius: 75px;
+  border: 3px solid #f2f2f2;
+  -webkit-backface-visibility: hidden;
+}
+
+.home .header .userIcon {
+  background-position: -20px -200px;
+  background-image: url('../assets/images/cover-176.jpg');
+  width: 138px;
+  height: 138px;
+}
+
+.home .header .labelUser {
+  top: 0px;
+  position: absolute;
+  color: white;
+  left: 430px;
+  width: 572px;
+  height: 60px;
+  font-size: 28px;
+  line-height: 25px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.userInfo {
+  position: absolute;
+  top: 34px;
+  font-size: 20px;
+  line-height: 36px;
+  color: #C8CDD2;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  background: transparent;
+}
+
+.home .header .labelUser .userProfile {
+  font-size: 22px;
+  line-height: 22px;
+  color: #CCC;
+}
+
+.home .header .labelUser .userProfile.main {
+  color: #007FEB;
+}
+
+.home .header .labelUser .userProfile.kid {
+  color: #E91988;
+}
+
+.home .header .buttonConnect,
+.home .header .flowButton {
+  position: absolute;
+  top: 80px;
+  left: 431px;
+  width: 310px;
+  height: 56px;
+  color: #FFFFFF;
+  font-size: 34px;
+  /*font-family: "Deezer Icons";*/
+  border-radius: 10px;
+  -webkit-backface-visibility: hidden;
+  border: 2px #FFFFFF solid;
+  line-height: 50px;
+}
+
+
+/* Specific follows/followings position button */
+.home .header .followButton {
+  position: absolute;
+  width: 255px;
+  left: 455px;
+}
+
+.home .header .followUserIcon {
+  position: absolute;
+  left: 292px;
+}
+
+.home .header .followlabelUser {
+  position: absolute;
+  left: 457px;
+  top: 30px
+}
+
+.home .header.guest .buttonConnect.stbActive,
+.home .header .flowButton.stbActive,
+.home .header.guest .flowButton.stbActive {
+  background-color: #007FEB !important;
+  border-color: #007FEB;
+}
+
+.flowButton:before,
+.flowButton.paused.stbActive:before {
+  font-family: "Deezer icons";
+  content: '\e85b';
+  position: absolute;
+  left: 14px;
+  top:5px;
+}
+
+.flowButton.playing.stbActive:before {
+  content: '\e856';
+}
+
+.flowButton.paused:before,
+.flowButton.playing:before {
+  content: '';
+}
+
+
+/*GUEST*/
+
+.home .header.guest .buttonConnect,
+.home .header.guest .flowButton {
+  top: 40px;
+}
+
+.home .header.guest .flowButton {
+  left: 220px;
+  width: 306px;
+  /*padding-left: 10px;*/
+}
+
+.home .header.guest .buttonConnect {
+  left: 550px;
+  width: 238px;
+}
+
+.home .header.guest .buttonConnect .connect {
+  position: absolute;
+  top: 3px;
+  left: 20px;
+  width: 218px;
+  overflow: visible;
+  line-height: 50px;
+}
+
+.home .header.guest .flowButton {
+  background-color: #727982 !important;
+  border-color: #727982;
+}
+
+.home .header.guest .buttonConnect .connect:before {
+  font-family: "Deezer icons";
+  position: absolute;
+  content: '\e83d';
+}
+
+.home .header.guest .buttonConnect .connectInfo {
+  position: absolute;
+  font-size: 24px;
+  width: 140px;
+  left: 72px;
+  white-space: nowrap;
+  line-height: 28px;
+  top: 14px;
+}
+
+
+/*EQUALIZER */
+
+.home .flowButton .equalizer {
+  display: none;
+  position: absolute;
+  top: 6px;
+  left: 14px;
+  width: 38px;
+  height: 38px;
+  overflow: hidden;
+}
+
+.home .playing .equalizer {
+  background-image: url(../assets/images/equalizer.gif);
+  background-size: 38px 38px;
+  display: block;
+}
+
+.home .paused .equalizer {
+  background-image: url(../assets/images/paused_equalizer.png);
+  background-size: 38px 38px;
+  display: block;
+}
+
+.stbActive.playing .equalizer,
+.stbActive.paused .equalizer {
+  display: none;
+}
+
+.home .flowButton .equalizer-bar.equalizer-bar-1 {
+  left: 0;
+}
+
+.home .flowButton .equalizer-bar {
+  width: 10px;
+}
+
+.equalizer .equalizer-bar.equalizer-bar-1 {
+  top: 50%;
+  -webkit-animation: equalizer-bar-1 0.75s linear infinite;
+}
+
+.equalizer .equalizer-bar {
+  position: absolute;
+  height: 100%;
+  background-color: #f2f2f2;
+}
+
+.home .flowButton .equalizer-bar.equalizer-bar-2 {
+  left: 12px;
+}
+
+.equalizer .equalizer-bar.equalizer-bar-2 {
+  left: 5px;
+  top: 30%;
+  -webkit-animation: equalizer-bar-2 0.75s linear infinite;
+}
+
+.equalizer .equalizer-bar {
+  position: absolute;
+  height: 100%;
+  background-color: #f2f2f2;
+}
+
+.home .flowButton .equalizer-bar.equalizer-bar-3 {
+  left: 24px;
+}
+
+.equalizer .equalizer-bar.equalizer-bar-3 {
+  left: 10px;
+  top: 70%;
+  -webkit-animation: equalizer-bar-3 0.75s linear infinite;
+}
+
+.paused .equalizer .equalizer-bar {
+  -webkit-animation-play-state: paused;
+}
+
+.home .flowButton .buttonLabel {
+  left: 65px;
+  position: absolute;
+  font-size: 24px;
+  top: 8px;
+  line-height: 20px;
+}
+
+.home .flowButton .buttonLabelFollow {
+  top: 8px;
+  line-height: 37px;
+}
+
+.home .flowButton .buttonLabel .info {
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.home .content {
+  position: absolute;
+  top: 320px;
+  height: 400px;
+  left: 30px;
+  width: 1008px;
+  overflow: hidden;
+}
+
+.home .content.guest {
+  overflow: visible;
+  width: 1103px;
+  top: 310px;
+}
+
+.home .content .mosaic {
+  left: 0px;
+  top: 10px;
+}
+
+.home .content.guest .scrollbar {
+  height: 355px;
+}
+
+.home .content .mix {
+  left: -32px;
+  overflow: visible;
+}
+
+.wTab .home .content {
+  top: 380px;
+  height: 340px;
+}
+
+.home .scrollableContent {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+}
+
+.scrollableContent .items {
+  position: relative;
+  top: 0px;
+}
+
+.scrollableContent .mix {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  overflow: visible;
+}
+
+.home .content .horizontal {
+  position: relative;
+  margin-bottom: 30px;
+  width: 100%;
+  height: 290px;
+}
+
+.wTab .content .horizontal {
+  margin-bottom: 20px;
+}
+
+.home .content .horizontal.edito {
+  height: 176px;
+}
+
+.content.guest .stripTitle,
+.horizontal .stripTitle {
+  height: 60px;
+  width: 1008px;
+  font-size: 20px;
+  color: #727982;
+  overflow: hidden;
+  text-align: center;
+}
+
+.content.guest .stripTitle {
+  width: 1008px;
+}
+
+.content.guest .stripTitle .text,
+.horizontal .stripTitle .text {
+  position: relative;
+  display: inline-block;
+  padding: 0 20px;
+  height: 30px;
+  line-height: 30px;
+  /*width: 100%;*/
+  text-align: center;
+  font-size: 20px;
+  color: #727982;
+}
+
+.content.guest .stripTitle .text:after,
+.content.guest .stripTitle .text:before,
+.horizontal .stripTitle .text:before,
+.horizontal .stripTitle .text:after {
+  background-color: #727982;
+  content: "";
+  height: 1px;
+  position: absolute;
+  top: 50%;
+  width: 500px;
+}
+
+.content.guest .stripTitle .text:after,
+.horizontal .stripTitle .text:after {
+  margin-left: 20px;
+}
+
+.content.guest .stripTitle .text:before,
+.horizontal .stripTitle .text:before {
+  right: 100%;
+}
+
+.horizontalScrollable {
+  position: relative;
+  left: 0;
+  white-space: nowrap;
+  float: left;
+}
+
+.horizontalScrollable .item {
+  position: relative;
+  display: inline-block;
+  margin-right: 32px;
+  width: 176px;
+  color: white;
+}
+
+.horizontalScrollable .item .cover {
+  width: 176px;
+  height: 176px;
+}
+
+.horizontalScrollable .item .cover img {
+  background-image: url(../assets/images/cover-176.jpg);
+  background-position: 0px 0px;
+  width: 176px;
+  height: 176px;
+}
+
+.horizontalScrollable .item.editoArtists .cover img {
+  background-position: 0px -176px;
+}
+
+.horizontalScrollable .item.stbActive:after {
+  width: 168px;
+  height: 168px;
+  border: 4px #007FEB solid;
+  top: 0;
+  left: 0;
+  position: absolute;
+  content: "";
+}
+
+.horizontal.edito .horizontalScrollable .item .cover:after {
+  height: 100%;
+  width: 100%;
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-image: url('../assets/images/home_screen_links_bg.png');
+}
+
+.horizontal.edito .horizontalScrollable .item .edito {
+  position: absolute;
+  top: auto;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+  font-size: 22px;
+}
+
+.horizontalScrollable .item .edito {
+  position: relative;
+  font-size: 20px;
+  top: 10px;
+}
+
+.horizontalScrollable .item .edito .desc {
+  font-size: 16px;
+  color: #727982;
+  line-height: 20px;
+}
+
+.horizontal.edito .horizontalScrollable .item .edito .desc {
+  display: none;
+}
+
+.horizontal.edito .item .contentIcon {
+  position: absolute;
+  /*font-family: "Deezer Icons";*/
+  font-size: 45px;
+  width: 100%;
+  text-align: center;
+  height: 45px;
+  top: 40px;
+}
+
+.item.editoRelease .contentIcon:before {
+  font-family: "Deezer icons";
+  content: '\e852';
+}
+
+.item.editoTracks .contentIcon:before {
+  font-family: "Deezer icons";
+  content: '\e851';
+}
+
+.item.editoAlbums .contentIcon:before {
+  font-family: "Deezer icons";
+  content: '\e802';
+}
+
+.item.editoArtists .contentIcon:before {
+  font-family: "Deezer icons";
+  content: '\e838';
+}
+
+.item.editoPlaylists .contentIcon:before {
+  font-family: "Deezer icons";
+  content: '\e85d';
+}

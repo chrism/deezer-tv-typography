@@ -1,0 +1,352 @@
+.grid {
+  position: relative;
+  width: 100%;
+  float: left;
+}
+
+.grid.gridXY {
+  height: 550px;
+}
+
+
+/*.grid .items{
+    float:left;
+    list-style-type: none;
+}*/
+
+.grid .item {
+  position: relative;
+  width: 176px;
+  height: 225px;
+  float: left;
+  margin-right: 32px;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+
+/*JNC zone user*/
+
+.connect .grid .item,
+.disconnect .grid .item {
+  position: relative;
+  width: 150px;
+  height: 187px;
+  float: left;
+  margin-right: 10px;
+  margin-left: 8px;
+  /*margin-bottom: 20px;*/
+  display: inline-block;
+  text-align: center;
+}
+
+.connect .grid .item.add_user {
+  height: 50px;
+  margin: 0px 0px 0px 0px;
+}
+
+.grid .item.stbActive::after {
+  width: 166px;
+  height: 166px;
+  overflow: visible;
+  position: absolute;
+  border-width: 5px;
+  border-color: #007FEB;
+  border-style: solid;
+  top: 0;
+  left: 0;
+  content: '';
+}
+
+.grid .item.add_user.stbActive::after {
+  border: none;
+}
+
+
+/*JNC cercle bleu*/
+
+.connect .grid .item.user.stbActive::after,
+.disconnect .grid .item.user.stbActive::after {
+  width: 102px;
+  height: 102px;
+  border-radius: 75px;
+  overflow: visible;
+  position: absolute;
+  border-width: 4px;
+  border-color: #007FEB;
+  border-style: solid;
+  /*margin-right: 11px;*/
+  margin-left: 20px;
+  /*top: 0;*/
+  /*left: 0;*/
+  content: '';
+  background-position: 0px 0px;
+}
+
+.connect .grid .item.user.active::before,
+.disconnect .grid .item.user.active::before {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  color: #727982;
+  line-height: 1;
+  font-family: "Deezer Icons";
+  text-align: center;
+  width: 28px;
+  height: 28px;
+  background: none;
+  border: none;
+  content: '\e81d';
+  font-size: 28px;
+}
+
+
+/*JNC fleche ronde grise*/
+
+.connect .grid .item.user.active::before,
+.disconnect .grid .item.user.active::before {
+  position: absolute;
+  top: 88px;
+  left: 88px;
+  color: #ffffff;
+  line-height: 2;
+  font-family: "Deezer Icons";
+  text-align: center;
+  width: 27px;
+  height: 27px;
+  background: none;
+  background-color: #c8cdd2;
+  border-radius: 75px;
+  border: none;
+  content: '\e81d';
+  margin-left: 15px;
+  margin-top: -6px;
+  font-size: 14px;
+  z-index: 1;
+}
+
+
+/*JNC fleche ronde bleue*/
+
+.grid .connect.item.user.stbActive::after,
+.grid .disconnect.item.user.stbActive::after {
+  position: absolute;
+  top: 88px;
+  left: 88px;
+  color: #ffffff;
+  line-height: 2;
+  font-family: "Deezer Icons";
+  text-align: center;
+  width: 27px;
+  height: 27px;
+  background: none;
+  background-color: #007FEB;
+  border-radius: 75px;
+  border: none;
+  content: '\e81d';
+  /*margin: 0 auto;*/
+  font-size: 14px;
+  z-index: 1;
+}
+
+
+/*JNC rond bleu fleche*/
+
+.connect .grid .item.active.stbActive::before,
+.disconnect .grid .item.active.stbActive::before {
+  color: white;
+  background-color: #007FEB;
+}
+
+.grid .item img {
+  width: 176px;
+  height: 176px;
+  background-image: url(../assets/images/cover-176.jpg);
+  background-position: 0px 0px;
+}
+
+
+/*JNC contact rond gris*/
+
+.connect .grid .item img,
+.disconnect .grid .item img {
+  width: 102px;
+  height: 102px;
+  border-radius: 75px;
+  background-image: url(../assets/images/avatar-missing-grey-56x56.png);
+  background-size: 100%;
+  border: 4px solid #c8cdd2;
+  -webkit-backface-visibility: hidden;
+}
+
+
+/*JNC Bouton Add User*/
+
+.connect .grid .buttonAddUser {
+  position: absolute;
+  top: 470px;
+  width: 375px;
+  height: 50px;
+  left: 300px;
+  color: #FFFFFF;
+  font-size: 20px;
+  border-radius: 10px;
+  -webkit-backface-visibility: hidden;
+  background-color: #727982;
+  text-align: center;
+  line-height: 50px;
+  /*margin-bottom : 70px;*/
+}
+
+.grid .item.artist img,
+.grid .item.user img {
+  background-position: 0px -102px;
+}
+
+.grid .item.podcast img {
+  background-position: 0px -352px;
+}
+
+.grid .item .edito {
+  width: 176px;
+  /*height:36px;*/
+}
+
+
+/*JNC*/
+
+.connect .grid .item .edito,
+.disconnect .grid .item .edito {
+  width: 150px;
+}
+
+.grid .item .edito .title {
+  font-size: 20px;
+  color: #C8CDD2;
+  line-height: 25px;
+}
+
+
+/*JNC label user*/
+
+.connect .grid .item .edito .title,
+.disconnect .grid .item .edito .title {
+  font-size: 20px;
+  color: #FFFFFF;
+  line-height: 25px;
+  margin-top: 10px;
+  text-align: center;
+  width: 150px;
+}
+
+.grid .item .edito .desc {
+  font-size: 16px;
+  color: #727982;
+  line-height: 20px;
+}
+
+
+/*JNC label user second line*/
+
+.connect .grid .item .edito .desc,
+.disconnect .grid .item .edito .desc {
+  font-size: 16px;
+  color: #c8cdd2;
+  text-align: center;
+  line-height: 20px;
+  width: 150px;
+  text-align: center;
+}
+
+.grid .item.stbActive .edito .title,
+.grid .item.stbActive .edito .desc {
+  color: #FFF;
+}
+
+
+/*JNC */
+
+.connect .grid .item.stbActive .edito .desc,
+.disconnect .grid .item.stbActive .edito .desc {
+  color: #c8cdd2;
+}
+
+.grid .item .playing,
+.grid .item .pausing,
+.grid .item.stbActive .radio {
+  background-size: 38px 38px;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: block;
+  position: absolute;
+  top: 48px;
+  left: 48px;
+  width: 76px;
+  height: 76px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50px;
+  -webkit-backface-visibility: hidden;
+  border: 3px rgba(255, 255, 255, 0.3) solid;
+}
+
+.grid .item .playing {
+  background-image: url(../assets/images/equalizer.gif);
+}
+
+.grid .item .pausing {
+  background-image: url(../assets/images/paused_equalizer.png);
+}
+
+.grid .item.stbActive .playing,
+.grid .item.stbActive .pausing,
+.grid .item.stbActive .radio {
+  background-image: none;
+  position: absolute;
+  color: #f2f2f2;
+  text-align: center;
+  font-size: 40px;
+  font-family: "Deezer Icons";
+  line-height: 76px;
+}
+
+.grid .item.stbActive .playing:before {
+  content: '\e856';
+}
+
+.grid .item.stbActive .pausing:before {
+  content: '\e85B';
+}
+
+.grid .item.stbActive .radio:before {
+  content: '\e85B';
+}
+
+.grid .addUser {
+  position: absolute;
+  top: 000px;
+  left: 316.5px;
+  right: 20px;
+  text-align: center;
+  width: 375px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: #727982;
+  letter-spacing: normal;
+  font-size: 20px;
+  color: white;
+  line-height: 50px;
+  /*margin-bottom: 70px;*/
+}
+
+.grid .stbActive .addUser {
+  background-color: #007FEB;
+}
+
+.grid .addUser.spacer {
+  margin-top: 210px;
+}
+
+.scrollableGrid {
+  position: relative;
+  top: 0px;
+}

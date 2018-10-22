@@ -1,0 +1,44 @@
+.carousel-player {
+  position: absolute;
+  left: 0px;
+}
+
+.carousel-player.left {
+  -webkit-transition: left 1s ease-in-out;
+}
+
+.carousel-player .block-limit {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background-image: url("../assets/images/degrade.png");
+  background-repeat: no-repeat;
+}
+
+.carousel-player .text-limit {
+  position: absolute;
+  top: 0px;
+  width: 400px;
+  height: 70px;
+  padding-top: 10px;
+  font-size: 16px;
+  text-align: center;
+  overflow: hidden;
+  color: white;
+  -webkit-transition: top 1s ease-in-out;
+}
+
+.carousel-player.stbActive .block-limit {
+  background-image: none;
+  background: #007FEB !important;
+  opacity: 0.8;
+}
+
+.carousel-player.stbActive .text-limit {
+  font-size: 16px;
+  text-align: center;
+  overflow: hidden;
+  color: white;
+  top: 160px;
+  transition: top ease-out 500ms;
+}

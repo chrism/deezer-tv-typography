@@ -1,0 +1,282 @@
+.keyboard {
+  position: absolute;
+  width: 1280px;
+  left: 0px;
+  top: 320px;
+  height: 0px;
+  border-radius: 0px;
+  opacity: 1;
+  z-index: 101;
+}
+
+.keyboard.active {
+  height: 250px;
+  top: 450px;
+  background-color: #23232A;
+}
+
+.keyboard.email.active {
+  height: 300px;
+  top: 400px;
+}
+
+.kbContent {
+  position: relative;
+  width: 1280px;
+  height: inherit;
+  top: 0px;
+  background-color: #32303A;
+  padding-top: 40px;
+}
+
+.keyboard.email.active .kbContent {
+  padding-top: 20px;
+}
+
+.kbLine {
+  width: 700px;
+  height: 52px;
+  float: none;
+  margin-left: 80px;
+}
+
+.kbLineEmail {
+  width: 1280px;
+  height: 60px;
+  float: none;
+  margin-left: 340px;
+}
+
+.kbContent .kbItem {
+  color: #C8C0D2;
+  text-align: center;
+  font-size: 26px;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  float: left;
+  line-height: 40px;
+}
+
+.kbItem.emailItem {
+  width: 150px;
+  font-size: 16px;
+}
+
+.kbItemSP {
+  width: 12px;
+  height: 40px;
+  float: left;
+}
+
+.kbItem.W1 {
+  font-family: "Deezer Icons";
+  width: 74px;
+}
+
+.kbItem.W2 {
+  font-family: "Deezer Icons";
+  width: 74px;
+}
+
+.kbItem.W3 {
+  font-family: "Deezer Icons";
+  width: 95px;
+}
+
+.kbItem.W4 {
+  font-family: "Deezer Icons";
+  width: 290px;
+}
+
+.kbItem.W5 {
+  font-family: "Deezer Icons";
+  width: 50px;
+}
+
+.kbItem.W6 {
+  width: 95px;
+}
+
+.kbItem.W09 {
+  width: 40px;
+  height: 40px;
+}
+
+.kbItem.W10 {
+  font-size: 18px;
+  line-height: 40px;
+  width: 120px;
+  color: #8A8D93;
+}
+
+.kbItem.W10.active {
+  color: #FFFFFF;
+}
+
+.kbContent .kbItem.stbActive {
+  background-color: #007FEB;
+  color: #FFFFFF;
+  border-radius: 5px;
+  width: 40px;
+}
+
+.kbLineEmail .kbItem.stbActive {
+  background-color: #007FEB;
+  color: #FFFFFF;
+  border-radius: 5px;
+  width: 150px;
+  height: 40px;
+  font-size: 16px;
+  line-height: 40px;
+}
+
+.kbItem.W10.stbActive {
+  width: 120px;
+}
+
+.icons {
+  height: 340px;
+  width: 140px;
+  position: absolute;
+  top: 0px;
+  left: 750px;
+  margin-top: 40px;
+}
+
+.icons.email {
+  top: 40px;
+}
+
+.icons .kbItem.ibksp {
+  height: 40px;
+  width: 40px;
+  margin-left: 50px;
+  background: url('../assets/images/keyboard_sprite_sheet.png') 0 0 no-repeat;
+  margin-bottom: 12px;
+}
+
+.icons .kbItem.ibksp.stbActive {
+  background: url('../assets/images/keyboard_sprite_sheet.png') -40px 0 no-repeat;
+  background-color: #007FEB;
+  border-radius: 5px;
+  width: 40px;
+}
+
+.icons .kbItem.ishift {
+  height: 40px;
+  width: 40px;
+  margin-left: 50px;
+  background: url('../assets/images/keyboard_sprite_sheet.png') 0 -40px no-repeat;
+  margin-bottom: 12px;
+}
+
+.icons .kbItem.ishift.stbActive {
+  background: url('../assets/images/keyboard_sprite_sheet.png') -40px -40px no-repeat;
+  background-color: #007FEB;
+  border-radius: 5px;
+  width: 40px;
+}
+
+.icons .kbItem.ishift.active {
+  background: url('../assets/images/keyboard_shift_on.png') no-repeat;
+}
+
+.icons .kbItem.ishift.active.stbActive {
+  background: url('../assets/images/keyboard_sprite_sheet.png') -40px -40px no-repeat;
+  background-color: #007FEB;
+  border-radius: 5px;
+  width: 40px;
+}
+
+.icons .kbItem.ispace {
+  height: 40px;
+  width: 40px;
+  margin-left: 50px;
+  background: url('../assets/images/keyboard_sprite_sheet.png') 0 -80px no-repeat;
+  margin-bottom: 12px;
+}
+
+.icons .kbItem.ispace.stbActive {
+  background: url('../assets/images/keyboard_sprite_sheet.png') -40px -80px no-repeat;
+  background-color: #007FEB;
+  border-radius: 5px;
+  width: 40px;
+}
+
+.icons .iarrows {
+  position: absolute;
+  top: 156px;
+  height: 52px;
+  width: 140px;
+}
+
+.icons .iarrows .kbItem.ileft {
+  height: 40px;
+  width: 40px;
+  left: 28px;
+  background: url('../assets/images/keyboard_sprite_sheet.png') 0 -120px no-repeat;
+  position: absolute;
+}
+
+.icons .iarrows .kbItem.ileft.stbActive {
+  background: url('../assets/images/keyboard_sprite_sheet.png') -40px -120px no-repeat;
+  background-color: #007FEB;
+  border-radius: 5px;
+  width: 40px;
+}
+
+.icons .iarrows .kbItem.iright {
+  height: 40px;
+  width: 40px;
+  left: 72px;
+  background: url('../assets/images/keyboard_sprite_sheet.png') 0 -160px no-repeat;
+  position: absolute;
+}
+
+.icons .iarrows .kbItem.iright.stbActive {
+  background: url('../assets/images/keyboard_sprite_sheet.png') -40px -160px no-repeat;
+  background-color: #007FEB;
+  border-radius: 5px;
+  width: 40px;
+}
+
+.buttons {
+  width: 358px;
+  height: 340px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+.buttons.email {
+  top: 40px;
+}
+
+.buttons .bOk,
+.buttons .bCancel {
+  width: 260px;
+  height: 50px;
+  color: #FFFFFF;
+  background: #727982;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 26px;
+  line-height: 50px;
+  position: absolute;
+  right: 90px;
+}
+
+.buttons .bOk {
+  top: 70px;
+}
+
+.buttons .bCancel {
+  top: 156px;
+}
+
+.buttons .bOk.stbActive,
+.buttons .bCancel.stbActive {
+  width: 260px;
+  background: #007FEB;
+}

@@ -1,0 +1,538 @@
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+body {
+  background-color: black;
+  font-family: 'HelveticaNeueLT Com 65 Md', sans-serif;
+  margin: 0;
+  width: 1280px;
+  height: 720px;
+}
+
+
+/*
+    SPLASH SCREEN
+*/
+
+.splash {
+  position: absolute;
+  width: 1280px;
+  height: 720px;
+  background-color: black;
+  z-index: 9;
+}
+
+.splash.hidden {
+  display: none;
+}
+
+.splash .deezerLogo {
+  position: absolute;
+  left: 470px;
+  top: 331px;
+}
+
+
+/*
+    HEADER
+*/
+
+.container .deezerLogo {
+  position: absolute;
+  top: 35px;
+  left: 70px;
+  width: 262px;
+  height: 44px;
+  z-index: 500;
+}
+
+.loader {
+  position: absolute;
+  top: 50px;
+  left: 1125px;
+  width: 59px;
+  height: 15px;
+  z-index: 10;
+}
+
+
+/*
+    SEARCH
+*/
+
+.searchHeader {
+  position: absolute;
+  left: 385px;
+  width: 592px;
+  height: 45px;
+  top: 35px;
+  z-index: 11;
+}
+
+.searchButton {
+  position: absolute;
+  right: 512px;
+  top: 35px;
+  z-index: 11;
+}
+
+.searchHeader .searchBkg {
+  position: absolute;
+  left: -385px;
+  width: 1280px;
+  height: 475px;
+  top: -60px;
+  background: #23232A;
+}
+
+.searchHeader .searchBkg .logoDeezer {
+  position: absolute;
+  background: url('../assets/images/deezer-262x44.png') 0 no-repeat;
+  width: 262px;
+  height: 44px;
+  top: 60px;
+  left: 70px;
+  opacity: 0.5;
+}
+
+.searchHeader .searchInput {
+  position: absolute;
+  width: 588px;
+  height: 41px;
+  z-index: 5;
+  /*background: rgba(255, 255, 255, 0.2);*/
+  border: 2px solid #8A8D93;
+  border-radius: 10px;
+  -webkit-backface-visibility: hidden;
+}
+
+.searchButton .btnSearch {
+  z-index: 5;
+  border: 2px solid #FFFFFF;
+  border-radius: 10px;
+  color: white;
+  font-size: 20px;
+}
+
+.searchButton .btnSearch .txtBtnSearch {
+  line-height: 41px;
+  position: relative;
+  margin-left: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.searchButton .btnSearch.stbActive {
+  color: white;
+  background-color: #007FEB;
+  border: 2px solid #007FEB;
+}
+
+.searchHeader .searchInput.stbActive {
+  border: 2px solid #007FEB;
+  background: rgba(32, 32, 45, 1);
+}
+
+.searchInput .searchIcon {
+  margin-left: 10px;
+  margin-right: 10px;
+  top: 6px;
+  float: left;
+  position: relative;
+  font-family: "Deezer Icons";
+  font-size: 25px;
+}
+
+.searchButton .searchIcon {
+  /* margin-left: 10px; */
+  /* margin-right: 10px; */
+  top: 8px;
+  /* float: left; */
+  position: absolute;
+  font-family: "Deezer Icons";
+  font-size: 25px;
+  left: 14px;
+}
+
+.searchInput .searchIcon {
+  color: #fff;
+}
+
+.searchIcon:before {
+  content: '\e86d';
+}
+
+.searchIcon.selected {
+  color: #007FEB;
+}
+
+.searchInput .text-input {
+  width: 530px !important;
+  float: left;
+  position: relative;
+}
+
+.searchInput .text-input-content .default {
+  color: #727982;
+}
+
+.searchHeader .autocomplete {
+  position: absolute;
+  top: 80px;
+  width: 1280px;
+  left: -385px;
+  background-color: #23232A;
+}
+
+.autocomplete .lArtist,
+.autocomplete .lAlbum,
+.autocomplete .lTrack,
+.autocomplete .lPlaylist {
+  position: absolute;
+  width: 260px;
+  height: 36px;
+  font-size: 20px;
+  color: #c8cdd2;
+  line-height: 36px;
+  text-align: center;
+}
+
+.autocomplete .iArtist,
+.autocomplete .iAlbum,
+.autocomplete .iTrack,
+.autocomplete .iPlaylist {
+  position: absolute;
+  width: 260px;
+  height: 200px;
+  top: 56px;
+  color: #FFFFFF;
+}
+
+.iArtist .artist,
+.iAlbum .album,
+.iTrack .track,
+.iPlaylist .playlist {
+  position: relative;
+  width: 260px;
+  height: 90px;
+  padding-bottom: 20px;
+}
+
+.autocomplete .iArtist,
+.autocomplete .lArtist {
+  left: 74px;
+}
+
+.autocomplete .iAlbum,
+.autocomplete .lAlbum {
+  left: 371px;
+}
+
+.autocomplete .iTrack,
+.autocomplete .lTrack {
+  left: 668px;
+}
+
+.autocomplete .iPlaylist,
+.autocomplete .lPlaylist {
+  left: 966px;
+}
+
+.autocomplete .lArtist:before,
+.autocomplete .lAlbum:before,
+.autocomplete .lTrack:before,
+.autocomplete .lPlaylist:before {
+  width: 36px;
+  font-family: "Deezer Icons";
+  font-size: 20px;
+  text-align: center;
+  padding-right: 10px;
+}
+
+.autocomplete .lArtist:before {
+  content: '\e838';
+}
+
+.autocomplete .lAlbum:before {
+  content: '\e802';
+}
+
+.autocomplete .lTrack:before {
+  content: '\e851';
+}
+
+.autocomplete .lPlaylist:before {
+  content: '\e85d';
+}
+
+.autocomplete .photo {
+  position: absolute;
+  width: 82px;
+  height: 82px;
+  border: 3px #23232A solid;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background: url('../assets/images/cover-76.jpg');
+}
+
+.autocomplete .photo.loaded {
+  background: none;
+}
+
+.autocomplete .title {
+  position: absolute;
+  left: 96px;
+  width: 164px;
+  font-size: 20px;
+  height: 37px;
+  line-height: 37px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.autocomplete .desc {
+  position: absolute;
+  left: 96px;
+  top: 37px;
+  height: 20px;
+  width: 164px;
+  font-size: 16px;
+  line-height: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.autocomplete .album.stbActive,
+.autocomplete .artist.stbActive,
+.autocomplete .track.stbActive,
+.autocomplete .playlist.stbActive {
+  color: #007FEB;
+}
+
+.autocomplete .album.stbActive .photo,
+.autocomplete .artist.stbActive .photo,
+.autocomplete .track.stbActive .photo,
+.autocomplete .playlist.stbActive .photo {
+  border: 3px #007FEB solid;
+}
+
+
+/*.autocomplete .listItem {
+  position: relative;
+  overflow: hidden;
+  line-height: 36px;
+  background-image: none;
+  font-size: 20px;
+  width: 1280px;
+  padding-left: 45px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding-right: 10px;
+}
+
+.autocomplete .listItem.stbActive {
+  height: 34px;
+  color: #FFF;
+  border-bottom: 2px solid #007FEB;
+}
+
+.autocomplete .listItem:before {
+  position: absolute;
+  content: '';
+  left: 0px;
+  width: 36px;
+  height: 36px;
+  background-color: #32323a;
+  font-family: "Deezer Icons";
+  font-size: 24px;
+  color: #8A8D93;
+  text-align: center;
+}
+
+.autocomplete .artist:nth-child(odd):before {
+  content: '\e882';
+}
+
+.autocomplete .album:nth-child(odd):before {
+  content: '\e802';
+}
+
+.autocomplete .playlist:nth-child(odd):before {
+  content: '\e85d';
+}
+
+.autocomplete .track:nth-child(odd):before {
+  content: '\e851';
+}*/
+
+
+/*
+    MAIN CONTAINER
+*/
+
+.container {
+  position: absolute;
+  width: 1280px;
+  height: 720px;
+  overflow: hidden;
+  background-color: #23232A;
+}
+
+.container.hidden {
+  visibility: hidden;
+}
+
+.container-fluid {
+  position: absolute;
+  top: 104px;
+  left: 145px;
+  width: 1135px;
+  height: 616px;
+  overflow: hidden;
+}
+
+.container-fluid.wTab {
+  top: 144px;
+  height: 576px;
+}
+
+.container-fluid.hp {
+  top: 0px;
+  height: 720px;
+}
+
+.errorContainer {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.errorContainer .errorMessage {
+  font-size: 32px;
+  color: #727982;
+}
+
+.errorContainer .errorMessage.stbActive {
+  color: #007FEB;
+}
+
+
+/*
+    NAVIGATION SCROLLBAR
+*/
+
+.scrollbar {
+  position: absolute;
+  left: 1040px;
+  top: 0px;
+  width: 4px;
+  height: 544px;
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+  background: none;
+  background-color: black;
+}
+
+.scrollbar.hidden {
+  visibility: hidden;
+}
+
+.detail .scrollbar {
+  left: 624px;
+}
+
+.wTab .scrollbar {
+  height: 504px;
+}
+
+.scroller {
+  position: absolute;
+  top: 0px;
+  width: 4px;
+  background-color: #55565D;
+}
+
+
+/*
+    TEXT STYLE
+*/
+
+.txt_noellipsis {
+  overflow: hidden;
+  white-space: normal;
+}
+
+.txt_ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: pre;
+  width: auto;
+}
+
+.txt_ellipsis.slide {
+  text-overflow: clip;
+}
+
+.txt_normal {
+  font-size: 20px;
+}
+
+.txt_title3 {
+  font-size: 24px;
+}
+
+.txt_gray {
+  color: #CCC;
+}
+
+.txt_white {
+  color: #FFF;
+}
+
+
+/*
+    IMAGES
+*/
+
+img.loaded {
+  background: none !important;
+}
+
+
+/*
+    ANIMATIONS
+*/
+
+@-webkit-keyframes fadeInFromNone {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+  1% {
+    display: block;
+    opacity: 0;
+  }
+  100% {
+    display: block;
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInFromNone {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+  1% {
+    display: block;
+    opacity: 0;
+  }
+  100% {
+    display: block;
+    opacity: 1;
+  }
+}

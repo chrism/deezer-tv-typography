@@ -1,0 +1,133 @@
+.mosaic {
+  position: absolute;
+  left: 32px;
+  top: 0px;
+  height: 100%;
+  width: 1103px;
+  float: left;
+}
+
+.mosaic .items,
+.mosaic .errorContainer {
+  position: absolute;
+  top: 32px;
+  left: 0px;
+  width: 1044px;
+  height: 584px;
+  overflow: hidden;
+}
+
+.wTab .mosaic .items,
+.wTab .mosaic .errorContainer {
+  height: 544px;
+}
+
+.mosaic .row {
+  -webkit-transition: top .5s ease-in-out;
+  transition: top .5s ease-in-out;
+}
+
+.mosaic .row1 {
+  top: 0px;
+}
+
+.mosaic .row2 {
+  top: 231px;
+}
+
+.mosaic .row3 {
+  top: 462px;
+}
+
+.mosaic .row4 {
+  top: 693px;
+}
+
+.mosaic .items.list,
+.wTab .mosaic .items.list {
+  top: 5px;
+  height: 611px;
+}
+
+.wTab .mosaic .items.list {
+  height: 550px;
+}
+
+.mosaic .icon {
+  font-family: "Deezer Icons";
+}
+
+.mosaic .bigIcon {
+  font-family: "Deezer icons";
+  font-size: 150px;
+  padding-top: 50px;
+  color: #32303A;
+}
+
+.defaultIcon:before {
+  content: '\e852';
+}
+
+.playlistsIcon:before {
+  content: '\e85D';
+}
+
+.albumsIcon:before {
+  content: '\e802';
+}
+
+.historyIcon:before {
+  content: '\e879';
+}
+
+.podcastsIcon:before {
+  content: '\e862';
+}
+
+.tracksIcon:before {
+  content: '\e851';
+}
+
+.artistsIcon:before {
+  content: '\e838';
+}
+
+.followingsIcon:before,
+.followersIcon:before {
+  content: '\e882';
+}
+
+.emptyLabel,
+.emptyLabel2Line {
+  font-size: 24px;
+  color: #727982;
+}
+
+.groupHL {
+  position: relative;
+  font-size: 20px;
+  color: #727982;
+  width: 1008px;
+  top: -12.5px;
+  height: 25px;
+  line-height: 50px;
+  text-align: center;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #727982;
+}
+
+.groupHL .textHL {
+  padding-left: 10px;
+  padding-right: 10px;
+  background: #23232A;
+}
+
+.groupItems {
+  position: relative;
+  width: inherit;
+  height: 210px;
+}
+
+.groupItems.add_user {
+  height: 50px;
+}

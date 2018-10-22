@@ -1,0 +1,189 @@
+.offerView {
+  position: relative;
+  margin: 23px 31px 0;
+  width: 1075px;
+  height: 580px;
+  overflow: hidden;
+  font-size: 20px;
+  color: white;
+}
+
+.offerView .deezerIcon,
+.offerView .multiProfilsIcon {
+  float: left;
+  width: 29px;
+  margin-right: 13px;
+  text-align: center;
+}
+
+.offerView .deezerIcon {
+  font-family: "Deezer Icons";
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.offerView .center .deezerIcon {
+  margin: 0;
+  float: none;
+}
+
+.offerView .multiProfilsIcon {
+  background: url('../assets/images/6_profils_icon.png') 0 no-repeat;
+  height: 18px;
+  margin-top: 7px;
+}
+
+.offerView .center {
+  text-align: center;
+}
+
+.offerView .small {
+  font-size: 16px;
+}
+
+.offerView .smallc {
+  font-size: 16px;
+  line-height: 0.9;
+}
+
+.offerView .title {
+  font-size: 36px;
+  line-height: 36px;
+  text-align: center;
+  width: 1075px;
+  height: 36px;
+}
+
+.offerView .subtitle {
+  font-size: 18px;
+  text-align: center;
+  color: #C8CDD2;
+  margin: 10px 0 24px;
+  width: 1075px;
+  height: 35px;
+}
+
+.offerView .notice {
+  position: absolute;
+  top: 489px;
+  left: 0px;
+  width: 400px;
+  height: 41px;
+  font-size: 16px;
+  color: #C8CDD2;
+}
+
+.offerView .table {
+  display: table;
+  /*  width: 1075px;*/
+  margin-left: 0px;
+}
+
+.offerView .row {
+  display: table-row;
+  height: 37px;
+}
+
+.offerView .cell {
+  display: table-cell;
+  height: 37px;
+  width: 150px;
+  vertical-align: middle;
+}
+
+.offerView .label {
+  width: 517px;
+  color: white;
+/*
+  letter-spacing: 1.3px;*/
+}
+
+.offerView .separation {
+  width: 20px;
+}
+
+.offerView .free,
+.offerView .premium,
+.offerView .family {
+  width: 150px;
+  color: #c8cdd2;
+}
+
+.offerView.freeAccount .free,
+.offerView.premiumAccount .premium,
+.offerView.familyAccount .family,
+.offerView.freeAccount .free .triangle,
+.offerView.premiumAccount .premium .triangle,
+.offerView.familyAccount .family .triangle,
+.offerView.freeAccount .free .header,
+.offerView.premiumAccount .premium .header,
+.offerView.familyAccount .family .header,
+.offerView.freeAccount .free .button,
+.offerView.premiumAccount .premium .button,
+.offerView.familyAccount .family .button {
+  background-color: #4F4F55;
+  color: #c8cdd2;
+}
+
+.offerView .header,
+.offerView .triangle,
+.offerView .premium .button,
+.offerView .family .button {
+  background-color: #c8cdd2;
+}
+
+.offerView.premiumAccount .premium .button,
+.offerView.familyAccount .button {
+  background-color: transparent;
+}
+
+.offerView .premiumSelected .premium,
+.offerView .familySelected .family {
+  color: #007FEB;
+}
+
+.offerView .premiumSelected .premium .triangle,
+.offerView .familySelected .family .triangle,
+.offerView .premiumSelected .premium .button,
+.offerView .familySelected .family .button {
+  background-color: #007FEB;
+  color: #fff;
+}
+
+.offerView .premiumSelected .premium .header,
+.offerView .familySelected .family .header {
+  background-color: #007FEB;
+  color: #fff;
+}
+
+.offerView .triangle {
+  width: 21px;
+  height: 11px;
+  -webkit-mask-image: url("../assets/images/triangle-mask.png");
+  -webkit-mask-repeat: no-repeat;
+  margin: 0 0 19px 64px;
+}
+
+.offerView .header {
+  line-height: 58px;
+  height: 58px;
+  /*margin: 0 10px 0;*/
+  width: 150px;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  font-size: 20px;
+  color: #727982;
+}
+
+.offerView .button {
+  margin: 20px 0 0;
+  width: 150px;
+  line-height: 50px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 20px;
+  color: white;
+  border-radius: 15px;
+  -webkit-backface-visibility: hidden;
+}

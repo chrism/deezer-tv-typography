@@ -1,0 +1,242 @@
+.detail {
+  position: relative;
+  top: 0px;
+  width: 1090px;
+  float: left;
+  height: 100%;
+}
+
+.detail .detailPic {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background-image: url(../assets/images/cover-400.jpg);
+  background-position: 0px 0px;
+}
+
+.detail .header {
+  position: absolute;
+  left: 32px;
+  width: 385px;
+  height: 544px;
+  top: 15px;
+}
+
+.detail .header .detailInfos {
+  position: absolute;
+  top: 395px;
+}
+
+.detail .header .detailPicContent {
+  position: absolute;
+  width: 385px;
+  height: 385px;
+}
+
+.detail .header .detailPicContent.stbActive:after {
+  width: 375px;
+  height: 375px;
+  overflow: visible;
+  position: absolute;
+  border: 5px #007FEB solid;
+  top: 0;
+  left: 0;
+  content: '';
+}
+
+.detail .header .detailPic {
+  width: 100%;
+  height: 100%;
+}
+
+.detail .detailPicContent.stbActive .selection {
+  display: block;
+}
+
+.header .detailPicContent .selection {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 142px;
+  left: 142px;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50px;
+  border: 3px rgba(255, 255, 255, 0.3) solid;
+}
+
+.header .detailPicContent .selection .playPauseIcon {
+  position: absolute;
+  font-family: "Deezer Icons";
+  font-size: 40px;
+  line-height: 100px;
+  text-align: center;
+  width: 100%;
+  color: #f2f2f2;
+}
+
+.playPauseIcon:before {
+  content: '\e85b';
+}
+
+.header .detailPicContent.playing.stbActive .selection .playPauseIcon:before {
+  content: '\e856';
+}
+
+.detail .header .title,
+.detail .header .subTitle {
+  /*position: absolute;*/
+  height: 40px;
+  line-height: 40px;
+  left: 32px;
+  width: 385px;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.detail .header .title.slide,
+.detail .header .subTitle.slide {
+  text-overflow: clip;
+}
+
+.detail .header .title {
+  /*top: 403px;*/
+  font-size: 24px;
+  color: #C8CDD2;
+  font-size: 32px;
+}
+
+.detail .header .subTitle {
+  /*top: 448px;*/
+  font-size: 24px;
+  color: #727982;
+}
+
+.detail .header .infos {
+  position: absolute;
+  /*left: 32px;*/
+  top: 100px;
+  width: 385px;
+  height: 46px;
+  line-height: 46px;
+  font-size: 18px;
+  color: #727982;
+  text-align: right;
+
+}
+
+.detail .header .infos span {
+  position: relative;
+  float: right;
+  margin-left: 5px;
+  margin-right: 5px;
+  color: #404048;
+
+  font-size: 22px;
+}
+
+.detail .infos .info1 {
+  position: relative;
+  float: right;
+}
+
+.detail .infos .info2 {
+  position: relative;
+  float: right;
+}
+
+.detail .header .favButton,
+.detail .header .radioButton {
+  top: 100px;
+  width: 126px;
+  height: 42px;
+  line-height: 42px;
+  font-size: 20px;
+  border: 2px solid #404048;
+  border-radius: 10px;
+  -webkit-backface-visibility: hidden;
+  color: #C8CDD2;
+  display: block;
+  margin-right: 10px;
+  float: left;
+}
+
+.detail.artist .header .favButton,
+.detail.artist .header .radioButton,
+.detail.artist .header .infos {
+  top: 70px;
+}
+
+.detail .header .favButton .favIcon,
+.detail .header .favButton .loveIcon,
+.detail .header .radioButton .radioIcon {
+  margin-left: 10px;
+  font-family: "Deezer Icons";
+  font-size: 24px;
+  float: left;
+}
+
+.detail .header .favButton.stbActive .favIcon,
+.detail .header .radioButton.stbActive .radioIcon {
+  color: #007FEB;
+}
+
+.loveIcon:before {
+  content: '\e84c';
+}
+
+.favIcon:before {
+  color: #007FEB;
+  content: '\e84c';
+}
+
+.radioIcon:before {
+  content: '\e85b';
+}
+
+.detail .header .favButton.stbActive .favIcon:before {
+  color: white;
+  content: '\e819';
+}
+
+.detail .header .favButton .favLabel,
+.detail .header .radioButton .radioLabel {
+  margin-left: 10px;
+  font-size: 20px;
+  float: left;
+}
+
+.detail .header .favButton.stbActive,
+.detail .header .radioButton.stbActive {
+  border: 2px solid #007FEB;
+  color: #fff;
+}
+
+.detail .items,
+.detail .errorContainer {
+  position: absolute;
+  top: 15px;
+  left: 448px;
+  width: 628px;
+  height: 600px;
+  overflow: hidden;
+  margin-left: 0px;
+  font-size: 28px;
+  color: #C8CDD2;
+  margin-top: 0px;
+  text-align: left;
+}
+
+.WTab .detail .items,
+.WTab .detail .errorContainer {
+  height: 560px;
+}
+
+.detail .errorMessage {
+  margin-top: 30px;
+  font-size: 32px;
+  color: white;
+  line-height: 40px;
+}
