@@ -1,0 +1,90 @@
+.lyrics {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  width: 1280px;
+  height: 100%;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-name: fadeInFromNone;
+}
+
+.lyrics .hidden {
+  display: none !important;
+}
+
+.lyrics .textLyrics {
+  position: absolute;
+  left: 80px;
+  width: 1120px;
+  height: 390px;
+
+  color: white;
+  text-align: center;
+  overflow: hidden;
+}
+
+.lyrics .label {
+  position: absolute;
+  white-space: pre-line;
+  width: 1120px;
+  font-size: 30px;
+  line-height: 48px;
+}
+
+.lyrics .sync {
+  position: absolute;
+  top: 70px;
+  left: 64px;
+  height: 400px;
+  overflow: visible;
+}
+
+.lyrics .sync .line {
+  position: absolute;
+  top: 200px;
+  width: 1152px;
+  padding: 25px;
+  text-align: center;
+  font-size: 50px;
+  line-height: 50px;
+  border-left: none;
+  word-wrap: break-word;
+  white-space: normal;
+  -webkit-box-sizing: border-box;
+  color: #fff;
+
+  opacity: 0;
+}
+
+.lyrics .sync .line.secondLine {
+  opacity: 0.7;
+  -webkit-transition: opacity 1s ease-in-out;
+  top: 190px;
+}
+
+.lyrics .sync .line.finished {
+  opacity: 0;
+  top: -50px !important;
+}
+
+.lyrics .sync .line.highlight {
+  top: 0 !important;
+  background-color: rgba(0, 127, 235, 0.6);
+  opacity: 1;
+}
+
+.lyrics .sync .line.highlight {
+  -webkit-transition: top 1s ease-in-out;
+}
+
+.lyrics .sync .line.finished {
+  -webkit-transition: opacity 1s ease-in-out, top 1s ease-in-out;
+}
+
+.lyrics .scrollbar {
+  left: 1116px;
+}
+
+.lyrics .scrollbar .scroller {
+  background-color: #727982;
+}

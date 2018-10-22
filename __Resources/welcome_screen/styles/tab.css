@@ -1,0 +1,76 @@
+.tabContent {
+  z-index: 1;
+  top: 104px;
+  position: absolute;
+  height: 40px;
+  left: 142px;
+  width: 1078px;
+}
+
+.tabsLine {
+  position: absolute;
+  width: 1008px;
+  height: 4px;
+  background-color: #32323A;
+  left: 35px;
+  top: 36px;
+}
+
+.tabs {
+  position: absolute;
+  top: 0px;
+  height: 40px;
+  left: 35px;
+  width: 1008px;
+  overflow: hidden;
+  line-height: 36px;
+}
+
+.tabs .tabList {
+  position: relative;
+  white-space: nowrap;
+  float: left;
+  left: 0px;
+  transition-duration: 0.5s;
+}
+
+.tabs .tab {
+  width: 252px;
+  height: 36px;
+  text-transform: uppercase;
+  text-align: center;
+  display: inline-block;
+  color: white;
+  border-bottom: 4px solid transparent;
+  font-size: 18px;
+}
+
+.tabs .tab.stbActive {
+  border-bottom: 4px solid #007FEB;
+}
+
+.tabs .tab.selected {
+  color: #007FEB;
+}
+
+.dotsIcon {
+  position: absolute;
+  font-size: 32px;
+  font-family: "Deezer Icons";
+  color: #f2f2f2;
+  top: 0px;
+  width: 35px;
+  background-color: #23232A;
+}
+
+.dotsIcon:before {
+  content: '\e855';
+}
+
+.dotsIcon.prev {
+  left: 0px;
+}
+
+.dotsIcon.next {
+  left: 1043px;
+}

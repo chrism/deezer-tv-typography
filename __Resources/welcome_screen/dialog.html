@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Welcome Screen</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/dialog.css">
+  </head>
+  <body>
+    <div class="dialogWrapper ng-isolate-scope noBkg" ng-class="{'noBkg':content().type==='wGuest'}" ng-if="$root.dialogShown" content="dialogContent">
+      <div id="dialog" class="dialog">
+        <!-- ngIf: content().type==='connectN' -->
+
+        <!-- ngIf: content().type==='wGuest' --><div class="block welcomeGuest ng-scope ng-isolate-scope" stb-group="" stb-default="true" ng-if="content().type==='wGuest'">
+          <div class="welcomeGuest-container">
+            <div class="title ng-binding" ng-bind="content().title">Bienvenue sur l'application Deezer de la TV d'Orange</div>
+            <div class="content">
+              <div class="content1 ng-binding" ng-bind-html="content().content1">Profitez de toute la musique que vous aimez parmi plus de 50 millions de titres.</div>
+              <div class="content2 ng-binding" ng-bind-html="content().content2">Nous vous offrons aujourd'hui un accès illimité aux mix musicaux et podcasts.</div>
+              <div class="content3 ng-binding" ng-bind-html="content().content3">Connectez-vous gratuitement ensuite avec votre compte Deezer pour profiter de ces contenus en illimité.</div>
+            </div>
+            <div class="panBtn">
+              <div class="panFree">
+                <span class="wgpLine1 ng-binding" ng-bind-html="content().wgpLine1">Avec un compte Deezer</span>
+                <span class="wgpType ng-binding" ng-bind-html="content().free">Gratuit</span>
+                <div class="wgpLine2">
+                  <div class="icon sizeMini ng-binding" ng-bind-html="content().point"></div>
+                  <div class="txtLine2 ng-binding" ng-bind-html="content().flow">Flow</div>
+                </div>
+                <div class="wgpLine3">
+                  <div class="icon sizeMini ng-binding" ng-bind-html="content().point"></div>
+                  <div class="txtLine2 ng-binding" ng-bind-html="content().musicLimit">Ecoute limitée à 30 secondes</div>
+                </div>
+                <div class="wgpLine4">
+                  <div class="icon sizeMini ng-binding" ng-bind-html="content().point"></div>
+                  <div class="txtLine2 ng-binding" ng-bind-html="content().noLimitRadio">Accès illimité aux mix et podcasts</div>
+                </div>
+                <div stb-item="" class="button connect ng-binding ng-isolate-scope" style="float: left" active-parent="true" ng-click="$root.hideDialog();displayAuthent()" ng-bind="content().connect">Se connecter</div>
+              </div>
+              <div class="panPremium active">
+                <span class="wgpLine1 ng-binding" ng-bind-html="content().wgpLine1">Avec un compte Deezer</span>
+                <span class="wgpType ng-binding" ng-bind-html="content().premium">Premium</span>
+                <div class="wgpLine2">
+                  <div class="icon sizeMini ng-binding" ng-bind-html="content().point"></div>
+                  <div class="txtLine2 ng-binding" ng-bind-html="content().flow">Flow</div>
+                </div>
+                <div class="wgpLine3 noLimit">
+                  <div class="icon sizeMini ng-binding" ng-bind-html="content().point"></div>
+                  <div class="txtLine2 ng-binding" ng-bind-html="content().noLimitMusic">Musique illimitée</div>
+                </div>
+                <div class="wgpLine4">
+                  <div class="icon sizeMini ng-binding" ng-bind-html="content().point"></div>
+                  <div class="txtLine2 ng-binding" ng-bind-html="content().noLimitRadio">Accès illimité aux mix et podcasts</div>
+                </div>
+                <div stb-item="" class="button connect ng-binding ng-isolate-scope" style="float: left" active-parent="true" ng-click="$root.hideDialog();displayAuthent()" ng-bind="content().connect">Se connecter</div>
+                <div stb-item="" class="button aboG ng-binding ng-isolate-scope stbActive" style="float: left" stb-default="true" active-parent="true" ng-click="$root.hideDialog(true);displayOffers()" ng-bind-html="content().subscriptionButton">S'abonner</div>
+              </div>
+            </div>
+            <div class="contentFooter ng-binding" ng-bind-html="content().contentFooter">Non merci, je reste en mode invité.<br>Je serai limité à 1H d'écoute par mois pour les mix et les podcasts.</div>
+            <div stb-item="" class="button continue ng-binding ng-isolate-scope" style="float: left" ng-click="$root.hideDialog()" ng-bind="content().continue">Continuer</div>
+
+          </div>
+
+        </div><!-- end ngIf: content().type==='wGuest' -->
+
+        <!-- ngIf: content().type==='connectP' -->
+
+        <!-- ngIf: content().type==='disconnect' -->
+
+        <!-- ngIf: (content().type==='message' || content().type==='messageOneButton'|| content().type==='message-blue' || content().type==='playerError') -->
+
+        <!-- ngIf: content().type==='smartloginSuccess' -->
+
+        <!-- ngIf: content().type==='familyAccount' -->
+
+        <!-- ngIf: content().type==='subscription' -->
+
+        <!-- ngIf: content().type==='createPlaylist' -->
+
+        <!-- ngIf: content().type==='newPlaylist' -->
+
+        <!-- ngIf: content().type==='addPlaylist' -->
+
+        <!-- ngIf: content().type==='addPlaylist2' -->
+
+        <!-- ngIf: content().type==='networkError' -->
+
+        <!-- ngIf: content().type==='exitService' -->
+
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,310 @@
+.player .container-fluid {
+  left: 0px;
+  width: 1280px;
+}
+
+.back {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 1280px;
+  height: 720px;
+}
+
+.background {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 1280px;
+  height: 720px;
+  display: none;
+}
+
+.back:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /*background:rgba(0,0,0,0.4);*/
+  background-image: url('../assets/images/radial_lighter_24.png');
+}
+
+.player .search .text-input {
+  background-color: black;
+}
+
+.player .stream .cover {
+  position: absolute;
+  left: 440px;
+  width: 400px;
+  height: 400px;
+  background-image: url('../assets/images/cover-400.jpg');
+  box-shadow: 0 5px 15px 5px rgba(35, 35, 42, 0.5);
+}
+
+.player .stream .content {
+  position: absolute;
+  top: 445px;
+  left: 286px;
+  width: 708px;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+}
+
+.player .stream .title {
+  color: #f2f2f2;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.player .stream .artist {
+  color: rgba(200, 205, 210, 0.7);
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.player .stream .album {
+  color: rgba(200, 205, 210, 0.7);
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+  font-size: 18px;
+}
+
+.player .playerInfos {
+  position: absolute;
+  left: 375px;
+  height: 100%;
+  width: 400px;
+}
+
+.player .playerInfos .timer,
+.player .playerInfos .duration {
+  color: #fff;
+  position: absolute;
+  font-size: 18px;
+  top: 20px;
+}
+
+.player .playerInfos .timer {
+  left: 0;
+}
+
+.player .playerInfos .duration {
+  right: 0;
+}
+
+.player .progressBar {
+  position: absolute;
+  width: 217px;
+  top: 28px;
+  left: 100px;
+  height: 5px;
+  background: #23232A;
+  overflow: hidden;
+}
+
+.player .progressBar .scroller {
+  background-color: #007FEB;
+  height: 100%;
+  width: 0;
+}
+
+.player .playerButtons {
+  top: 516px;
+  position: absolute;
+  left: 65px;
+  height: 60px;
+  width: 1135px;
+}
+
+.playerButtons .previousBtn,
+.playerButtons .playBtn,
+.playerButtons .nextBtn,
+.playerButtons .repeatBtn,
+.playerButtons .shuffleBtn,
+.playerButtons .lyricsBtn,
+.playerButtons .loveBtn,
+.playerButtons .playlistBtn,
+.playerButtons .albumBtn,
+.playerButtons .artistBtn {
+  position: absolute;
+  border: 2px transparent solid;
+  color: #727982;
+  font-family: "Deezer Icons";
+  text-align: center;
+}
+
+.playerButtons .active,
+.playerButtons.stbActive .selected.active {
+  color: #007FEB;
+}
+
+.playerButtons .hide {
+  visibility: hidden;
+}
+
+.playerButtons .disabled {
+  display: none;
+}
+
+.playerButtons .previousBtn,
+.playerButtons .nextBtn {
+  width: 44px;
+  height: 44px;
+  margin-top: 6px;
+  border-radius: 24px;
+  font-size: 22px;
+  line-height: 44px;
+  -webkit-backface-visibility: hidden;
+}
+
+.playerButtons .lyricsBtn,
+.playerButtons .loveBtn,
+.playerButtons .playlistBtn,
+.playerButtons .albumBtn,
+.playerButtons .artistBtn {
+  width: 50px;
+  height: 50px;
+  margin-top: 3px;
+  border-radius: 26px;
+  font-size: 32px;
+  line-height: 50px;
+  -webkit-backface-visibility: hidden;
+}
+
+.playerButtons .repeatBtn,
+.playerButtons .shuffleBtn {
+  width: 32px;
+  height: 32px;
+  margin-top: 14px;
+  border-radius: 18px;
+  font-size: 24px;
+  line-height: 32px;
+  -webkit-backface-visibility: hidden;
+}
+
+.playerButtons .repeatBtn .active,
+.playerButtons .shuffleBtn .active.playerButtons .shuffleBtn .active {
+  color: #007FEB;
+}
+
+.playerButtons .playBtn {
+  width: 56px;
+  height: 56px;
+  border-radius: 30px;
+  font-size: 40px;
+  line-height: 56px;
+  -webkit-backface-visibility: hidden;
+}
+
+.playerButtons .previousBtn {
+  left: 0px;
+}
+
+.previousBtn:before {
+  content: '\e863';
+}
+
+.playerButtons .playBtn {
+  left: 58px;
+}
+
+.playBtn:before {
+  content: '\e85b';
+}
+
+.playBtn.playing:before {
+  content: '\e856';
+}
+
+.playerButtons .nextBtn {
+  left: 128px;
+}
+
+.barMenu .playerButtons .previousBtn,
+.barMenu .playerButtons .playBtn,
+.barMenu .playerButtons .nextBtn {
+  border-radius: 57px;
+  border: 2px solid #c8cdd2;
+  color: #c8cdd2;
+}
+
+.barMenu .playerButtons .stbActive,
+.playerButtons .stbActive {
+  border-color: #007FEB;
+  color: white;
+  border: 2px solid #007FEB;
+}
+
+.playerButtons .repeatBtn.active,
+.playerButtons .shuffleBtn.active,
+.playerButtons .loveBtn.active,
+.playerButtons .lyricsBtn.active {
+  color: #007FEB;
+}
+
+.nextBtn:before {
+  content: '\e853';
+}
+
+.playerButtons .repeatBtn {
+  left: 0px;
+}
+
+.repeatBtn:before {
+  content: '\e868';
+}
+
+.repeatBtn.repeatOnce:before {
+  content: '\e869';
+}
+
+.playerButtons .shuffleBtn {
+  left: 43px;
+}
+
+.shuffleBtn:before {
+  content: '\e870';
+}
+
+.playerButtons .lyricsBtn {
+  left: 892px;
+}
+
+.lyricsBtn:before {
+  content: '\e84d';
+}
+
+.playerButtons .loveBtn {
+  left: 942px;
+}
+
+.loveBtn:before {
+  content: '\e84c';
+}
+
+.playerButtons .playlistBtn {
+  left: 992px;
+}
+
+.playlistBtn:before {
+  content: '\e85e';
+}
+
+.playerButtons .albumBtn {
+  left: 1042px;
+}
+
+.albumBtn:before {
+  content: '\e802';
+}
+
+.playerButtons .artistBtn {
+  left: 1092px;
+}
+
+.artistBtn:before {
+  content: '\e838';
+}
+
+.playerButtons .single {
+  left: 942px;
+}

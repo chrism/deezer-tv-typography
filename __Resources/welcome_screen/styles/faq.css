@@ -1,0 +1,106 @@
+.faqView {
+  position: relative;
+  color: #8A8D93;
+  font-size: 20px;
+  margin: 32px;
+  width: 1008px;
+  padding-right: 45px;
+
+  max-height: 475px;
+  overflow: hidden;
+}
+
+.faqView .right {
+  float: right;
+}
+
+.faqView .req {
+  margin-bottom: 30px;
+  border-bottom: 2px solid #32323a;
+  margin-top: 30px;
+}
+
+.faqView .question {
+  margin-bottom: 30px;
+  font-size: 32px;
+  line-height: 40px;
+  color: #c2c9d2;
+}
+
+.faqView .answer {
+  margin-bottom: 30px;
+  font-size: 24px;
+  line-height: 32px;
+  color: #858692;
+}
+
+.faqView .link {
+  color: #c2c9d2;
+}
+
+.faqView.col {
+  padding-top: 100px;
+}
+
+.faqView.col .gridItem {
+  height: 440px;
+}
+
+.faqView.col .req {
+  width: 180px;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-bottom: none;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.faqView.col .question {
+  text-align: center;
+  font-size: 24px;
+  line-height: 32px;
+  color: #C2C9D2;
+}
+
+.faqView.col .icon {
+  font-size: 48px;
+  margin-bottom: 20px;
+  line-height: 48px;
+}
+
+.faqView.col .answer {
+  margin-bottom: 0;
+  font-size: 18px;
+  text-align: left;
+  color: #858692;
+}
+
+.faqView .scroller.focused {
+  background-color: #007FEB;
+}
+
+.faqView .icon {
+  font-family: "Deezer icons";
+}
+
+.lyricsIcon:before {
+  content: '\e84d';
+}
+
+.loveIcon:before,
+.favouriteIcon:before {
+  content: '\e84c';
+}
+
+.addPlaylistIcon:before {
+  content: '\e85e';
+}
+
+.albumIcon:before {
+  content: '\e802';
+}
+
+.artistIcon:before {
+  content: '\e838';
+}
