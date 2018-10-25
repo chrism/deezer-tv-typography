@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Homescreen buttons</title>
+</head>
+
+<body>
+  <div ui-view="" class="container-fluid ng-scope hp" ng-class="{'wTab':$root.tabs,'hp':$root.isHome}">
+    <div class="home ">
+      <div class="homeBckgd empty" ng-class="{'empty':!$root.wait&amp;&amp;!home.background}"> <img ng-show="home.background" ng-src="" hide-img-on-error="" class="ng-hide"> </div>
+      <!-- ngIf: !home.isGuest -->
+      <!-- ngIf: home.isGuest -->
+      <div ng-if="home.isGuest" class="header guest ng-scope ng-isolate-scope" stb-group="" stb-default="true">
+        <div id="buttonFlow" stb-item="" stb-default="true" class="flowButton ng-isolate-scope stbActive" ng-click="home.launchFlow()">
+          <div class="iconFlow"><span ng-bind="home.iconFlow" class="ng-binding"></span></div> <span class="buttonLabel ng-binding">FLOW<br><span class="info ng-binding" ng-bind="home.flowInfo">Votre bande-son personnalisée</span></span>
+        </div>
+        <div stb-item="" stb-default="false" class="buttonConnect ng-isolate-scope" ng-click="home.connect()"> <span class="connect ng-scope"></span> <span class="connectInfo ng-binding" ng-bind="home.user.connect">Se connecter</span> </div>
+      </div>
+      <!-- end ngIf: home.isGuest -->
+      <!-- ngIf: !home.isGuest && home.isLastListen -->
+      <!-- ngIf: !home.isGuest && home.strips.length > 0 && !home.isLastListen -->
+      <!-- ngIf: home.isGuest -->
+      <div class="content guest ng-scope" ng-if="home.isGuest">
+        <div class="stripTitle"><span class="text ng-binding">Mix</span></div>
+        <div class="mosaic radio " index="0" active-index="-1" tab-index="0" type="radio" id="top" active-mosaic="false" nb-rows="1">
+          <!-- ngIf: items.length>0 -->
+          <div class="items grid" stb-group="" stb-default="false" ng-if="items.length&gt;0" stb-update-row="updateRow">
+            <!-- ngIf: contentType==='grid' -->
+            <grid class="grid ng-scope ng-isolate-scope" ng-if="contentType==='grid'" scrollbar="" active-index="activeIndex" items="items" index="index" max-elts="maxElts" max-cols="maxCol" limit-size="limitSize" limit-begin="limitBegin" img-size="imgSize"
+              display-item="displayItem">
+              <!-- ngRepeat: item in items()  | limitTo:limitSize():limitBegin() track by item.idx -->
+              <div stb-item="" ng-repeat="item in items()  | limitTo:limitSize():limitBegin() track by item.idx" stb-default="true" stb-max-elts="25" stb-max-col="5" id="0" idx="$index" id-item="37151" class="gridItem item ng-scope ng-isolate-scope radio"
+                ng-class="{'radio':true,'favourite':item.favourite,'empty':item.empty,'active':$index===activeIndex()}" ng-click="displayItem()(item.idx)">
+                <ng-item imgsize="imgSize()" item="item" class="ng-isolate-scope"><img ng-src="https://deezerapi.vct.pgw.orange.fr/images/dzcdn/e-cdns-images/images/misc/dc26da8141ed1f3605544fc7aca2696b/176x176-000000-80-0-0.jpg" hide-img-on-error="" onload="className='loaded'" src="https://deezerapi.vct.pgw.orange.fr/images/dzcdn/e-cdns-images/images/misc/dc26da8141ed1f3605544fc7aca2696b/176x176-000000-80-0-0.jpg"
+                    class="loaded">
+                  <div class="edito">
+                    <div class="title txt_ellipsis txt_title3 txt_white ng-binding" autoscroll="" ng-bind="item().title">Hits</div>
+                    <div ng-show="item().desc" ng-bind="item().desc" class="desc txt_ellipsis txt_normal txt_gray ng-binding ng-hide" autoscroll=""></div>
+                    <div ng-show="item().type === 'user' &amp;&amp; !$root.tabs" ng-bind-html="showUserStatus(item())" class="desc txt_ellipsis txt_normal txt_gray ng-binding ng-hide">Gratuit</div>
+                  </div>
+                  <div class="contentIcon ng-hide" ng-show="item().hasIcon"></div>
+                </ng-item>
+                <!-- ngIf: item.type === 'radio' && isPlaying(item.id) && !isPausing(item.id) -->
+                <!-- ngIf: item.type === 'radio' && isPausing(item.id) -->
+                <!-- ngIf: item.type === 'radio' && !isPlaying(item.id) && !isPausing(item.id) -->
+                <div ng-if="item.type === 'radio' &amp;&amp; !isPlaying(item.id) &amp;&amp; !isPausing(item.id)" class="radio ng-scope"></div>
+                <!-- end ngIf: item.type === 'radio' && !isPlaying(item.id) && !isPausing(item.id) -->
+              </div>
+              <!-- end ngRepeat: item in items()  | limitTo:limitSize():limitBegin() track by item.idx -->
+              <div stb-item="" ng-repeat="item in items()  | limitTo:limitSize():limitBegin() track by item.idx" stb-default="false" stb-max-elts="25" stb-max-col="5" id="1" idx="$index" id-item="30931" class="gridItem item ng-scope ng-isolate-scope radio"
+                ng-class="{'radio':true,'favourite':item.favourite,'empty':item.empty,'active':$index===activeIndex()}" ng-click="displayItem()(item.idx)">
+                <ng-item imgsize="imgSize()" item="item" class="ng-isolate-scope"><img ng-src="https://deezerapi.vct.pgw.orange.fr/images/dzcdn/e-cdns-images/images/misc/b2ddc2927971670e6866cd0d3da4e2e2/176x176-000000-80-0-0.jpg" hide-img-on-error="" onload="className='loaded'" src="https://deezerapi.vct.pgw.orange.fr/images/dzcdn/e-cdns-images/images/misc/b2ddc2927971670e6866cd0d3da4e2e2/176x176-000000-80-0-0.jpg"
+                    class="loaded">
+                  <div class="edito">
+                    <div class="title txt_ellipsis txt_title3 txt_white ng-binding" autoscroll="" ng-bind="item().title">Pop Rock</div>
+                    <div ng-show="item().desc" ng-bind="item().desc" class="desc txt_ellipsis txt_normal txt_gray ng-binding ng-hide" autoscroll=""></div>
+                    <div ng-show="item().type === 'user' &amp;&amp; !$root.tabs" ng-bind-html="showUserStatus(item())" class="desc txt_ellipsis txt_normal txt_gray ng-binding ng-hide">Gratuit</div>
+                  </div>
+                  <div class="contentIcon ng-hide" ng-show="item().hasIcon"></div>
+                </ng-item>
+                <!-- ngIf: item.type === 'radio' && isPlaying(item.id) && !isPausing(item.id) -->
+                <!-- ngIf: item.type === 'radio' && isPausing(item.id) -->
+                <!-- ngIf: item.type === 'radio' && !isPlaying(item.id) && !isPausing(item.id) -->
+                <div ng-if="item.type === 'radio' &amp;&amp; !isPlaying(item.id) &amp;&amp; !isPausing(item.id)" class="radio ng-scope"></div>
+                <!-- end ngIf: item.type === 'radio' && !isPlaying(item.id) && !isPausing(item.id) -->
+              </div>
+              <!-- end ngRepeat: item in items()  | limitTo:limitSize():limitBegin() track by item.idx -->
+              <div stb-item="" ng-repeat="item in items()  | limitTo:limitSize():limitBegin() track by item.idx" stb-default="false" stb-max-elts="25" stb-max-col="5" id="2" idx="$index" id-item="31061" class="gridItem item ng-scope ng-isolate-scope radio"
+                ng-class="{'radio':true,'favourite':item.favourite,'empty':item.empty,'active':$index===activeIndex()}" ng-click="displayItem()(item.idx)">
+                <ng-item imgsize="imgSize()" item="item" class="ng-isolate-scope"><img ng-src="https://deezerapi.vct.pgw.orange.fr/images/dzcdn/e-cdns-images/images/misc/2a37213fb756d7991b4b9a575c1ffaf3/176x176-000000-80-0-0.jpg" hide-img-on-error="" onload="className='loaded'" src="https://deezerapi.vct.pgw.orange.fr/images/dzcdn/e-cdns-images/images/misc/2a37213fb756d7991b4b9a575c1ffaf3/176x176-000000-80-0-0.jpg"
+                    class="loaded">
+                  <div class="edito">
+                    <div class="title txt_ellipsis txt_title3 txt_white ng-binding" autoscroll="" ng-bind="item().title">Pop</div>
+                    <div ng-show="item().desc" ng-bind="item().desc" class="desc txt_ellipsis txt_normal txt_gray ng-binding ng-hide" autoscroll=""></div>
+                    <div ng-show="item().type === 'user' &amp;&amp; !$root.tabs" ng-bind-html="showUserStatus(item())" class="desc txt_ellipsis txt_normal txt_gray ng-binding ng-hide">Gratuit</div>
+                  </div>
+                  <div class="contentIcon ng-hide" ng-show="item().hasIcon"></div>
+                </ng-item>
+                <!-- ngIf: item.type === 'radio' && isPlaying(item.id) && !isPausing(item.id) -->
+                <!-- ngIf: item.type === 'radio' && isPausing(item.id) -->
+                <!-- ngIf: item.type === 'radio' && !isPlaying(item.id) && !isPausing(item.id) -->
+                <div ng-if="item.type === 'radio' &amp;&amp; !isPlaying(item.id) &amp;&amp; !isPausing(item.id)" class="radio ng-scope"></div>
+                <!-- end ngIf: item.type === 'radio' && !isPlaying(item.id) && !isPausing(item.id) -->
+              </div>
+              <!-- end ngRepeat: item in items()  | limitTo:limitSize():limitBegin() track by item.idx -->
+              <div stb-item="" ng-repeat="item in items()  | limitTo:limitSize():limitBegin() track by item.idx" stb-default="false" stb-max-elts="25" stb-max-col="5" id="3" idx="$index" id-item="31031" class="gridItem item ng-scope ng-isolate-scope radio"
+                ng-class="{'radio':true,'favourite':item.favourite,'empty':item.empty,'active':$index===activeIndex()}" ng-click="displayItem()(item.idx)">
+                <ng-item imgsize="imgSize()" item="item" class="ng-isolate-scope"><img ng-src="https://deezerapi.vct.pgw.orange.fr/images/dzcdn/e-cdns-images/images/misc/7bd8407ffeffcf5f6ebc67cea68fd322/176x176-000000-80-0-0.jpg" hide-img-on-error="" onload="className='loaded'" src="https://deezerapi.vct.pgw.orange.fr/images/dzcdn/e-cdns-images/images/misc/7bd8407ffeffcf5f6ebc67cea68fd322/176x176-000000-80-0-0.jpg"
+                    class="loaded">
+                  <div class="edito">
+                    <div class="title txt_ellipsis txt_title3 txt_white ng-binding" autoscroll="" ng-bind="item().title">Jazz</div>
+                    <div ng-show="item().desc" ng-bind="item().desc" class="desc txt_ellipsis txt_normal txt_gray ng-binding ng-hide" autoscroll=""></div>
+                    <div ng-show="item().type === 'user' &amp;&amp; !$root.tabs" ng-bind-html="showUserStatus(item())" class="desc txt_ellipsis txt_normal txt_gray ng-binding ng-hide">Gratuit</div>
+                  </div>
+                  <div class="contentIcon ng-hide" ng-show="item().hasIcon"></div>
+                </ng-item>
+                <!-- ngIf: item.type === 'radio' && isPlaying(item.id) && !isPausing(item.id) -->
+                <!-- ngIf: item.type === 'radio' && isPausing(item.id) -->
+                <!-- ngIf: item.type === 'radio' && !isPlaying(item.id) && !isPausing(item.id) -->
+                <div ng-if="item.type === 'radio' &amp;&amp; !isPlaying(item.id) &amp;&amp; !isPausing(item.id)" class="radio ng-scope"></div>
+                <!-- end ngIf: item.type === 'radio' && !isPlaying(item.id) && !isPausing(item.id) -->
+              </div>
+              <!-- end ngRepeat: item in items()  | limitTo:limitSize():limitBegin() track by item.idx -->
+              <div stb-item="" ng-repeat="item in items()  | limitTo:limitSize():limitBegin() track by item.idx" stb-default="false" stb-max-elts="25" stb-max-col="5" id="4" idx="$index" id-item="38395" class="gridItem item ng-scope ng-isolate-scope radio"
+                ng-class="{'radio':true,'favourite':item.favourite,'empty':item.empty,'active':$index===activeIndex()}" ng-click="displayItem()(item.idx)">
+                <ng-item imgsize="imgSize()" item="item" class="ng-isolate-scope"><img ng-src="https://deezerapi.vct.pgw.orange.fr/images/dzcdn/e-cdns-images/images/misc/31b4c578ab85e207a2882823d844c1e0/176x176-000000-80-0-0.jpg" hide-img-on-error="" onload="className='loaded'" src="https://deezerapi.vct.pgw.orange.fr/images/dzcdn/e-cdns-images/images/misc/31b4c578ab85e207a2882823d844c1e0/176x176-000000-80-0-0.jpg"
+                    class="loaded">
+                  <div class="edito">
+                    <div class="title txt_ellipsis txt_title3 txt_white ng-binding" autoscroll="" ng-bind="item().title">French Chanson</div>
+                    <div ng-show="item().desc" ng-bind="item().desc" class="desc txt_ellipsis txt_normal txt_gray ng-binding ng-hide" autoscroll=""></div>
+                    <div ng-show="item().type === 'user' &amp;&amp; !$root.tabs" ng-bind-html="showUserStatus(item())" class="desc txt_ellipsis txt_normal txt_gray ng-binding ng-hide">Gratuit</div>
+                  </div>
+                  <div class="contentIcon ng-hide" ng-show="item().hasIcon"></div>
+                </ng-item>
+                <!-- ngIf: item.type === 'radio' && isPlaying(item.id) && !isPausing(item.id) -->
+                <!-- ngIf: item.type === 'radio' && isPausing(item.id) -->
+                <!-- ngIf: item.type === 'radio' && !isPlaying(item.id) && !isPausing(item.id) -->
+                <div ng-if="item.type === 'radio' &amp;&amp; !isPlaying(item.id) &amp;&amp; !isPausing(item.id)" class="radio ng-scope"></div>
+                <!-- end ngIf: item.type === 'radio' && !isPlaying(item.id) && !isPausing(item.id) -->
+              </div>
+              <!-- end ngRepeat: item in items()  | limitTo:limitSize():limitBegin() track by item.idx -->
+              <div stb-item="" ng-repeat="item in items()  | limitTo:limitSize():limitBegin() track by item.idx" stb-default="false" stb-max-elts="25" stb-max-col="5" id="5" idx="$index" id-item="30991" class="gridItem item ng-scope ng-isolate-scope radio"
+                ng-class="{'radio':true,'favourite':item.favourite,'empty':item.empty,'active':$index===activeIndex()}" ng-click="displayItem()(item.idx)">
+                <ng-item imgsize="imgSize()" item="item" class="ng-isolate-scope"><img ng-src="https://deezerapi.vct.pgw.orange.fr/images/dzcdn/e-cdns-images/images/misc/0116684cacf082e6fdb6b7362d4498bd/176x176-000000-80-0-0.jpg" hide-img-on-error="" onload="className='loaded'" src="https://deezerapi.vct.pgw.orange.fr/images/dzcdn/e-cdns-images/images/misc/0116684cacf082e6fdb6b7362d4498bd/176x176-000000-80-0-0.jpg"
+                    class="loaded">
+                  <div class="edito">
+                    <div class="title txt_ellipsis txt_title3 txt_white ng-binding" autoscroll="" ng-bind="item().title">Hip Hop</div>
+                    <div ng-show="item().desc" ng-bind="item().desc" class="desc txt_ellipsis txt_normal txt_gray ng-binding ng-hide" autoscroll=""></div>
+                    <div ng-show="item().type === 'user' &amp;&amp; !$root.tabs" ng-bind-html="showUserStatus(item())" class="desc txt_ellipsis txt_normal txt_gray ng-binding ng-hide">Gratuit</div>
+                  </div>
+                  <div class="contentIcon ng-hide" ng-show="item().hasIcon"></div>
+                </ng-item>
+                <!-- ngIf: item.type === 'radio' && isPlaying(item.id) && !isPausing(item.id) -->
+                <!-- ngIf: item.type === 'radio' && isPausing(item.id) -->
+                <!-- ngIf: item.type === 'radio' && !isPlaying(item.id) && !isPausing(item.id) -->
+                <div ng-if="item.type === 'radio' &amp;&amp; !isPlaying(item.id) &amp;&amp; !isPausing(item.id)" class="radio ng-scope"></div>
+                <!-- end ngIf: item.type === 'radio' && !isPlaying(item.id) && !isPausing(item.id) -->
+              </div>
+              <!-- end ngRepeat: item in items()  | limitTo:limitSize():limitBegin() track by item.idx -->
+              <div stb-item="" ng-repeat="item in items()  | limitTo:limitSize():limitBegin() track by item.idx" stb-default="false" stb-max-elts="25" stb-max-col="5" id="6" idx="$index" id-item="38935" class="gridItem item ng-scope ng-isolate-scope radio"
+                ng-class="{'radio':true,'favourite':item.favourite,'empty':item.empty,'active':$index===activeIndex()}" ng-click="displayItem()(item.idx)">
+                <ng-item imgsize="imgSize()" item="item" class="ng-isolate-scope"><img ng-src="https://deezerapi.vct.pgw.orange.fr/images/dzcdn/e-cdns-images/images/misc/fe5ad57cceb5163c0c578bde62d0c7b7/176x176-000000-80-0-0.jpg" hide-img-on-error="" onload="className='loaded'" src="https://deezerapi.vct.pgw.orange.fr/images/dzcdn/e-cdns-images/images/misc/fe5ad57cceb5163c0c578bde62d0c7b7/176x176-000000-80-0-0.jpg"
+                    class="loaded">
+                  <div class="edito">
+                    <div class="title txt_ellipsis txt_title3 txt_white ng-binding" autoscroll="" ng-bind="item().title">Road Trip</div>
+                    <div ng-show="item().desc" ng-bind="item().desc" class="desc txt_ellipsis txt_normal txt_gray ng-binding ng-hide" autoscroll=""></div>
+                    <div ng-show="item().type === 'user' &amp;&amp; !$root.tabs" ng-bind-html="showUserStatus(item())" class="desc txt_ellipsis txt_normal txt_gray ng-binding ng-hide">Gratuit</div>
+                  </div>
+                  <div class="contentIcon ng-hide" ng-show="item().hasIcon"></div>
+                </ng-item>
+                <!-- ngIf: item.type === 'radio' && isPlaying(item.id) && !isPausing(item.id) -->
+                <!-- ngIf: item.type === 'radio' && isPausing(item.id) -->
+                <!-- ngIf: item.type === 'radio' && !isPlaying(item.id) && !isPausing(item.id) -->
+                <div ng-if="item.type === 'radio' &amp;&amp; !isPlaying(item.id) &amp;&amp; !isPausing(item.id)" class="radio ng-scope"></div>
+                <!-- end ngIf: item.type === 'radio' && !isPlaying(item.id) && !isPausing(item.id) -->
+              </div>
+              <!-- end ngRepeat: item in items()  | limitTo:limitSize():limitBegin() track by item.idx -->
+              <div stb-item="" ng-repeat="item in items()  | limitTo:limitSize():limitBegin() track by item.idx" stb-default="false" stb-max-elts="25" stb-max-col="5" id="7" idx="$index" id-item="38305" class="gridItem item ng-scope ng-isolate-scope radio"
+                ng-class="{'radio':true,'favourite':item.favourite,'empty':item.empty,'active':$index===activeIndex()}" ng-click="displayItem()(item.idx)">
+                <ng-item imgsize="imgSize()" item="item" class="ng-isolate-scope"><img ng-src="https://deezerapi.vct.pgw.orange.fr/images/dzcdn/e-cdns-images/images/misc/d01877e662201f2d9fe11f38f98aa406/176x176-000000-80-0-0.jpg" hide-img-on-error="" onload="className='loaded'" src="https://deezerapi.vct.pgw.orange.fr/images/dzcdn/e-cdns-images/images/misc/d01877e662201f2d9fe11f38f98aa406/176x176-000000-80-0-0.jpg"
+                    class="loaded">
+                  <div class="edito">
+                    <div class="title txt_ellipsis txt_title3 txt_white ng-binding" autoscroll="" ng-bind="item().title">The '80s</div>
+                    <div ng-show="item().desc" ng-bind="item().desc" class="desc txt_ellipsis txt_normal txt_gray ng-binding ng-hide" autoscroll=""></div>
+                    <div ng-show="item().type === 'user' &amp;&amp; !$root.tabs" ng-bind-html="showUserStatus(item())" class="desc txt_ellipsis txt_normal txt_gray ng-binding ng-hide">Gratuit</div>
+                  </div>
+                  <div class="contentIcon ng-hide" ng-show="item().hasIcon"></div>
+                </ng-item>
+                <!-- ngIf: item.type === 'radio' && isPlaying(item.id) && !isPausing(item.id) -->
+                <!-- ngIf: item.type === 'radio' && isPausing(item.id) -->
+                <!-- ngIf: item.type === 'radio' && !isPlaying(item.id) && !isPausing(item.id) -->
+                <div ng-if="item.type === 'radio' &amp;&amp; !isPlaying(item.id) &amp;&amp; !isPausing(item.id)" class="radio ng-scope"></div>
+                <!-- end ngIf: item.type === 'radio' && !isPlaying(item.id) && !isPausing(item.id) -->
+              </div>
+              <!-- end ngRepeat: item in items()  | limitTo:limitSize():limitBegin() track by item.idx -->
+              <div stb-item="" ng-repeat="item in items()  | limitTo:limitSize():limitBegin() track by item.idx" stb-default="false" stb-max-elts="25" stb-max-col="5" id="8" idx="$index" id-item="39021" class="gridItem item ng-scope ng-isolate-scope radio"
+                ng-class="{'radio':true,'favourite':item.favourite,'empty':item.empty,'active':$index===activeIndex()}" ng-click="displayItem()(item.idx)">
+                <ng-item imgsize="imgSize()" item="item" class="ng-isolate-scope"><img ng-src="https://deezerapi.vct.pgw.orange.fr/images/dzcdn/e-cdns-images/images/misc/5c85ffb19f1c32980fd64ef2234d11aa/176x176-000000-80-0-0.jpg" hide-img-on-error="" onload="className='loaded'" src="https://deezerapi.vct.pgw.orange.fr/images/dzcdn/e-cdns-images/images/misc/5c85ffb19f1c32980fd64ef2234d11aa/176x176-000000-80-0-0.jpg"
+                    class="loaded">
+                  <div class="edito">
+                    <div class="title txt_ellipsis txt_title3 txt_white ng-binding" autoscroll="" ng-bind="item().title">French Rap</div>
+                    <div ng-show="item().desc" ng-bind="item().desc" class="desc txt_ellipsis txt_normal txt_gray ng-binding ng-hide" autoscroll=""></div>
+                    <div ng-show="item().type === 'user' &amp;&amp; !$root.tabs" ng-bind-html="showUserStatus(item())" class="desc txt_ellipsis txt_normal txt_gray ng-binding ng-hide">Gratuit</div>
+                  </div>
+                  <div class="contentIcon ng-hide" ng-show="item().hasIcon"></div>
+                </ng-item>
+                <!-- ngIf: item.type === 'radio' && isPlaying(item.id) && !isPausing(item.id) -->
+                <!-- ngIf: item.type === 'radio' && isPausing(item.id) -->
+                <!-- ngIf: item.type === 'radio' && !isPlaying(item.id) && !isPausing(item.id) -->
+                <div ng-if="item.type === 'radio' &amp;&amp; !isPlaying(item.id) &amp;&amp; !isPausing(item.id)" class="radio ng-scope"></div>
+                <!-- end ngIf: item.type === 'radio' && !isPlaying(item.id) && !isPausing(item.id) -->
+              </div>
+              <!-- end ngRepeat: item in items()  | limitTo:limitSize():limitBegin() track by item.idx -->
+              <div stb-item="" ng-repeat="item in items()  | limitTo:limitSize():limitBegin() track by item.idx" stb-default="false" stb-max-elts="25" stb-max-col="5" id="9" idx="$index" id-item="36901" class="gridItem item ng-scope ng-isolate-scope radio"
+                ng-class="{'radio':true,'favourite':item.favourite,'empty':item.empty,'active':$index===activeIndex()}" ng-click="displayItem()(item.idx)">
+                <ng-item imgsize="imgSize()" item="item" class="ng-isolate-scope"><img ng-src="https://deezerapi.vct.pgw.orange.fr/images/dzcdn/e-cdns-images/images/misc/6e584a51f11e4f6329417472403f3315/176x176-000000-80-0-0.jpg" hide-img-on-error="" onload="className='loaded'" src="https://deezerapi.vct.pgw.orange.fr/images/dzcdn/e-cdns-images/images/misc/6e584a51f11e4f6329417472403f3315/176x176-000000-80-0-0.jpg"
+                    class="loaded">
+                  <div class="edito">
+                    <div class="title txt_ellipsis txt_title3 txt_white ng-binding" autoscroll="" ng-bind="item().title">Work Out</div>
+                    <div ng-show="item().desc" ng-bind="item().desc" class="desc txt_ellipsis txt_normal txt_gray ng-binding ng-hide" autoscroll=""></div>
+                    <div ng-show="item().type === 'user' &amp;&amp; !$root.tabs" ng-bind-html="showUserStatus(item())" class="desc txt_ellipsis txt_normal txt_gray ng-binding ng-hide">Gratuit</div>
+                  </div>
+                  <div class="contentIcon ng-hide" ng-show="item().hasIcon"></div>
+                </ng-item>
+                <!-- ngIf: item.type === 'radio' && isPlaying(item.id) && !isPausing(item.id) -->
+                <!-- ngIf: item.type === 'radio' && isPausing(item.id) -->
+                <!-- ngIf: item.type === 'radio' && !isPlaying(item.id) && !isPausing(item.id) -->
+                <div ng-if="item.type === 'radio' &amp;&amp; !isPlaying(item.id) &amp;&amp; !isPausing(item.id)" class="radio ng-scope"></div>
+                <!-- end ngIf: item.type === 'radio' && !isPlaying(item.id) && !isPausing(item.id) -->
+              </div>
+              <!-- end ngRepeat: item in items()  | limitTo:limitSize():limitBegin() track by item.idx -->
+            </grid>
+            <div class="scrollbar vertical">
+              <div class="scroller" style="top: 0px; height: 71px; display: block;"></div>
+            </div>
+            <!-- end ngIf: contentType==='grid' -->
+            <!-- ngIf: contentType==='gridXY' -->
+            <!-- ngIf: contentType==='list' -->
+            <!-- ngIf: contentType==='home' -->
+          </div>
+          <!-- end ngIf: items.length>0 -->
+          <!-- ngIf: isEmpty -->
+        </div>
+      </div>
+      <!-- end ngIf: home.isGuest -->
+    </div>
+  </div>
+</body>
+
+</html>
